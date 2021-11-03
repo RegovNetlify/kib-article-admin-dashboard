@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 
 const Pricing = ({ data }) => (
   <div className="columns">
+    {console.log(data)}
     {data.map((price) => (
       <div key={price.plan} className="column">
         <section className="section">
