@@ -7,7 +7,7 @@ import {LoginCardData, NAVBAR} from "../constants"
 import {LoginCard} from "./logInCard"
 import {Dropdown} from "./dropdown"
 import {Modal} from "./modal"
-import {SiteSearchBar} from "./SiteSearchbar"
+import {SiteSearchBar} from "./SiteSearchBar"
 
 
 export const NavBar = () => {
