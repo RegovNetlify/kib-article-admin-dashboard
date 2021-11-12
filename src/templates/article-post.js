@@ -23,6 +23,7 @@ export const ArticlePostTemplate = ({
   author,
   tags,
   date,
+  post,
 }) => {
   const PostContent = contentComponent || Content;
   let notice = false;
@@ -158,7 +159,8 @@ export const ArticlePostTemplate = ({
   function closePrint(t) {
     document.body.removeChild(t.__container__);
   }
-
+  console.log(tags);
+  console.log(post);
   return (
     <section className="section">
       <div className="flex_row sa">
@@ -192,7 +194,7 @@ export const ArticlePostTemplate = ({
             <div className="sa_border" />
             <div className="sa_related_header">{SINGLEARTICLE.tag}</div>
             <div className="flex_row">
-              {artilceData.tags.map((tag) => (
+              {tags.map((tag) => (
                 <div
                   className="sa_related_tag cursor_pointer"
                   onClick={() => HandleToogleTag(tag, 1)}
@@ -279,16 +281,16 @@ ArticlePostTemplate.propTypes = {
 
 const ArticlePost = ({ data }) => {
   const { markdownRemark: post } = data;
-
   return (
     <Layout>
       <ArticlePostTemplate
         content={post.html}
         contentComponent={HTMLContent}
         description={post.frontmatter.description}
-        date= {post.frontmatter.date}
+        date={post.frontmatter.date}
         author={post.frontmatter.author}
         tags={post.frontmatter.tags}
+        post={post}
         helmet={
           <Helmet titleTemplate="%s | Blog">
             <title>{`${post.frontmatter.title}`}</title>
@@ -315,6 +317,8 @@ export const articlePageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         title
         description
+        tags
+        author
       }
     }
   }
