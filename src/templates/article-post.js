@@ -20,6 +20,9 @@ export const ArticlePostTemplate = ({
   description,
   title,
   helmet,
+  author,
+  tags,
+  date,
 }) => {
   const PostContent = contentComponent || Content;
   let notice = false;
@@ -55,10 +58,10 @@ export const ArticlePostTemplate = ({
   let history = useHistory();
 
   const [artilceData, setArticledata] = useState({
-    author: "x",
+    author: author,
     content: content,
-    date: "date",
-    tags: ["x"],
+    date: date,
+    tags: tags,
     heading: title,
   });
 
@@ -270,6 +273,8 @@ ArticlePostTemplate.propTypes = {
   description: PropTypes.string,
   title: PropTypes.string,
   helmet: PropTypes.object,
+  tags: PropTypes.array,
+  author: PropTypes.string,
 };
 
 const ArticlePost = ({ data }) => {
@@ -281,6 +286,9 @@ const ArticlePost = ({ data }) => {
         content={post.html}
         contentComponent={HTMLContent}
         description={post.frontmatter.description}
+        date= {post.frontmatter.date}
+        author={post.frontmatter.author}
+        tags={post.frontmatter.tags}
         helmet={
           <Helmet titleTemplate="%s | Blog">
             <title>{`${post.frontmatter.title}`}</title>
