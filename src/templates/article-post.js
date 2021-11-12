@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import { useHistory, useLocation, useParams } from "react-router-dom";
 import Layout from "../components/Layout";
 import PropTypes from "prop-types";
@@ -8,11 +8,11 @@ import Content, { HTMLContent } from "../components/Content";
 import { kebabCase } from "lodash";
 import { SINGLEARTICLE } from "../constants";
 import {
-    getArticle,
-    getLatestArticle,
-    getLatestNotice,
-    getNotice,
-  } from "../api";
+  getArticle,
+  getLatestArticle,
+  getLatestNotice,
+  getNotice,
+} from "../api";
 
 export const ArticlePostTemplate = ({
   content,
@@ -22,7 +22,7 @@ export const ArticlePostTemplate = ({
   helmet,
 }) => {
   const PostContent = contentComponent || Content;
-    let notice = false
+  let notice = false;
   const handlePrint = () => {
     let content = document.getElementById(
       `${notice ? "notice" : "article"}:${id}`
@@ -81,11 +81,7 @@ export const ArticlePostTemplate = ({
     }
   };
 
-  const setRelatedArticles = async (
-    id,
-    tag,
-    type
-  ) => {
+  const setRelatedArticles = async (id, tag, type) => {
     try {
       let response = await getLatestArticle(id, tag, type);
       console.log("===============related=====================");
@@ -110,46 +106,50 @@ export const ArticlePostTemplate = ({
       console.log("================related====================");
     }
   };
+  const isBrowser = typeof window !== "undefined";
 
   const HandleToogleTag = (tag, type) => {
-    window.scroll(0, 0);
+    if (isBrowser) {
+      window.scroll(0, 0);
+    }
     history.push(`/articlecatalog/${type ? type : 1}/${tag}`);
   };
 
   useEffect(() => {
     if (notice) {
-    //   getNotice(parseInt(id))
-    //     .then((res) => {
-    //       setArticledata({
-    //         author: res?.data["author"],
-    //         content: res?.data["content"],
-    //         date: res?.data["date"],
-    //         heading: res?.data["heading"],
-    //         tags: res?.data["tags"],
-    //       });
-    //     })
-    //     .catch((err) => {
-    //       console.error(err);
-    //     });
-    //   setRelatedNotice(parseInt(id));
+      //   getNotice(parseInt(id))
+      //     .then((res) => {
+      //       setArticledata({
+      //         author: res?.data["author"],
+      //         content: res?.data["content"],
+      //         date: res?.data["date"],
+      //         heading: res?.data["heading"],
+      //         tags: res?.data["tags"],
+      //       });
+      //     })
+      //     .catch((err) => {
+      //       console.error(err);
+      //     });
+      //   setRelatedNotice(parseInt(id));
     } else {
-    //   getArticle(parseInt(id))
-    //     .then((res) => {
-    //       setArticledata({
-    //         author: res?.data["author"],
-    //         content: res?.data["content"],
-    //         date: res?.data["date"],
-    //         heading: res?.data["heading"],
-    //         tags: res?.data["tags"],
-    //       });
-    //       setRelatedArticles(parseInt(id), res?.data["tags"], 1);
-    //     })
-    //     .catch((err) => {
-    //       console.error(`error while geting article ${err}`);
-    //     });
+      //   getArticle(parseInt(id))
+      //     .then((res) => {
+      //       setArticledata({
+      //         author: res?.data["author"],
+      //         content: res?.data["content"],
+      //         date: res?.data["date"],
+      //         heading: res?.data["heading"],
+      //         tags: res?.data["tags"],
+      //       });
+      //       setRelatedArticles(parseInt(id), res?.data["tags"], 1);
+      //     })
+      //     .catch((err) => {
+      //       console.error(`error while geting article ${err}`);
+      //     });
     }
-
-    window.scrollTo(0, 0);
+    if (isBrowser) {
+      window.scrollTo(0, 0);
+    }
   }, [id, notice]);
 
   function closePrint(t) {
@@ -172,7 +172,7 @@ export const ArticlePostTemplate = ({
                       className="sa_share_img cursor_pointer"
                     />
                   </div>
-                ) : (
+                ) : isBrowser ? (
                   <a
                     target="_blank"
                     rel="noreferrer"
@@ -183,7 +183,7 @@ export const ArticlePostTemplate = ({
                     {console.log(pathname)}
                     <img src={img} alt={img} className="sa_share_img" />
                   </a>
-                )
+                ) : null
               )}
             </div>
             <div className="sa_border" />
@@ -260,7 +260,6 @@ export const ArticlePostTemplate = ({
         </div>
       </div>
       {helmet || ""}
-     
     </section>
   );
 };

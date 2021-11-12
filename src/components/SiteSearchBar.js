@@ -1,4 +1,4 @@
-import React, { Fragment, useLayoutEffect, useState } from "react";
+import React, { Fragment, useLayoutEffect, useState, useEffect } from "react";
 import { BUTTON, SEARCH_RESULTS } from "../constants";
 import { Button } from "./button";
 
@@ -12,20 +12,28 @@ export const SiteSearchBar = ({
   visible,
 }) => {
   const [size, setSize] = useState([0, 0]);
-//   const useWindowResize = () => {
-    // State and setters for window size value
+  //   const useWindowResize = () => {
+  // State and setters for window size value
 
-    // useLayoutEffect(() => {
-      const updateSize = () => {
-        setSize([window.innerWidth, window.innerHeight]);
-      };
-    //   window.addEventListener("resize", updateSize);
-    //   updateSize();
-    //   return () => window.removeEventListener("resize", updateSize);
-    // }, []);
-    // return size;
-//   };
-  window.onresize = updateSize;
+  // useLayoutEffect(() => {
+  const isBrowser = typeof window !== "undefined";
+  const updateSize = () => {
+    if (isBrowser) {
+      setSize([window.innerWidth, window.innerHeight]);
+    } 
+  };
+  //   window.addEventListener("resize", updateSize);
+  //   updateSize();
+  //   return () => window.removeEventListener("resize", updateSize);
+  // }, []);
+  // return size;
+  //   };
+
+  useEffect(() => {
+    if (isBrowser) {
+      window.onresize = updateSize;
+    }
+  }, [isBrowser]);
   let width = size[0];
   console.log(width);
   return width > 1024 ? (
