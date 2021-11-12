@@ -1,0 +1,60 @@
+.custom_button {
+    border-radius: 40px;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 24px;
+    display: flex;
+    justify-content: center;
+    padding: 16px 32px;
+    outline: none;
+    width: 100%;
+    cursor: pointer;
+  }
+  
+  .custom_button.primary {
+    background: #a7202c;
+    color: #ffffff;
+    border: 0;
+  }
+  
+  .custom_button.primary:disabled {
+    background: #8a8a8b;
+  }
+  
+  .primary:hover {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+      #a7202c;
+  }
+  .custom_button.secondary {
+    border: 1px solid #a7202c;
+    background: transparent;
+    color: #a7202c;
+  }
+  .secondary:hover {
+    background: #a7202c;
+    color: #ffffff;
+    border: 0;
+  }
+  .custom_button.primary_white {
+    background: #ffffff;
+    border: 0;
+    color: #a7202c;
+  }
+  .primary_white:hover {
+    background: linear-gradient(
+        0deg,
+        rgba(167, 32, 44, 0.1),
+        rgba(167, 32, 44, 0.1)
+      ),
+      #ffffff;
+  }
+  .custom_button_icon {
+    height: 24px;
+    width: 24px;
+    margin-left: 8px;
+  }
+  
+  .connect_investor_button_wrapper {
+    display: flex;
+  }
+  

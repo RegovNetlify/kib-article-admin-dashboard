@@ -1,101 +1,123 @@
-import React from "react";
-import { Link } from "gatsby";
-import github from "../img/github-icon.svg";
-import logo from "../img/logo.svg";
+import React from "react"
+import {Fragment, useState} from "react"
+import {useHistory} from "react-router-dom"
 
-const Navbar = class extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      active: false,
-      navBarActiveClass: "",
-    };
+import {siteSearch} from "../api"
+import {LoginCardData, NAVBAR} from "../constants"
+import {LoginCard} from "./logInCard"
+import {Dropdown} from "./dropdown"
+import {Modal} from "./modal"
+import {SiteSearchBar} from "./SiteSearchbar"
+
+
+export const NavBar = () => {
+  const [showModal, setShowModal] = useState(false)
+  const [searchValue, setSearchValue] = useState("")
+  const [showSearch, setShowSearch] = useState(false)
+  
+
+  let history = useHistory()
+  const openLogin = () => {
+    setShowModal(true)
   }
-
-  toggleHamburger() {
-    // toggle the active boolean in the state
-    this.setState(
-      {
-        active: !this.state.active,
-      },
-      // after state has been updated,
-      () => {
-        // set the class in state for the navbar accordingly
-        this.state.active
-          ? this.setState({
-              navBarActiveClass: "is-active",
-            })
-          : this.setState({
-              navBarActiveClass: "",
-            });
-      }
-    );
+  const closeLogin = () => {
+    setShowModal(false)
   }
-
-  render() {
-    return (
-      <nav
-        className="navbar is-transparent"
-        role="navigation"
-        aria-label="main-navigation"
-      >
-        <div className="container">
-          <div className="navbar-brand">
-            <Link to="/" className="navbar-item" title="Logo">
-              <img src={logo} alt="Kaldi" style={{ width: "88px" }} />
-            </Link>
-            {/* Hamburger menu */}
-            <div
-              className={`navbar-burger burger ${this.state.navBarActiveClass}`}
-              data-target="navMenu"
-              role="menuitem"
-              tabIndex={0}
-              onKeyPress={() => this.toggleHamburger()}
-              onClick={() => this.toggleHamburger()}
-            >
-              <span />
-              <span />
-              <span />
-            </div>
-          </div>
-          <div
-            id="navMenu"
-            className={`navbar-menu ${this.state.navBarActiveClass}`}
-          >
-            <div className="navbar-start has-text-centered">
-              <Link className="navbar-item" to="/about">
-                About
-              </Link>
-              <Link className="navbar-item" to="/products">
-                Products
-              </Link>
-              <Link className="navbar-item" to="/blog">
-                Blog
-              </Link>
-              <Link className="navbar-item" to="/contact">
-                Contact
-              </Link>
-              <Link className="navbar-item" to="/contact/examples">
-                Form Examples
-              </Link>
-            </div>
-            <div className="navbar-end has-text-centered">
-              <a
-                className="navbar-item"
-                href="https://github.com/netlify-templates/gatsby-starter-netlify-cms"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <span className="icon">
-                  <img src={github} alt="Github" />
-                </span>
-              </a>
-            </div>
-          </div>
+  const handleSearch = (e) => {
+    console.log(e.currentTarget.value, "ddf")
+    setSearchValue(e.currentTarget.value)
+  }
+  const handleEnterKeyPress = (e) => {
+    if (e.key === "Enter") {
+      onSite_Search(e.currentTarget.value)
+    }
+  }
+  const handleClearSearch = () => {
+    setSearchValue("")
+  }
+  const onSite_Search = async (input) => {
+    const response = await siteSearch(input, 0)
+    console.log("data", response?.data)
+    const searchResults = {key: input, result: response?.data.searchData}
+    setShowSearch(false)
+  
+    // handleScrollToTop();
+    history.push(`/search-results`, searchResults)
+  }
+  const handleScrollToTop = () => {
+    document.body.scrollTop = 0
+    document.documentElement.scrollTop = 0
+  }
+  return (
+    <Fragment>
+      <div className="border navbar flex_row_vertical_center">
+        <div className="navbar_logo_container" style={{marginRight: "45px"}}>
+          <a href="/">
+            <img src={NAVBAR.logo} alt={NAVBAR.logo} className="navbar_logo cursor_pointer" />
+          </a>
         </div>
-      </nav>
-    );
-  }
-};
+        {/* {NAVBAR.tabs.map(({label, tabs, links}, index) => (
+          <div key={"navbar tab" + index} className="navbar_tabs">
+            <Dropdown label={label} options={tabs} active={!showModal} links={links} />
+          </div>
+        ))} */}
+        {NAVBAR.tabs.map(({label, tabs }, index) => (
+          <div key={"navbar tab" + index} className="navbar_tabs">
+            <Dropdown label={label} options={tabs} active={!showModal} />
+          </div>
+        ))}
 
-export default Navbar;
+      
+        <div className="solotab_dropdown_label">
+          <a className="solotab_dropdown_label" href={NAVBAR.solotab.links2}>Choice of Profession</a>
+        </div>
+        <div className="flex_grow" />
+
+        <img
+          src={NAVBAR.search}
+          alt={NAVBAR.search}
+          className="navbar_search"
+          onClick={() => {
+            setShowSearch(!showSearch)
+          }}
+        />
+        <div className="navbar_swap">
+        <img
+          src={NAVBAR.eAccess}
+          alt={NAVBAR.eAccess}
+          className="navbar_access navbar_access_hide"
+          // onClick={openLogin}
+        />
+        <img
+          src={NAVBAR.eAccess_hover}
+          alt={NAVBAR.eAccess_hover}
+          className="navbar_access navbar_access_show"
+          onClick={openLogin}
+        />
+        </div>
+        
+        <Modal open={showModal} paddingTop="0" closeModal={closeLogin}>
+          <LoginCard
+            main={LoginCardData.main}
+            sub={LoginCardData.sub}
+            buttonText={LoginCardData.buttonText}
+            visitCard={LoginCardData.visitCard}
+          />
+        </Modal>
+      </div>
+      <SiteSearchBar
+        searchValue={searchValue}
+        handleSearch={handleSearch}
+        onEnter={handleEnterKeyPress}
+        visible={showSearch}
+        buttonInside
+        onSubmit={() => onSite_Search(searchValue)}
+        onClear={() => handleClearSearch()}
+      />
+    </Fragment>
+  )
+}
+function setOpen(arg0) {
+  throw new Error("Function not implemented.")
+}
+

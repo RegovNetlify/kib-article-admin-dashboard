@@ -1,13 +1,12 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Link, graphql, StaticQuery } from "gatsby";
-import PreviewCompatibleImage from "./PreviewCompatibleImage";
 
-class BlogRollTemplate extends React.Component {
+class ArticleRollTemplate extends React.Component {
   render() {
-    console.log("blog");
     const { data } = this.props;
     const { edges: posts } = data.allMarkdownRemark;
+    console.log(posts)
     return (
       <div className="columns is-multiline">
         {posts &&
@@ -19,22 +18,6 @@ class BlogRollTemplate extends React.Component {
                 }`}
               >
                 <header>
-                  {post.frontmatter.featuredimage ? (
-                    <div className="featured-thumbnail">
-                      <PreviewCompatibleImage
-                        imageInfo={{
-                          image: post.frontmatter.featuredimage,
-                          alt: `featured image thumbnail for post ${post.frontmatter.title}`,
-                          width:
-                            post.frontmatter.featuredimage.childImageSharp
-                              .gatsbyImageData.width,
-                          height:
-                            post.frontmatter.featuredimage.childImageSharp
-                              .gatsbyImageData.height,
-                        }}
-                      />
-                    </div>
-                  ) : null}
                   <p className="post-meta">
                     <Link
                       className="title has-text-primary is-size-4"
@@ -64,7 +47,7 @@ class BlogRollTemplate extends React.Component {
   }
 }
 
-BlogRoll.propTypes = {
+ArticleRoll.propTypes = {
   data: PropTypes.shape({
     allMarkdownRemark: PropTypes.shape({
       edges: PropTypes.array,
@@ -72,14 +55,14 @@ BlogRoll.propTypes = {
   }),
 };
 
-export default function BlogRoll() {
+export default function ArticleRoll() {
   return (
     <StaticQuery
       query={graphql`
-        query BlogRollQuery {
+        query ArticleRollQuery {
           allMarkdownRemark(
             sort: { order: DESC, fields: [frontmatter___date] }
-            filter: { frontmatter: { templateKey: { eq: "blog-post" } } }
+            filter: { frontmatter: { templateKey: { eq: "article-post" } } }
           ) {
             edges {
               node {
@@ -93,22 +76,15 @@ export default function BlogRoll() {
                   templateKey
                   date(formatString: "MMMM DD, YYYY")
                   featuredpost
-                  featuredimage {
-                    childImageSharp {
-                      gatsbyImageData(
-                        width: 120
-                        quality: 100
-                        layout: CONSTRAINED
-                      )
-                    }
-                  }
                 }
               }
             }
           }
         }
       `}
-      render={(data, count) => <BlogRollTemplate data={data} count={count} />}
+      render={(data, count) => (
+        <ArticleRollTemplate data={data} count={count} />
+      )}
     />
   );
 }
