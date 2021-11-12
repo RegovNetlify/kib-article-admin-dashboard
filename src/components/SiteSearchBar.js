@@ -16,8 +16,11 @@ export const SiteSearchBar = ({
   // State and setters for window size value
 
   // useLayoutEffect(() => {
+  const isBrowser = typeof window !== "undefined";
   const updateSize = () => {
-    setSize([window.innerWidth, window.innerHeight]);
+    if (isBrowser) {
+      setSize([window.innerWidth, window.innerHeight]);
+    }
   };
   //   window.addEventListener("resize", updateSize);
   //   updateSize();
@@ -25,8 +28,6 @@ export const SiteSearchBar = ({
   // }, []);
   // return size;
   //   };
-
-  const isBrowser = typeof window !== "undefined";
 
   useEffect(() => {
     if (isBrowser) {
