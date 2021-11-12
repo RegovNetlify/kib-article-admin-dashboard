@@ -20,7 +20,7 @@ export const SiteSearchBar = ({
   const updateSize = () => {
     if (isBrowser) {
       setSize([window.innerWidth, window.innerHeight]);
-    }
+    } 
   };
   //   window.addEventListener("resize", updateSize);
   //   updateSize();
