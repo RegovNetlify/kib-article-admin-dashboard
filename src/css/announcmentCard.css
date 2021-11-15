@@ -1,0 +1,124 @@
+.announcement_card_body {
+    padding: 32px 40px;
+    color: white;
+    height: 100%;
+    box-sizing: border-box;
+    /* flex: 1; */
+  }
+  
+  .announcement_card_paper {
+    background-color: #a7202c;
+    /* min-height: 312px; */
+    max-width: 50%;
+  }
+  .announcement_card_paper_sec {
+    background-color: #ffffff;
+    /* min-height: 312px; */
+    max-width: 50%;
+  }
+  
+  .announcement_card_content {
+    max-width: 372px;
+    height: 100%;
+  }
+  
+  .announcement_card_sub_header {
+    font-size: 17px;
+    line-height: 24px;
+    margin-bottom: 8px;
+  }
+  .announcement_card_sub_header_Sec {
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: 0.016em;
+    color: #3c3c3e;
+    padding: 4px 12px;
+    /* border: 1px solid #3c3c3e;
+    border-radius: 24px; */
+    width: fit-content;
+    margin-bottom: 20px;
+  }
+  
+  .announcement_card_main_text {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 40px;
+    letter-spacing: -0.0025em;
+    margin-bottom: auto;
+  }
+  .announcement_card_main_text_sec {
+    font-size: 36px;
+    line-height: 56px;
+    letter-spacing: -0.0025em;
+    color: #3c3c3e;
+    margin-bottom: auto;
+  }
+  .announcement_card_arrow {
+    width: 24px;
+    height: 24px;
+    margin-left: 8px;
+  }
+  .announcement_card_read {
+    /* flex-grow: 1; */
+    /* align-items: flex-end !important; */
+    margin-top: 32px;
+  }
+  
+  .announcement-tag {
+    padding: 4px 8px;
+    border-radius: 24px;
+    border: 1px solid #3c3c3e;
+  }
+  
+  .announcement-tag.secondary {
+    color: #3c3c3e;
+  }
+  
+  .announcement-tag-wrapper {
+    display: flex;
+    column-gap: 8px;
+    margin-bottom: 20px;
+  }
+  .announcement_card_misc {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+    color: #a7202c;
+  }
+  
+  @media screen and (max-width: 640px) {
+    .announcement_card_body {
+      width: 100%;
+      height: fit-content;
+    }
+    .announcement_card_paper {
+      max-width: 100%;
+      margin-bottom: 1.2rem;
+    }
+    .announcement_card_sub_header {
+      font-size: 13px;
+      line-height: 16px;
+      letter-spacing: 0.016em;
+    }
+    .announcement_card_content {
+      max-width: 100%;
+    }
+    .announcement_card_main_text {
+      font-weight: bold;
+      font-size: 21px;
+      line-height: 32px;
+      width: 248px;
+    }
+    .announcement_card_read {
+      font-weight: bold;
+      font-size: 13px;
+      line-height: 16px;
+      letter-spacing: 0.0025em;
+    }
+    .announcement_card_arrow {
+      width: 24px;
+      height: 24px;
+      margin-left: 10px;
+    }
+  }
+  

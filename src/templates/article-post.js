@@ -20,9 +20,16 @@ export const ArticlePostTemplate = ({
   description,
   title,
   helmet,
+  author,
+  tags,
+  date,
+  post,
 }) => {
   const PostContent = contentComponent || Content;
   let notice = false;
+  useEffect(() => {
+    tags.map((tag) => (tag === "notice" ? (notice = true) : null));
+  }, []);
   const handlePrint = () => {
     let content = document.getElementById(
       `${notice ? "notice" : "article"}:${id}`
@@ -55,10 +62,10 @@ export const ArticlePostTemplate = ({
   let history = useHistory();
 
   const [artilceData, setArticledata] = useState({
-    author: "x",
+    author: author,
     content: content,
-    date: "date",
-    tags: ["x"],
+    date: date,
+    tags: tags,
     heading: title,
   });
 
@@ -111,8 +118,12 @@ export const ArticlePostTemplate = ({
   const HandleToogleTag = (tag, type) => {
     if (isBrowser) {
       window.scroll(0, 0);
+      window.location.href = `/article`;
+      window.localStorage.setItem(
+        "tag",
+        JSON.stringify(`${type ? type : 1}/${tag}`)
+      );
     }
-    history.push(`/articlecatalog/${type ? type : 1}/${tag}`);
   };
 
   useEffect(() => {
@@ -155,7 +166,8 @@ export const ArticlePostTemplate = ({
   function closePrint(t) {
     document.body.removeChild(t.__container__);
   }
-
+  console.log(tags);
+  console.log(post);
   return (
     <section className="section">
       <div className="flex_row sa">
@@ -189,7 +201,7 @@ export const ArticlePostTemplate = ({
             <div className="sa_border" />
             <div className="sa_related_header">{SINGLEARTICLE.tag}</div>
             <div className="flex_row">
-              {artilceData.tags.map((tag) => (
+              {tags.map((tag) => (
                 <div
                   className="sa_related_tag cursor_pointer"
                   onClick={() => HandleToogleTag(tag, 1)}
@@ -270,17 +282,22 @@ ArticlePostTemplate.propTypes = {
   description: PropTypes.string,
   title: PropTypes.string,
   helmet: PropTypes.object,
+  tags: PropTypes.array,
+  author: PropTypes.string,
 };
 
 const ArticlePost = ({ data }) => {
   const { markdownRemark: post } = data;
-
   return (
     <Layout>
       <ArticlePostTemplate
         content={post.html}
         contentComponent={HTMLContent}
         description={post.frontmatter.description}
+        date={post.frontmatter.date}
+        author={post.frontmatter.author}
+        tags={post.frontmatter.tags}
+        post={post}
         helmet={
           <Helmet titleTemplate="%s | Blog">
             <title>{`${post.frontmatter.title}`}</title>
@@ -307,6 +324,8 @@ export const articlePageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         title
         description
+        tags
+        author
       }
     }
   }

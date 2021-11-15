@@ -26,52 +26,200 @@ import email_logo from "../img/email_logo.png";
 import printer_logo from "../img/printer_logo.png";
 import twitter_logo from "../img/twitter_logo.png";
 import whatsapp_logo from "../img/whatsapp_logo.png";
+import caret_right_black from "../img/caret_right_black.png";
+import Article_banner from "../img/Articles_banner.png";
+
+export const BREADCRUMB = {
+    caret_right: caret_right_black,
+  };
+
+export const ANNOUNCEMENTCARD = {
+  image: right_arrow_white,
+  arrow: right_arrow_red,
+};
+
+export const CATALOG = {
+  limit: 8,
+  mobileLimit: 4,
+};
+
+export const FEATUREARTICLE = {
+  title: "Featured Articles",
+  heading: "Fintech And Asset Management Firms Disrupting Fund Distribution",
+  img: single_article_img,
+  desc: "An increasing number of asset management firms are working with fintech firms – in particular, robo-advisors or digital investment managers (DIM) – to transform the …",
+};
+
+export const ARTICLECATALOG = {
+  banner: Article_banner,
+  bannerPara:
+    "Access our latest markets wealth insights, media releases, articles, and announcements.",
+  misc: "Read More",
+  announcementTitle: "Related Notices",
+  catalogTitle: "Categories",
+  catalogSubTitle: "articles",
+  catalogSubtext: "found",
+  // dummy
+  articles: [
+    {
+      tags: ["Ignites Asia", "Press Release"],
+      heading:
+        "ETFs Struggle To Gain Traction In Malaysia Singapore America India",
+      date: "October 6, 2020",
+      author: "Bernie Yeo",
+      shortDescription:
+        "The main problem is that distributors have little incentive to market the products A lack of distributors willing to market and promote exchange traded funds, …",
+    },
+    {
+      tags: ["Ignites Asia"],
+      heading: "ETFs Struggle To Gain Traction In Malaysia",
+      date: "October 6, 2020",
+      author: "Bernie Yeo",
+      shortDescription:
+        "The main problem is that distributors have little incentive to market the products A lack of distributors willing to market and promote exchange traded funds, …",
+    },
+    {
+      tags: ["Ignites Asia"],
+      heading: "ETFs Struggle To Gain Traction In Malaysia",
+      date: "October 6, 2020",
+      author: "Bernie Yeo",
+      shortDescription:
+        "The main problem is that distributors have little incentive to market the products A lack of distributors willing to market and promote exchange traded funds, …",
+    },
+    {
+      tags: ["Ignites Asia"],
+      heading: "ETFs Struggle To Gain Traction In Malaysia",
+      date: "October 6, 2020",
+      author: "Bernie Yeo",
+      shortDescription:
+        "The main problem is that distributors have little incentive to market the products A lack of distributors willing to market and promote exchange traded funds, …",
+    },
+    {
+      tags: ["Ignites Asia"],
+      heading: "ETFs Struggle To Gain Traction In Malaysia",
+      date: "October 6, 2020",
+      author: "Bernie Yeo",
+      shortDescription:
+        "The main problem is that distributors have little incentive to market the products A lack of distributors willing to market and promote exchange traded funds, …",
+    },
+    {
+      tags: ["Ignites Asia"],
+      heading: "ETFs Struggle To Gain Traction In Malaysia",
+      date: "October 6, 2020",
+      author: "Bernie Yeo",
+      shortDescription:
+        "The main problem is that distributors have little incentive to market the products A lack of distributors willing to market and promote exchange traded funds, …",
+    },
+    {
+      tags: ["Ignites Asia"],
+      heading: "ETFs Struggle To Gain Traction In Malaysia",
+      date: "October 6, 2020",
+      author: "Bernie Yeo",
+      shortDescription:
+        "The main problem is that distributors have little incentive to market the products A lack of distributors willing to market and promote exchange traded funds, …",
+    },
+    {
+      tags: ["Ignites Asia"],
+      heading: "ETFs Struggle To Gain Traction In Malaysia",
+      date: "October 6, 2020",
+      author: "Bernie Yeo",
+      shortDescription:
+        "The main problem is that distributors have little incentive to market the products A lack of distributors willing to market and promote exchange traded funds, …",
+    },
+    {
+      tags: ["Ignites Asia"],
+      heading: "ETFs Struggle To Gain Traction In Malaysia",
+      date: "October 6, 2020",
+      author: "Bernie Yeo",
+      shortDescription:
+        "The main problem is that distributors have little incentive to market the products A lack of distributors willing to market and promote exchange traded funds, …",
+    },
+    {
+      tags: ["Ignites Asia"],
+      heading: "ETFs Struggle To Gain Traction In Malaysia",
+      date: "October 6, 2020",
+      author: "Bernie Yeo",
+      shortDescription:
+        "The main problem is that distributors have little incentive to market the products A lack of distributors willing to market and promote exchange traded funds, …",
+    },
+  ],
+  mostread: [
+    {
+      heading: `Fintech And Asset Management Firms Disrupting Fund Distribution`,
+      date: `November 12, 2020`,
+    },
+    {
+      heading: `Kenanga Investors Has No Involvement With Utsav BankIT`,
+      date: `November 12, 2020`,
+    },
+    {
+      heading: `ETFs Struggle To Gain Traction In Malaysia`,
+      date: `November 12, 2020`,
+    },
+  ],
+  tags: [
+    "4E Journal",
+    "Bond Market Review",
+    "Ignites Asia",
+    "Market Outlook",
+    "Notices",
+  ],
+  notices: [
+    {
+      content: "Kenanga Investors Has No Involvement With Utsav BankIT",
+    },
+    {
+      content: "Kenanga Investors Has No Involvement With Utsav BankIT",
+    },
+  ],
+  noticeHeading: "Latest Notices",
+};
 
 export const SINGLEARTICLE = {
-    name: "Fintech And Asset Management Firms Disrupting Fund Distribution",
-    Heading: "Related Articles",
-    noticeHeading: "Latest Notices",
-    date: "November 2, 2020",
-    tags: ["The Edge Market"],
-    tag: "Tags",
-    by: "By",
-    img: single_article_img,
-    author: "Tan Zhai Yun",
-    share: "Share",
-    shareLogo: [
-      facebook_logo,
-      linked_in_logo,
-      twitter_logo,
-      whatsapp_logo,
-      email_logo,
-      printer_logo,
+  name: "Fintech And Asset Management Firms Disrupting Fund Distribution",
+  Heading: "Related Articles",
+  noticeHeading: "Latest Notices",
+  date: "November 2, 2020",
+  tags: ["The Edge Market"],
+  tag: "Tags",
+  by: "By",
+  img: single_article_img,
+  author: "Tan Zhai Yun",
+  share: "Share",
+  shareLogo: [
+    facebook_logo,
+    linked_in_logo,
+    twitter_logo,
+    whatsapp_logo,
+    email_logo,
+    printer_logo,
+  ],
+  shareLink: [
+    // "https://www.facebook.com/dialog/feed?app_id=585480489089632&link=https://www.recall.bersih.org/&redirect_uri=https://www.recall.bersih.org/",
+    "https://www.facebook.com/sharer.php?u={url}",
+    "https://www.linkedin.com/shareArticle?mini=true&title={title}&url={url}",
+    "https://twitter.com/intent/tweet?text={title}{url} ",
+    "https://web.whatsapp.com/send?text={title}: {url}",
+    "mailto:?subject={title}&body=Check out this site:{url}",
+    "",
+  ],
+  articles: {
+    title: "Related Articles",
+    headings: ["The Edge Market", "The Edge Market"],
+    main: [
+      "Fintech And Asset Management Firms Disrupting Fund Distribution",
+      "Fintech And Asset Management Firms Disrupting Fund Distribution",
     ],
-    shareLink: [
-      // "https://www.facebook.com/dialog/feed?app_id=585480489089632&link=https://www.recall.bersih.org/&redirect_uri=https://www.recall.bersih.org/",
-      "https://www.facebook.com/sharer.php?u={url}",
-      "https://www.linkedin.com/shareArticle?mini=true&title={title}&url={url}",
-      "https://twitter.com/intent/tweet?text={title}{url} ",
-      "https://web.whatsapp.com/send?text={title}: {url}",
-      "mailto:?subject={title}&body=Check out this site:{url}",
-      "",
-    ],
-    articles: {
-      title: "Related Articles",
-      headings: ["The Edge Market", "The Edge Market"],
-      main: [
-        "Fintech And Asset Management Firms Disrupting Fund Distribution",
-        "Fintech And Asset Management Firms Disrupting Fund Distribution",
+    misc: ["Read More", "Read More"],
+  },
+  text: [
+    {
+      text: [
+        "A scheduled server maintenance exercise will be carried out this weekend. We apologise for any inconvenience that this may cause and we thank you for your patience.For enquiries, please email us at investorservices@kenanga.com.my. ",
       ],
-      misc: ["Read More", "Read More"],
     },
-    text: [
-      {
-        text: [
-          "A scheduled server maintenance exercise will be carried out this weekend. We apologise for any inconvenience that this may cause and we thank you for your patience.For enquiries, please email us at investorservices@kenanga.com.my. ",
-        ],
-      },
-    ],
-  };
+  ],
+};
 
 export const BUTTON = {
   primary_image: right_arrow_white,

@@ -1,0 +1,15 @@
+.banner {
+    position: relative;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+  }
+  
+  @media screen and (max-width: 764px) {
+    /* .banner {
+      background-size: cover;
+      background-repeat: no-repeat;
+    } */
+  }
+  

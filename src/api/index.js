@@ -3,10 +3,13 @@ import axios from "axios";
 
 export const API_ENDPOINT = {
   SITE_SEARCH: "https://api.regovitservices.com/v1/api/app/search",
-  RelatedArticle: "https://api.regovitservices.com/v1/api/app/content/relatedarticles",
+  RelatedArticle:
+    "https://api.regovitservices.com/v1/api/app/content/relatedarticles",
   ARTICLE: "https://api.regovitservices.com/v1/api/app/content/articles",
   NOTICELIST: "https://api.regovitservices.com/v1/api/app/content/notices",
-  LATESTNOTICES: "https://api.regovitservices.com/v1/api/app/content/latestNotices",
+  LATESTNOTICES:
+    "https://api.regovitservices.com/v1/api/app/content/latestNotices",
+  ARTICLELIST: "https://api.regovitservices.com/v1/api/app/content/list",
 };
 
 export const API_Call = async (url, data, options) => {
@@ -54,4 +57,8 @@ export const getLatestArticle = async (id, tag, type) => {
     tag: tag[0],
     type: type ? type : 1,
   });
+};
+
+export const getArticleList = async (data) => {
+  return await API_Call(API_ENDPOINT.ARTICLELIST, { ...data });
 };
