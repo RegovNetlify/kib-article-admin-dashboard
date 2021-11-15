@@ -6,7 +6,6 @@ class ArticleRollTemplate extends React.Component {
   render() {
     const { data } = this.props;
     const { edges: posts } = data.allMarkdownRemark;
-    console.log(posts);
     return (
       <div className="columns is-multiline">
         {posts &&
@@ -84,7 +83,6 @@ export default function ArticleRoll() {
       `}
       render={(data, count) => (
         <Fragment>
-          {console.log(data)}
           <ArticleRollTemplate data={data} count={count} />
         </Fragment>
       )}

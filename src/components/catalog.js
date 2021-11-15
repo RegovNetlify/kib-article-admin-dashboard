@@ -13,6 +13,8 @@ import { FeaturedCard } from ".";
 import { ARTICLECATALOG, CATALOG, FEATUREARTICLE } from "../constants";
 
 export const Catalog = (props) => {
+  console.log(props.data);
+
   // let history = useHistory()
   // const [activeTag, setActiveTage] = useState({
   //   tag:"",
@@ -240,6 +242,7 @@ export const Catalog = (props) => {
                   shortDescription={articleCard.shortDescription}
                   setTag={handleToggleTab}
                   notice={articleCard.type === 2}
+                  slug={articleCard.slug}
                 />
               );
             })}
