@@ -13,9 +13,9 @@
 @import "./announcmentCard.css";
 @import "./paper.css";
 @import "./breadcrumb.css";
-@import "./articleCard.css"; 
-@import "./mostReadlist.css"; 
-@import "./featureCard.css"; 
+@import "./articleCard.css";
+@import "./mostReadlist.css";
+@import "./featureCard.css";
 
 .flex_grow {
   flex-grow: 1;
@@ -621,4 +621,8 @@ ul {
   font-family: "Nunito Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
     "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
     "Helvetica Neue", sans-serif;
+}
+
+p {
+  margin: 1em;
 }
