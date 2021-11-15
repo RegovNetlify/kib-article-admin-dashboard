@@ -27,6 +27,9 @@ export const ArticlePostTemplate = ({
 }) => {
   const PostContent = contentComponent || Content;
   let notice = false;
+  useEffect(() => {
+    tags.map((tag) => (tag === "notice" ? (notice = true) : null));
+  }, []);
   const handlePrint = () => {
     let content = document.getElementById(
       `${notice ? "notice" : "article"}:${id}`
@@ -115,8 +118,12 @@ export const ArticlePostTemplate = ({
   const HandleToogleTag = (tag, type) => {
     if (isBrowser) {
       window.scroll(0, 0);
+      window.location.href = `/article`;
+      window.localStorage.setItem(
+        "tag",
+        JSON.stringify(`${type ? type : 1}/${tag}`)
+      );
     }
-    history.push(`/articlecatalog/${type ? type : 1}/${tag}`);
   };
 
   useEffect(() => {

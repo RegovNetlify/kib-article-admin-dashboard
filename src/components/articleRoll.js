@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 import PropTypes from "prop-types";
 import { Link, graphql, StaticQuery } from "gatsby";
 
@@ -6,7 +6,7 @@ class ArticleRollTemplate extends React.Component {
   render() {
     const { data } = this.props;
     const { edges: posts } = data.allMarkdownRemark;
-    console.log(posts)
+    console.log(posts);
     return (
       <div className="columns is-multiline">
         {posts &&
@@ -83,7 +83,10 @@ export default function ArticleRoll() {
         }
       `}
       render={(data, count) => (
-        <ArticleRollTemplate data={data} count={count} />
+        <Fragment>
+          {console.log(data)}
+          <ArticleRollTemplate data={data} count={count} />
+        </Fragment>
       )}
     />
   );

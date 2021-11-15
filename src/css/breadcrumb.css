@@ -1,0 +1,40 @@
+.bread_crumb_image {
+    width: 8px;
+    height: 14px;
+    margin: 0px 24px;
+  }
+  
+  .bread_crumb_text {
+    font-size: 21px;
+    line-height: 32px;
+    color: #a7202c;
+    cursor: pointer;
+  }
+  
+  .bread_crumb_text_last {
+    color: #3c3c3e;
+    cursor: text;
+    font-size: 21px;
+  }
+  
+  @media screen and (max-width: 1023px) {
+    .bread_crumb_text_last {
+      font-size: 13px;
+      line-height: 16px;
+      letter-spacing: 0.016em;
+      min-width:max-content;
+    }
+    .bread_crumb_text {
+      font-size: 13px;
+      line-height: 16px;
+      letter-spacing: 0.016em;
+    }
+  
+    .bread_crumb_image {
+      width: 5.33px;
+      height: 9.33px;
+      margin: 0px 13px;
+    }
+    
+  }
+  
