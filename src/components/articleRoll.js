@@ -74,7 +74,7 @@ export default function ArticleRoll() {
                   title
                   templateKey
                   date(formatString: "MMMM DD, YYYY")
-                  featuredpost
+                  
                 }
               }
             }
