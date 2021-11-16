@@ -203,7 +203,6 @@ export const catalogQuery = graphql`
             title
             templateKey
             date(formatString: "MMMM DD, YYYY")
-            featuredpost
             tags
             author
             description
