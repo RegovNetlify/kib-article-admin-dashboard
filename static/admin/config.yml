@@ -34,7 +34,7 @@ collections:
   #     - { label: "Tags", name: "tags", widget: "list" }
   - name: "article"
     label: "Article"
-    folder: "src/pages/article"
+    folder: "src/pages"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
