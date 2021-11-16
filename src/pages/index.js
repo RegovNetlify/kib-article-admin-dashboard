@@ -1,11 +1,11 @@
 import * as React from "react";
 
-import Layout from "../../components/Layout";
-import { Catalog } from "../../components/catalog";
+import Layout from "../components/Layout";
+import { Catalog } from "../components/catalog";
 import { useState } from "react";
 import { useHistory } from "react-router-dom";
-import { getArticleList, getLatestNotice } from "../../api";
-import { ARTICLECATALOG } from "../../constants";
+import { getArticleList, getLatestNotice } from "../api";
+import { ARTICLECATALOG } from "../constants";
 import { graphql } from "gatsby";
 import PropTypes from "prop-types";
 import { useEffect } from "react";
