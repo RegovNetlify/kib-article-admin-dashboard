@@ -46,6 +46,7 @@ export const CatologIndexPage = ({ data }) => {
   //   let { typeParam, tagParam } = useParams();
 
   const [activeTag, setActiveTag] = useState({
+    author: "",
     tag: "",
     type: 0,
   });
@@ -100,8 +101,14 @@ export const CatologIndexPage = ({ data }) => {
     getLatest();
     let tempTag = [];
     post.edges.map((edge) => {
-      console.log(edge);
-      tempTag.push(edge.node.frontmatter.tags);
+      // console.log(edge);
+      edge.node.frontmatter.tags.map((tag) => {
+        if (tempTag.indexOf(tag) < 0) {
+          console.log(tag);
+          console.log(tempTag);
+          tempTag.push(tag);
+        }
+      });
     });
     setTags(tempTag);
   }, []);
@@ -145,7 +152,7 @@ export const CatologIndexPage = ({ data }) => {
           counter = counter + 1;
         }
       }
-      setMostRead(tempData);
+      setMostRead([...tempData]);
     });
   };
 
@@ -158,6 +165,7 @@ export const CatologIndexPage = ({ data }) => {
   };
 
   const HandleToogleTag = (tag, type) => {
+    console.log(type);
     let baseUrl = "/article";
     if (tag === "") {
       baseUrl = baseUrl;
@@ -174,6 +182,7 @@ export const CatologIndexPage = ({ data }) => {
   const handleTag = (tag, type) => {
     handleGetArticle(tag, type);
     setActiveTag({
+      author: type === 2 ? tag : "",
       tag: tag,
       type: type,
     });

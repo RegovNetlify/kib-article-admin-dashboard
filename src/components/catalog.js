@@ -13,7 +13,6 @@ import { FeaturedCard } from ".";
 import { ARTICLECATALOG, CATALOG, FEATUREARTICLE } from "../constants";
 
 export const Catalog = (props) => {
-  console.log(props.data);
 
   // let history = useHistory()
   // const [activeTag, setActiveTage] = useState({
@@ -111,8 +110,6 @@ export const Catalog = (props) => {
       });
     }
   }, [props.articleCardList]);
-  console.log(isMobile);
-  console.log(size);
 
   return (
     <div>
@@ -206,7 +203,7 @@ export const Catalog = (props) => {
             >
               <div
                 onClick={() => {
-                  handleToggleTab("", 1);
+                  handleToggleTab("", 0);
                 }}
                 className={`catalog-tags ${
                   props.activeTag.tag === "" ? "active" : ""
@@ -233,19 +230,59 @@ export const Catalog = (props) => {
           </div>
           <div className="catalog-card-list-container">
             {props.articleCardList.slice(0, catalogLimit).map((articleCard) => {
-              return (
-                <ArticleCard
-                  articleId={articleCard.articleId}
-                  tags={articleCard.tags}
-                  heading={articleCard.heading}
-                  date={articleCard.date}
-                  author={articleCard.author}
-                  shortDescription={articleCard.shortDescription}
-                  setTag={handleToggleTab}
-                  notice={articleCard.type === 2}
-                  slug={articleCard.slug}
-                />
-              );
+              if (props.activeTag.type === 0) {
+                return (
+                  <ArticleCard
+                    articleId={articleCard.articleId}
+                    tags={articleCard.tags}
+                    heading={articleCard.heading}
+                    date={articleCard.date}
+                    author={articleCard.author}
+                    shortDescription={articleCard.shortDescription}
+                    setTag={handleToggleTab}
+                    notice={articleCard.type === 2}
+                    slug={articleCard.slug}
+                  />
+                );
+              } else {
+                if (
+                  articleCard.tags.indexOf(props.activeTag.tag) > -1 &&
+                  props.activeTag.type === 1
+                ) {
+                  return (
+                    <ArticleCard
+                      articleId={articleCard.articleId}
+                      tags={articleCard.tags}
+                      heading={articleCard.heading}
+                      date={articleCard.date}
+                      author={articleCard.author}
+                      shortDescription={articleCard.shortDescription}
+                      setTag={handleToggleTab}
+                      notice={articleCard.type === 2}
+                      slug={articleCard.slug}
+                    />
+                  );
+                } else if (
+                  articleCard.author
+                    .toLowerCase()
+                    .indexOf(props.activeTag.author.toLowerCase()) > -1 &&
+                  props.activeTag.type === 2
+                ) {
+                  return (
+                    <ArticleCard
+                      articleId={articleCard.articleId}
+                      tags={articleCard.tags}
+                      heading={articleCard.heading}
+                      date={articleCard.date}
+                      author={articleCard.author}
+                      shortDescription={articleCard.shortDescription}
+                      setTag={handleToggleTab}
+                      notice={articleCard.type === 2}
+                      slug={articleCard.slug}
+                    />
+                  );
+                }
+              }
             })}
           </div>
           {props.articleCardList.length > CATALOG.limit && (
