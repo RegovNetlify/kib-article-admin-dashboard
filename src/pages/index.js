@@ -90,7 +90,6 @@ export const CatologIndexPage = ({ data }) => {
       // setArticle(response?.data["articles"]);
       getMostRead(response?.data["articles"]);
       console.log(`tags from backend ${response?.data["tags"]}`);
-      setTags(response?.data["tags"]);
     } catch (error) {
       console.log(`error is ${error}`);
     }
@@ -99,6 +98,7 @@ export const CatologIndexPage = ({ data }) => {
   useEffect(() => {
     handleGetArticle();
     getLatest();
+    setTags(post.edges[0].node.frontmatter.tags);
   }, []);
 
   const getLatest = async () => {
