@@ -98,7 +98,12 @@ export const CatologIndexPage = ({ data }) => {
   useEffect(() => {
     handleGetArticle();
     getLatest();
-    setTags(post.edges[0].node.frontmatter.tags);
+    let tempTag = [];
+    post.edges.map((edge) => {
+      console.log(edge);
+      tempTag.push(edge.node.frontmatter.tags);
+    });
+    setTags(tempTag);
   }, []);
 
   const getLatest = async () => {
