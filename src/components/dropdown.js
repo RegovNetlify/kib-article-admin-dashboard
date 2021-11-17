@@ -1,14 +1,7 @@
 import React, { useState } from "react";
 import { DROPDOWN } from "../constants";
 
-
-export const Dropdown = ({
-  label,
-  options,
-  active,
-  links,
-  disable,
-}) => {
+export const Dropdown = ({ label, options, active, links, disable }) => {
   const [open, setOpen] = useState(false);
 
   const OpenOptions = () => {
@@ -46,11 +39,7 @@ export const Dropdown = ({
         <div className="drop_down_content_container">
           {options.map((text, index) => (
             // <ToolTip title="Under Phase 2 Development" style="drop_down_tooltip">
-            <a
-              onClick={() => setOpen(!open)}
-              href={`/${links ? links[index] : text}`}
-              key={index}
-            >
+            <a onClick={() => setOpen(!open)} href={links[index]} key={index}>
               <div className="drop_down_content">{text}</div>
             </a>
           ))}

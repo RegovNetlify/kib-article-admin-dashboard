@@ -30,8 +30,8 @@ import caret_right_black from "../img/caret_right_black.png";
 import Article_banner from "../img/Articles_banner.png";
 
 export const BREADCRUMB = {
-    caret_right: caret_right_black,
-  };
+  caret_right: caret_right_black,
+};
 
 export const ANNOUNCEMENTCARD = {
   image: right_arrow_white,
@@ -256,7 +256,7 @@ export const NAVBAR = {
   eAccess_hover: eAccess_hover,
   solotab: {
     label2: "Choice of Profession",
-    links2: "/Recruitment Agent",
+    links2: "https://www.dev-kibwebsite.regovdevservices.com/Recruitment Agent",
   },
   tabs: [
     {
@@ -268,6 +268,13 @@ export const NAVBAR = {
         "Principle of Waqf",
         "Accolades for MARC",
       ],
+      link: [
+        "https://www.dev-kibwebsite.regovdevservices.com/Our Mission",
+        "https://www.dev-kibwebsite.regovdevservices.com/Investment Mechanism & Philosophy",
+        "https://www.dev-kibwebsite.regovdevservices.com/Stewardship Code",
+        "https://www.dev-kibwebsite.regovdevservices.com/Principle of Waqf",
+        "https://www.dev-kibwebsite.regovdevservices.com/Accolades for MARC",
+      ],
     },
     {
       label: "Connect with Us",
@@ -275,6 +282,11 @@ export const NAVBAR = {
         "Book An Appointment",
         "Contact Investor Services",
         "Head Office & Branch Locator",
+      ],
+      link: [
+        "https://www.dev-kibwebsite.regovdevservices.com/Book An Appointment",
+        "https://www.dev-kibwebsite.regovdevservices.com/Contact Investor Services",
+        "https://www.dev-kibwebsite.regovdevservices.com/Head Office & Branch Locator",
       ],
     },
     // {
@@ -498,11 +510,26 @@ export const NEW_FOOTER_INFO_LINKS = [
   {
     heading: "Products",
     links: [
-      { name: "Conventional Fund", link: "https://www.dev-kibwebsite.regovdevservices.com/products/conventional_fund" },
-      { name: "Shariah Fund", link: "https://www.dev-kibwebsite.regovdevservices.com/products/shariah_fund" },
-      { name: "Wholesale Fund", link: "https://www.dev-kibwebsite.regovdevservices.com/products/wholesale_fund" },
-      { name: "OnePRS by Kenanga", link: "https://www.dev-kibwebsite.regovdevservices.com/products/one_prs_by_kenanga" },
-      { name: "OneETF by Kenanga", link: "https://www.dev-kibwebsite.regovdevservices.com/products/one_etf_by_kenanga" },
+      {
+        name: "Conventional Fund",
+        link: "https://www.dev-kibwebsite.regovdevservices.com/products/conventional_fund",
+      },
+      {
+        name: "Shariah Fund",
+        link: "https://www.dev-kibwebsite.regovdevservices.com/products/shariah_fund",
+      },
+      {
+        name: "Wholesale Fund",
+        link: "https://www.dev-kibwebsite.regovdevservices.com/products/wholesale_fund",
+      },
+      {
+        name: "OnePRS by Kenanga",
+        link: "https://www.dev-kibwebsite.regovdevservices.com/products/one_prs_by_kenanga",
+      },
+      {
+        name: "OneETF by Kenanga",
+        link: "https://www.dev-kibwebsite.regovdevservices.com/products/one_etf_by_kenanga",
+      },
     ],
   },
   {
@@ -527,8 +554,14 @@ export const NEW_FOOTER_INFO_LINKS = [
         // link: "https://www.kenanga.com.my/news/#filter=.events",
         target: true,
       },
-      { name: "Download Centre", link: "https://www.dev-kibwebsite.regovdevservices.com/download_center" },
-      { name: "Frequently Asked Questions", link: "https://www.dev-kibwebsite.regovdevservices.com/faq" },
+      {
+        name: "Download Centre",
+        link: "https://www.dev-kibwebsite.regovdevservices.com/download_center",
+      },
+      {
+        name: "Frequently Asked Questions",
+        link: "https://www.dev-kibwebsite.regovdevservices.com/faq",
+      },
       {
         name: "Calculators",
         link: "https://www.dev-kibwebsite.regovdevservices.com/Retirement Calculator",
