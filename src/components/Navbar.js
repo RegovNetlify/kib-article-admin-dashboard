@@ -50,7 +50,7 @@ export const NavBar = () => {
     <Fragment>
       <div className="border navbar flex_row_vertical_center">
         <div className="navbar_logo_container" style={{ marginRight: "45px" }}>
-          <a href="/">
+          <a href="https://www.dev-kibwebsite.regovdevservices.com/">
             <img
               src={NAVBAR.logo}
               alt={NAVBAR.logo}
