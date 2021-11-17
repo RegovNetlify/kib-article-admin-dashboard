@@ -92,11 +92,11 @@ export const Catalog = (props) => {
     // document.documentElement.scrollTop = 0
   };
 
-  const handleNotice = (index) => {
+  const handleNotice = (slug) => {
     // history.push("/SingleArticleNotice")
     if (props.handleNotice) {
       window.scrollTo(0, 0);
-      props.handleNotice(index);
+      props.handleNotice(slug);
     }
   };
 
@@ -263,7 +263,7 @@ export const Catalog = (props) => {
           {props.noticeList.map((notice) => {
             return (
               <AnnouncementCard
-                onClick={() => handleNotice(notice.articleId)}
+                onClick={() => handleNotice(notice.slug)}
                 secondary
                 // tag={notice.tags}
                 // heading= {notice.heading}

@@ -12,6 +12,7 @@ import { useEffect } from "react";
 
 export const CatologIndexPage = ({ data }) => {
   const { allMarkdownRemark: post } = data;
+  const isBrowser = typeof window !== "undefined";
   let history = useHistory();
   const [articles, setArticle] = useState([
     {
@@ -27,7 +28,7 @@ export const CatologIndexPage = ({ data }) => {
   let tempArticle = [...articles];
   useEffect(() => {
     post.edges.map((edge, index) => {
-      console.log(edge);
+      // console.log(edge);
       tempArticle[index] = {
         articleId: edge.node.id,
         tags: edge.node.frontmatter.tags,
@@ -82,6 +83,7 @@ export const CatologIndexPage = ({ data }) => {
 
     let response = await getArticleList(data);
     try {
+      console.log(response);
       // console.log('====================================');
       // console.log(`data = ${JSON.stringify(data)} from tags ${JSON.stringify(response?.data['articles'])}`);
       // console.log('====================================');
@@ -94,11 +96,33 @@ export const CatologIndexPage = ({ data }) => {
     }
   };
 
+  useEffect(() => {
+    handleGetArticle();
+    getLatest();
+  }, []);
+
   const getLatest = async () => {
     try {
-      let tempNotices = await getLatestNotice();
+      // let tempNotices = await getLatestNotice();
       // console.log(`notices === ${JSON.stringify(tempNotices?.data)}`)
-      setLatest(tempNotices?.data);
+      // setLatest(tempNotices?.data);
+
+      console.log(post.edges[0].node);
+
+      let tempLatest = [...latest];
+      tempLatest[0] = {
+        articleId: post.edges[0].node.id,
+        heading: post.edges[0].node.frontmatter.title,
+        slug: post.edges[0].node.fields.slug,
+      };
+      if (post.edges[1] !== undefined) {
+        tempLatest[1] = {
+          articleId: post.edges[1].node.id,
+          heading: post.edges[1].node.frontmatter.title,
+          slug: post.edges[1].node.fields.slug,
+        };
+      }
+      setLatest([...tempLatest]);
     } catch (error) {}
   };
 
@@ -120,12 +144,12 @@ export const CatologIndexPage = ({ data }) => {
     });
   };
 
-  const articleOnClick = (index) => {
-    history.push(`/SingleNotice/${index}`);
+  const articleOnClick = (slug) => {
+    window.location.pathname = `${slug}`;
   };
 
-  const selectArticle = (index) => {
-    history.push(`/SingleArticle/${index}`);
+  const selectArticle = (slug) => {
+    window.location.pathname = `${slug}`;
   };
 
   const HandleToogleTag = (tag, type) => {
@@ -135,8 +159,11 @@ export const CatologIndexPage = ({ data }) => {
     } else {
       baseUrl = baseUrl + `/${type ? type : 1}/${tag}`;
     }
-    window.scroll(0, 0);
-    history.push(baseUrl);
+    if (isBrowser) {
+      window.scroll(0, 0);
+    }
+    window.localStorage.setItem();
+    // history.push(baseUrl);
   };
 
   //   useEffect(() => {
