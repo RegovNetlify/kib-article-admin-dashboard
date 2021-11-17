@@ -87,6 +87,7 @@ export const Catalog = (props) => {
     // })
     if (props.handleList) {
       props.handleList(tag, type);
+      props.handleTag(tag, type);
     }
     // document.body.scrollTop = 0
     // document.documentElement.scrollTop = 0

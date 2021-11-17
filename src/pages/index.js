@@ -153,7 +153,7 @@ export const CatologIndexPage = ({ data }) => {
   };
 
   const HandleToogleTag = (tag, type) => {
-    let baseUrl = "/articlecatalog";
+    let baseUrl = "/article";
     if (tag === "") {
       baseUrl = baseUrl;
     } else {
@@ -161,24 +161,22 @@ export const CatologIndexPage = ({ data }) => {
     }
     if (isBrowser) {
       window.scroll(0, 0);
+      window.localStorage.setItem("tag", `/${type ? type : 1}/${tag}`);
     }
-    window.localStorage.setItem();
     // history.push(baseUrl);
   };
 
-  //   useEffect(() => {
-  //     handleGetArticle(
-  //       tagParam ? tagParam : "",
-  //       typeParam ? parseInt(typeParam) : 0
-  //     );
-  //     setActiveTag({
-  //       tag: tagParam ? tagParam : "",
-  //       type: typeParam ? parseInt(typeParam) : 0,
-  //     });
-  //     getLatest();
-  //     window.scrollTo(0, 0);
-  //   }, [tagParam, typeParam]);
-
+  const handleTag = (tag, type) => {
+    handleGetArticle(tag, type);
+    setActiveTag({
+      tag: tag,
+      type: type,
+    });
+    getLatest();
+    if (isBrowser) {
+      window.scrollTo(0, 0);
+    }
+  };
   return (
     <Layout>
       <div className="article_wrapper">
@@ -199,6 +197,7 @@ export const CatologIndexPage = ({ data }) => {
           handleArticle={selectArticle}
           activeTag={activeTag}
           data={post}
+          handleTag={handleTag}
         />
       </div>
     </Layout>
