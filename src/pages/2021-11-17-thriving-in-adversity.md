@@ -94,3 +94,8 @@ tags:
 
 * Lipper Investment Management as at 31 December 2015
 * Asia Asset Management – 2015 Best of the Best Winners (http://www.asiaasset.com/winners-list.aspx).
+
+<ul>
+    <li>Lipper Investment Management as at 31 December 2015</li>
+    <li>Asia Asset Management – 2015 Best of the Best Winners (http://www.asiaasset.com/winners-list.aspx).</li>
+</ul>
