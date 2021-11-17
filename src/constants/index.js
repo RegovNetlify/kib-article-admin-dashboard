@@ -442,7 +442,7 @@ export const NEW_FOOTER_INFO_LINKS = [
     links: [
       {
         name: "Who We Are",
-        link: "/AboutUs",
+        link: "www.dev-kibwebsite.regovdevservices.com/AboutUs",
       },
       {
         name: "Our Structure",
