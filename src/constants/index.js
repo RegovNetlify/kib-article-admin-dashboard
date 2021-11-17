@@ -442,30 +442,30 @@ export const NEW_FOOTER_INFO_LINKS = [
     links: [
       {
         name: "Who We Are",
-        link: "www.dev-kibwebsite.regovdevservices.com/AboutUs",
+        link: "https://www.dev-kibwebsite.regovdevservices.com/AboutUs",
       },
       {
         name: "Our Structure",
-        link: "/AboutUs/OurStructure",
+        link: "https://www.dev-kibwebsite.regovdevservices.com/AboutUs/OurStructure",
         subLink: [
           {
             name: "Our Directorate",
-            link: "/AboutUs/OurStructure#tab",
+            link: "https://www.dev-kibwebsite.regovdevservices.com/AboutUs/OurStructure#tab",
           },
           {
             name: "Our Personnel Professional",
-            link: "/AboutUs/OurStructure/PersonnelProfessional#tab",
+            link: "https://www.dev-kibwebsite.regovdevservices.com/AboutUs/OurStructure/PersonnelProfessional#tab",
           },
         ],
       },
 
       {
         name: "Our Investment Committee",
-        link: "/AboutUs/OurInvestmentCommittee",
+        link: "https://www.dev-kibwebsite.regovdevservices.com/AboutUs/OurInvestmentCommittee",
       },
       {
         name: "Delegation Function",
-        link: "/AboutUs/DelegationFunction",
+        link: "https://www.dev-kibwebsite.regovdevservices.com/AboutUs/DelegationFunction",
         subLink: [
           {
             name: "External Fund Manager",
@@ -473,7 +473,7 @@ export const NEW_FOOTER_INFO_LINKS = [
           },
           {
             name: "Shariah Adviser",
-            link: "/AboutUs/DelegationFunction",
+            link: "https://www.dev-kibwebsite.regovdevservices.com/AboutUs/DelegationFunction",
           },
           {
             name: "Trustee",
@@ -483,32 +483,32 @@ export const NEW_FOOTER_INFO_LINKS = [
       },
       {
         name: "Shariah Adviser",
-        link: "/AboutUs/DelegationFunction",
+        link: "https://www.dev-kibwebsite.regovdevservices.com/AboutUs/DelegationFunction",
       },
       {
         name: "Award History",
-        link: "/AboutUs/AwardHistory",
+        link: "https://www.dev-kibwebsite.regovdevservices.com/AboutUs/AwardHistory",
       },
       {
         name: `Kenanga Group`,
-        link: "/AboutUs/KenangaGroup",
+        link: "https://www.dev-kibwebsite.regovdevservices.com/AboutUs/KenangaGroup",
       },
     ],
   },
   {
     heading: "Products",
     links: [
-      { name: "Conventional Fund", link: "/products/conventional_fund" },
-      { name: "Shariah Fund", link: "/products/shariah_fund" },
-      { name: "Wholesale Fund", link: "/products/wholesale_fund" },
-      { name: "OnePRS by Kenanga", link: "/products/one_prs_by_kenanga" },
-      { name: "OneETF by Kenanga", link: "/products/one_etf_by_kenanga" },
+      { name: "Conventional Fund", link: "https://www.dev-kibwebsite.regovdevservices.com/products/conventional_fund" },
+      { name: "Shariah Fund", link: "https://www.dev-kibwebsite.regovdevservices.com/products/shariah_fund" },
+      { name: "Wholesale Fund", link: "https://www.dev-kibwebsite.regovdevservices.com/products/wholesale_fund" },
+      { name: "OnePRS by Kenanga", link: "https://www.dev-kibwebsite.regovdevservices.com/products/one_prs_by_kenanga" },
+      { name: "OneETF by Kenanga", link: "https://www.dev-kibwebsite.regovdevservices.com/products/one_etf_by_kenanga" },
     ],
   },
   {
     heading: "Resources",
     links: [
-      { name: "Articles", link: "/article" },
+      { name: "Articles", link: "/" },
       {
         name: "Videos & Webinar",
         link: "",
@@ -527,19 +527,19 @@ export const NEW_FOOTER_INFO_LINKS = [
         // link: "https://www.kenanga.com.my/news/#filter=.events",
         target: true,
       },
-      { name: "Download Centre", link: "/download_center" },
-      { name: "Frequently Asked Questions", link: "/faq" },
+      { name: "Download Centre", link: "https://www.dev-kibwebsite.regovdevservices.com/download_center" },
+      { name: "Frequently Asked Questions", link: "https://www.dev-kibwebsite.regovdevservices.com/faq" },
       {
         name: "Calculators",
-        link: "/Retirement Calculator",
+        link: "https://www.dev-kibwebsite.regovdevservices.com/Retirement Calculator",
         subLink: [
           {
             name: "Retirement Calculator",
-            link: "/Retirement Calculator",
+            link: "https://www.dev-kibwebsite.regovdevservices.com/Retirement Calculator",
           },
           {
             name: "EPF Calculator",
-            link: "/EPF Calculator",
+            link: "https://www.dev-kibwebsite.regovdevservices.com/EPF Calculator",
           },
         ],
       },
