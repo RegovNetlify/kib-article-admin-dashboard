@@ -9,6 +9,8 @@ description: >-
       are 51 equity funds, 24 balanced funds and the remaining 20 funds are fixed-income funds. 80
       (84.2%) of the EPF-approved funds reported positive returns, while 15 funds (15.8%) were in the red
       in 2015.
+tags:
+  - Fundsupermart
 ---
 <!--StartFragment-->
 
