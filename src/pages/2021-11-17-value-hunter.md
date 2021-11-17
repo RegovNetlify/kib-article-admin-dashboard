@@ -8,6 +8,8 @@ description: >-
   thorough research
       process have helped her discover small and mid-cap gems — and outperform her peers in the
       industry
+tags:
+  - The Edge
 ---
 <p>Kenanga Investors Bhd chief investment officer Lee Sook Yee’s diligence and thorough research
     process have helped her discover small and mid-cap gems — and outperform her peers in the
