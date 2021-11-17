@@ -82,15 +82,15 @@ export const CatologIndexPage = ({ data }) => {
       }
     }
 
-    let response = await getArticleList(data);
+    // let response = await getArticleList(data);
     try {
-      console.log(response);
+      // console.log(response);
       // console.log('====================================');
       // console.log(`data = ${JSON.stringify(data)} from tags ${JSON.stringify(response?.data['articles'])}`);
       // console.log('====================================');
       // setArticle(response?.data["articles"]);
-      getMostRead(response?.data["articles"]);
-      console.log(`tags from backend ${response?.data["tags"]}`);
+      getMostRead();
+      // console.log(`tags from backend ${response?.data["tags"]}`);
     } catch (error) {
       console.log(`error is ${error}`);
     }
@@ -138,22 +138,33 @@ export const CatologIndexPage = ({ data }) => {
     } catch (error) {}
   };
 
-  const getMostRead = (data) => {
+  const getMostRead = () => {
     let tempData = [];
-    let counter = 0;
-    data.forEach((card) => {
-      if (counter < 3) {
-        if (card.type === 1) {
-          tempData.push({
-            heading: card.heading,
-            date: card.date,
-            id: card.articleId,
-          });
-          counter = counter + 1;
-        }
+    // let counter = 0;
+    // data.forEach((card) => {
+    //   if (counter < 3) {
+    //     if (card.type === 1) {
+    //       tempData.push({
+    //         heading: card.heading,
+    //         date: card.date,
+    //         id: card.articleId,
+    //       });
+    //       counter = counter + 1;
+    //     }
+    //   }
+    for (let index = 0; index < post.edges.length; index++) {
+      if (index < 3) {
+        tempData.push({
+          heading: post.edges[index].node.frontmatter.title,
+          date: post.edges[index].node.frontmatter.date,
+          id: post.edges[index].node.id,
+          slug: post.edges[index].node.fields.slug,
+        });
+      } else {
+        break;
       }
-      setMostRead([...tempData]);
-    });
+    }
+    setMostRead([...tempData]);
   };
 
   const articleOnClick = (slug) => {

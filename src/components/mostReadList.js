@@ -25,7 +25,7 @@ export const MostReadList = (props) => {
           return (
             <div
               className="reading-list cursor_pointer"
-              onClick={() => HandleSelect(list.id)}
+              onClick={() => HandleSelect(list.slug)}
             >
               <div className="mostread-list-number">{index + 1}</div>
               <div className="mostread-list-content">
