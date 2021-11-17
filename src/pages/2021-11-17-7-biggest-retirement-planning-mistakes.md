@@ -8,6 +8,8 @@ description: >-
   overwhelmed. A recent global survey
       showed that 88% of pre-retirees in Malaysia stated they are worried about not having enough money to live
       on day-to-day at retirement, and that goes to show how unprepared some of us are.
+tags:
+  - The Star
 ---
 ![](/img/2016-01-18-the-star-7-biggest-retirement-planning-mistakes.png)
 
