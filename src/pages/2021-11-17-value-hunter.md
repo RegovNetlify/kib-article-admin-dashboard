@@ -2,7 +2,7 @@
 templateKey: article-post
 author: Kuek Ser Kwang Zhe
 title: Value Hunter
-date: 2021-11-17T04:46:49.857Z
+date: 2016-02-29T04:46:49.857Z
 description: >-
   Kenanga Investors Bhd chief investment officer Lee Sook Yee’s diligence and
   thorough research
