@@ -10,6 +10,8 @@ description: >-
       implications globally. Following the decision, global stock markets lost about US$2 trillion in value
       the next day, and at the same time, the crisis has sent reverberations through Asian markets and
       spooked investors.
+tags:
+  - Focus Malaysia
 ---
 ![](/img/2016-07-25-focus-malaysia-positive-on-asia.png)
 
