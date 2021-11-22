@@ -16,11 +16,10 @@ const TemplateWrapper = ({ children }) => {
         <title>{title}</title>
         <meta name="description" content={description} />
 
-
         <link
           rel="icon"
           type="image/png"
-          href={`${withPrefix("/")}img/favicon.ico`}
+          href={`%PUBLIC_URL%/img/favicon.ico`}
           sizes="32x32"
         />
 
