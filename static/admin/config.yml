@@ -50,7 +50,7 @@ collections:
       - { label: "Description", name: "description", widget: "text" }
       # - { label: "Featured Post", name: "featuredpost", widget: "boolean" }
       - { label: "Body", name: "body", widget: "markdown" }
-      - { label: "Tags", name: "tags", widget: "list" }
+      - { label: "Tags", name: "tags", widget: "list", min: 1 }
 
   # - name: "pages"
   #   label: "Pages"
