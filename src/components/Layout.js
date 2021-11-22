@@ -18,9 +18,8 @@ const TemplateWrapper = ({ children }) => {
 
         <link
           rel="icon"
-          type="image/png"
-          href={`%PUBLIC_URL%/img/favicon.ico`}
-          sizes="32x32"
+          href={`${withPrefix("/")}img/favicon.ico`}
+          // sizes="32x32"
         />
 
         <meta name="theme-color" content="#fff" />
