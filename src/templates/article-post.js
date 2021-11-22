@@ -289,7 +289,8 @@ ArticlePostTemplate.propTypes = {
 const ArticlePost = ({ data }) => {
   const { markdownRemark: post } = data;
   return (
-    <Layout>
+    <Layout
+    title="Kenanga Investors">
       <ArticlePostTemplate
         content={post.html}
         contentComponent={HTMLContent}
@@ -300,7 +301,7 @@ const ArticlePost = ({ data }) => {
         post={post}
         helmet={
           <Helmet titleTemplate="%s | Blog">
-            <title>{`${post.frontmatter.title}`}</title>
+            <title>Kenanga Investors</title>
             <meta
               name="description"
               content={`${post.frontmatter.description}`}

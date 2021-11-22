@@ -203,7 +203,7 @@ export const CatologIndexPage = ({ data }) => {
     }
   };
   return (
-    <Layout>
+    <Layout title="Kenanga Investors">
       <div className="article_wrapper">
         <Catalog
           catalogTitle={ARTICLECATALOG.catalogTitle}
