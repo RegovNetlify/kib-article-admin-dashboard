@@ -210,7 +210,7 @@ export const ArticlePostTemplate = ({
                 </div>
               ))}
             </div>
-            {notice ? null : (
+            {artilceData.author === "-" ? null : notice ? null : (
               <>
                 <div className="sa_border" />
                 <div className="sa_related_header">{SINGLEARTICLE.by}</div>
@@ -258,12 +258,12 @@ export const ArticlePostTemplate = ({
               {artilceData.date}
             </div>
           </div>
-          {notice ? null : (
+          {/* {notice ? null : (
             <div
               style={{ backgroundImage: `url(${SINGLEARTICLE.img})` }}
               className="sa_article_img"
             />
-          )}
+          )} */}
 
           <div
             className="sa_article_text"

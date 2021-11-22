@@ -42,7 +42,7 @@
     color: #3c3c3e;
   }
   .sa_article_title_container {
-    position: sticky;
+    /* position: sticky; */
     top: 88px;
     background-color: white;
     padding-top: 40px;
