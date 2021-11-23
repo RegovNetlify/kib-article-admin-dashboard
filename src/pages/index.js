@@ -56,6 +56,12 @@ export const CatologIndexPage = ({ data }) => {
     type: 0,
   });
 
+  useEffect(() => {
+    if (isBrowser) {
+      window.scrollTo(0, 0);
+    }
+  }, []);
+
   let numActiveArticle = 0;
   articles.map(({ tags }) =>
     tags[0] === activeTag.tag || activeTag.tag === ""
