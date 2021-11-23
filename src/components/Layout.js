@@ -18,8 +18,7 @@ const TemplateWrapper = ({ children }) => {
 
         <link
           rel="icon"
-          href={`${withPrefix("../img/favIcon.ico")}`}
-          // sizes="32x32"
+          href={`${withPrefix("/")}img/apple-touch-icon-72x72.png`}
         />
 
         <meta name="theme-color" content="#fff" />
