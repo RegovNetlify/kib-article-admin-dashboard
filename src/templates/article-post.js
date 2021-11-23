@@ -1,31 +1,19 @@
 import React, { useState, useEffect } from "react";
-import { useHistory, useLocation, useParams } from "react-router-dom";
 import Layout from "../components/Layout";
 import PropTypes from "prop-types";
 import { Helmet } from "react-helmet";
-import { graphql, Link } from "gatsby";
-import Content, { HTMLContent } from "../components/Content";
-import { kebabCase } from "lodash";
+import { graphql } from "gatsby";
+import { HTMLContent } from "../components/Content";
 import { SINGLEARTICLE } from "../constants";
-import {
-  getArticle,
-  getLatestArticle,
-  getLatestNotice,
-  getNotice,
-} from "../api";
 
 export const ArticlePostTemplate = ({
   content,
-  contentComponent,
-  description,
   title,
   helmet,
   author,
   tags,
   date,
-  post,
 }) => {
-  const PostContent = contentComponent || Content;
   let notice = false;
   useEffect(() => {
     tags.map((tag) => (tag === "notice" ? (notice = true) : null));
@@ -45,7 +33,6 @@ export const ArticlePostTemplate = ({
     oHideFrame.style.height = "0";
     oHideFrame.style.border = "0";
     document.body.appendChild(oHideFrame);
-    // oHideFrame.onload = setPrint
     let pri = oHideFrame.contentWindow;
     if (pri) {
       pri.document.open();
@@ -59,7 +46,6 @@ export const ArticlePostTemplate = ({
       }
     }
   };
-  let history = useHistory();
 
   const [artilceData, setArticledata] = useState({
     author: author,
@@ -80,84 +66,17 @@ export const ArticlePostTemplate = ({
   let pathname = "";
   let { id } = "0";
 
-  const relatedOnClick = (index) => {
-    if (notice) {
-      history.push(`/SingleNotice/${index}`);
-    } else {
-      history.push(`/SingleArticle/${index}`);
-    }
-  };
-
-  const setRelatedArticles = async (id, tag, type) => {
-    try {
-      let response = await getLatestArticle(id, tag, type);
-      console.log("===============related=====================");
-      console.log(response?.data);
-      setRelated(response?.data);
-    } catch (error) {
-      console.log("===============related=====================");
-      console.log(error);
-      console.log("================related====================");
-    }
-  };
-
-  const setRelatedNotice = async (id) => {
-    try {
-      let response = await getLatestNotice(id);
-      console.log("===============related==notice===================");
-      console.log(response?.data);
-      setRelated(response?.data);
-    } catch (error) {
-      console.log("===============related===notice=============");
-      console.log(error);
-      console.log("================related====================");
-    }
-  };
   const isBrowser = typeof window !== "undefined";
 
   const HandleToogleTag = (tag, type) => {
     if (isBrowser) {
       window.scroll(0, 0);
       window.location.href = `/`;
-      window.localStorage.setItem(
-        "tag",
-        JSON.stringify(`${tag}`)
-      );
+      window.localStorage.setItem("tag", JSON.stringify(`${type + "/" + tag}`));
     }
   };
 
   useEffect(() => {
-    if (notice) {
-      //   getNotice(parseInt(id))
-      //     .then((res) => {
-      //       setArticledata({
-      //         author: res?.data["author"],
-      //         content: res?.data["content"],
-      //         date: res?.data["date"],
-      //         heading: res?.data["heading"],
-      //         tags: res?.data["tags"],
-      //       });
-      //     })
-      //     .catch((err) => {
-      //       console.error(err);
-      //     });
-      //   setRelatedNotice(parseInt(id));
-    } else {
-      //   getArticle(parseInt(id))
-      //     .then((res) => {
-      //       setArticledata({
-      //         author: res?.data["author"],
-      //         content: res?.data["content"],
-      //         date: res?.data["date"],
-      //         heading: res?.data["heading"],
-      //         tags: res?.data["tags"],
-      //       });
-      //       setRelatedArticles(parseInt(id), res?.data["tags"], 1);
-      //     })
-      //     .catch((err) => {
-      //       console.error(`error while geting article ${err}`);
-      //     });
-    }
     if (isBrowser) {
       window.scrollTo(0, 0);
     }
@@ -166,8 +85,6 @@ export const ArticlePostTemplate = ({
   function closePrint(t) {
     document.body.removeChild(t.__container__);
   }
-  console.log(tags);
-  console.log(post);
   return (
     <section className="section">
       <div className="flex_row sa">
@@ -232,7 +149,6 @@ export const ArticlePostTemplate = ({
           id={`${notice ? "notice" : "article"}:${id}`}
         >
           <div className="sa_article_title_container">
-            {/* Inline styling is a dirty fix for the print function to capture the css */}
             <div
               className="sa_article_title"
               style={{
@@ -248,7 +164,6 @@ export const ArticlePostTemplate = ({
             </div>
 
             <div
-              // className="sa_article_date"
               style={{
                 fontSize: "17px",
                 lineHeight: "24px",
@@ -258,13 +173,6 @@ export const ArticlePostTemplate = ({
               {artilceData.date}
             </div>
           </div>
-          {/* {notice ? null : (
-            <div
-              style={{ backgroundImage: `url(${SINGLEARTICLE.img})` }}
-              className="sa_article_img"
-            />
-          )} */}
-
           <div
             className="sa_article_text"
             dangerouslySetInnerHTML={{ __html: artilceData.content }}
@@ -289,8 +197,7 @@ ArticlePostTemplate.propTypes = {
 const ArticlePost = ({ data }) => {
   const { markdownRemark: post } = data;
   return (
-    <Layout
-    title="Kenanga Investors">
+    <Layout title="Kenanga Investors">
       <ArticlePostTemplate
         content={post.html}
         contentComponent={HTMLContent}

@@ -22,10 +22,12 @@ export const CatologIndexPage = ({ data }) => {
         activeTagState !== undefined &&
         activeTagState
       ) {
+        activeTagState = JSON.parse(activeTagState).split("/");
+        console.log(activeTagState);
         setActiveTag({
-          author: "",
-          tag: JSON.parse(activeTagState),
-          type: 1,
+          author: activeTagState[1],
+          tag: activeTagState[1],
+          type: parseInt(activeTagState[0]),
         });
       }
       localStorage.clear();
@@ -63,7 +65,6 @@ export const CatologIndexPage = ({ data }) => {
   let tempArticle = [...articles];
   useEffect(() => {
     post.edges.map((edge, index) => {
-      // console.log(edge);
       tempArticle[index] = {
         articleId: edge.node.id,
         tags: edge.node.frontmatter.tags,
@@ -77,8 +78,6 @@ export const CatologIndexPage = ({ data }) => {
     });
     setArticle([...tempArticle]);
   }, []);
-
-  //   let { typeParam, tagParam } = useParams();
 
   const [mostRead, setMostRead] = useState([
     {
@@ -110,16 +109,8 @@ export const CatologIndexPage = ({ data }) => {
         }
       }
     }
-
-    // let response = await getArticleList(data);
     try {
-      // console.log(response);
-      // console.log('====================================');
-      // console.log(`data = ${JSON.stringify(data)} from tags ${JSON.stringify(response?.data['articles'])}`);
-      // console.log('====================================');
-      // setArticle(response?.data["articles"]);
       getMostRead();
-      // console.log(`tags from backend ${response?.data["tags"]}`);
     } catch (error) {
       console.log(`error is ${error}`);
     }
@@ -130,11 +121,8 @@ export const CatologIndexPage = ({ data }) => {
     getLatest();
     let tempTag = [];
     post.edges.map((edge) => {
-      // console.log(edge);
       edge.node.frontmatter.tags.map((tag) => {
         if (tempTag.indexOf(tag) < 0) {
-          console.log(tag);
-          console.log(tempTag);
           tempTag.push(tag);
         }
       });
@@ -144,12 +132,6 @@ export const CatologIndexPage = ({ data }) => {
 
   const getLatest = async () => {
     try {
-      // let tempNotices = await getLatestNotice();
-      // console.log(`notices === ${JSON.stringify(tempNotices?.data)}`)
-      // setLatest(tempNotices?.data);
-
-      console.log(post.edges[0].node);
-
       let tempLatest = [...latest];
       let count = 0;
       for (let index = 0; index < post.edges.length; index++) {
@@ -169,18 +151,6 @@ export const CatologIndexPage = ({ data }) => {
 
   const getMostRead = () => {
     let tempData = [];
-    // let counter = 0;
-    // data.forEach((card) => {
-    //   if (counter < 3) {
-    //     if (card.type === 1) {
-    //       tempData.push({
-    //         heading: card.heading,
-    //         date: card.date,
-    //         id: card.articleId,
-    //       });
-    //       counter = counter + 1;
-    //     }
-    //   }
     for (let index = 0; index < post.edges.length; index++) {
       if (tempData.length < 3) {
         tempData.push({
@@ -216,7 +186,6 @@ export const CatologIndexPage = ({ data }) => {
       window.scroll(0, 0);
       window.localStorage.setItem("tag", `/${type ? type : 1}/${tag}`);
     }
-    // history.push(baseUrl);
   };
 
   const handleTag = (tag, type) => {
