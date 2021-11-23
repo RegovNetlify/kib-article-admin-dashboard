@@ -215,6 +215,7 @@ export const CatologIndexPage = ({ data }) => {
         <Catalog
           catalogTitle={ARTICLECATALOG.catalogTitle}
           catalogSubText={`${numActiveArticle} ${ARTICLECATALOG.catalogSubTitle}`}
+          numActiveArticle={numActiveArticle}
           catalogSubSubText={ARTICLECATALOG.catalogSubtext}
           catalogImage={ARTICLECATALOG.banner}
           type="Article"
