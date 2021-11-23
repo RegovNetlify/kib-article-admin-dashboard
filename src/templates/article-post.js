@@ -118,10 +118,10 @@ export const ArticlePostTemplate = ({
   const HandleToogleTag = (tag, type) => {
     if (isBrowser) {
       window.scroll(0, 0);
-      window.location.href = `/article`;
+      window.location.href = `/`;
       window.localStorage.setItem(
         "tag",
-        JSON.stringify(`${type ? type : 1}/${tag}`)
+        JSON.stringify(`${tag}`)
       );
     }
   };

@@ -3,8 +3,6 @@ import * as React from "react";
 import Layout from "../components/Layout";
 import { Catalog } from "../components/catalog";
 import { useState } from "react";
-import { useHistory } from "react-router-dom";
-import { getArticleList, getLatestNotice } from "../api";
 import { ARTICLECATALOG } from "../constants";
 import { graphql } from "gatsby";
 import PropTypes from "prop-types";
@@ -13,7 +11,32 @@ import { useEffect } from "react";
 export const CatologIndexPage = ({ data }) => {
   const { allMarkdownRemark: post } = data;
   const isBrowser = typeof window !== "undefined";
-  let history = useHistory();
+  let activeTagState = "";
+  if (isBrowser) {
+    activeTagState = localStorage.getItem("tag");
+  }
+  useEffect(() => {
+    if (isBrowser) {
+      if (
+        activeTagState !== null &&
+        activeTagState !== undefined &&
+        activeTagState
+      ) {
+        setActiveTag({
+          author: "",
+          tag: JSON.parse(activeTagState),
+          type: 1,
+        });
+      }
+      localStorage.clear();
+    } else {
+      setActiveTag({
+        author: "",
+        tag: "",
+        type: 0,
+      });
+    }
+  }, []);
   const [articles, setArticle] = useState([
     {
       articleId: 0,
@@ -30,6 +53,7 @@ export const CatologIndexPage = ({ data }) => {
     tag: "",
     type: 0,
   });
+
   let numActiveArticle = 0;
   articles.map(({ tags }) =>
     tags[0] === activeTag.tag || activeTag.tag === ""
