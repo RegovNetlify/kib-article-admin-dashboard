@@ -122,18 +122,18 @@ export const CatologIndexPage = ({ data }) => {
       console.log(post.edges[0].node);
 
       let tempLatest = [...latest];
-      tempLatest[0] = {
-        articleId: post.edges[0].node.id,
-        heading: post.edges[0].node.frontmatter.title,
-        slug: post.edges[0].node.fields.slug,
-      };
-      if (post.edges[1] !== undefined) {
-        tempLatest[1] = {
-          articleId: post.edges[1].node.id,
-          heading: post.edges[1].node.frontmatter.title,
-          slug: post.edges[1].node.fields.slug,
-        };
+      let count = 0;
+      for (let index = 0; index < post.edges.length; index++) {
+        if (post.edges[index].node.frontmatter.tags[0] === "Notice") {
+          tempLatest[count] = {
+            articleId: post.edges[index].node.id,
+            heading: post.edges[index].node.frontmatter.title,
+            slug: post.edges[index].node.fields.slug,
+          };
+          count = count + 1;
+        }
       }
+
       setLatest([...tempLatest]);
     } catch (error) {}
   };
@@ -153,7 +153,7 @@ export const CatologIndexPage = ({ data }) => {
     //     }
     //   }
     for (let index = 0; index < post.edges.length; index++) {
-      if (index < 3) {
+      if (tempData.length < 3) {
         tempData.push({
           heading: post.edges[index].node.frontmatter.title,
           date: post.edges[index].node.frontmatter.date,
