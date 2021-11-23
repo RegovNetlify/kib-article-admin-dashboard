@@ -1,10 +1,11 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, Fragment } from "react";
 import Layout from "../components/Layout";
 import PropTypes from "prop-types";
 import { Helmet } from "react-helmet";
 import { graphql } from "gatsby";
 import { HTMLContent } from "../components/Content";
 import { SINGLEARTICLE } from "../constants";
+import { Banner, BreadCrumb } from "../components";
 
 export const ArticlePostTemplate = ({
   content,
@@ -86,101 +87,108 @@ export const ArticlePostTemplate = ({
     document.body.removeChild(t.__container__);
   }
   return (
-    <section className="section">
-      <div className="flex_row sa">
-        <div className="sa_info_container">
-          <div className="sa_info">
-            <div className="sa_related_header">{SINGLEARTICLE.share}</div>
-            <div className="flex_row flex-wrap">
-              {SINGLEARTICLE.shareLogo.map((img, index) =>
-                SINGLEARTICLE.shareLink[index] === "" ? (
-                  <div onClick={handlePrint}>
-                    <img
-                      src={img}
-                      alt={img}
-                      className="sa_share_img cursor_pointer"
-                    />
-                  </div>
-                ) : isBrowser ? (
-                  <a
-                    target="_blank"
-                    rel="noreferrer"
-                    href={SINGLEARTICLE.shareLink[index]
-                      .replace("{title}", artilceData.heading)
-                      .replace("{url}", window.location.href)}
+    <Fragment>
+      <Banner height="112px" img="">
+        <div className="sa_banner flex_row_vertical_center sa">
+          <BreadCrumb pathName={`/home/Articles/${artilceData.heading}`} />
+        </div>
+      </Banner>
+      <section className="section">
+        <div className="flex_row sa">
+          <div className="sa_info_container">
+            <div className="sa_info">
+              <div className="sa_related_header">{SINGLEARTICLE.share}</div>
+              <div className="flex_row flex-wrap">
+                {SINGLEARTICLE.shareLogo.map((img, index) =>
+                  SINGLEARTICLE.shareLink[index] === "" ? (
+                    <div onClick={handlePrint}>
+                      <img
+                        src={img}
+                        alt={img}
+                        className="sa_share_img cursor_pointer"
+                      />
+                    </div>
+                  ) : isBrowser ? (
+                    <a
+                      target="_blank"
+                      rel="noreferrer"
+                      href={SINGLEARTICLE.shareLink[index]
+                        .replace("{title}", artilceData.heading)
+                        .replace("{url}", window.location.href)}
+                    >
+                      {console.log(pathname)}
+                      <img src={img} alt={img} className="sa_share_img" />
+                    </a>
+                  ) : null
+                )}
+              </div>
+              <div className="sa_border" />
+              <div className="sa_related_header">{SINGLEARTICLE.tag}</div>
+              <div className="flex_row">
+                {tags.map((tag) => (
+                  <div
+                    className="sa_related_tag cursor_pointer"
+                    onClick={() => HandleToogleTag(tag, 1)}
                   >
-                    {console.log(pathname)}
-                    <img src={img} alt={img} className="sa_share_img" />
-                  </a>
-                ) : null
+                    {tag}
+                  </div>
+                ))}
+              </div>
+              {artilceData.author === "-" ? null : notice ? null : (
+                <>
+                  <div className="sa_border" />
+                  <div className="sa_related_header">{SINGLEARTICLE.by}</div>
+                  <div
+                    className="sa_related_author cursor_pointer"
+                    onClick={() => {
+                      HandleToogleTag(artilceData.author, 2);
+                    }}
+                  >
+                    {artilceData.author}
+                  </div>
+                </>
               )}
             </div>
-            <div className="sa_border" />
-            <div className="sa_related_header">{SINGLEARTICLE.tag}</div>
-            <div className="flex_row">
-              {tags.map((tag) => (
-                <div
-                  className="sa_related_tag cursor_pointer"
-                  onClick={() => HandleToogleTag(tag, 1)}
-                >
-                  {tag}
-                </div>
-              ))}
-            </div>
-            {artilceData.author === "-" ? null : notice ? null : (
-              <>
-                <div className="sa_border" />
-                <div className="sa_related_header">{SINGLEARTICLE.by}</div>
-                <div
-                  className="sa_related_author cursor_pointer"
-                  onClick={() => {
-                    HandleToogleTag(artilceData.author, 2);
-                  }}
-                >
-                  {artilceData.author}
-                </div>
-              </>
-            )}
           </div>
-        </div>
 
-        <div
-          className="sa_article_container"
-          id={`${notice ? "notice" : "article"}:${id}`}
-        >
-          <div className="sa_article_title_container">
-            <div
-              className="sa_article_title"
-              style={{
-                fontWeight: "bold",
-                fontSize: "4rem",
-                lineHeight: "64px",
-                letterSpacing: "-0.0025em",
-                color: "#3c3c3e",
-                marginBottom: "24px",
-              }}
-            >
-              {artilceData.heading}
-            </div>
-
-            <div
-              style={{
-                fontSize: "17px",
-                lineHeight: "24px",
-                color: "#3c3c3e",
-              }}
-            >
-              {artilceData.date}
-            </div>
-          </div>
           <div
-            className="sa_article_text"
-            dangerouslySetInnerHTML={{ __html: artilceData.content }}
-          ></div>
+            className="sa_article_container"
+            id={`${notice ? "notice" : "article"}:${id}`}
+          >
+            <div className="sa_article_title_container">
+              <div
+                className="sa_article_title"
+                style={{
+                  fontWeight: "bold",
+                  fontSize: "4rem",
+                  lineHeight: "64px",
+                  letterSpacing: "-0.0025em",
+                  color: "#3c3c3e",
+                  marginBottom: "24px",
+                }}
+              >
+                {artilceData.heading}
+              </div>
+
+              <div
+                style={{
+                  fontSize: "17px",
+                  lineHeight: "24px",
+                  color: "#3c3c3e",
+                }}
+              >
+                {artilceData.date}
+              </div>
+            </div>
+            <div
+              className="sa_article_text"
+              dangerouslySetInnerHTML={{ __html: artilceData.content }}
+            ></div>
+          </div>
         </div>
-      </div>
-      {helmet || ""}
-    </section>
+        {helmet || ""}
+      </section>
+    </Fragment>
   );
 };
 
