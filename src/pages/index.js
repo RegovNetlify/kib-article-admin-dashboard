@@ -135,7 +135,10 @@ export const CatologIndexPage = ({ data }) => {
       let tempLatest = [...latest];
       let count = 0;
       for (let index = 0; index < post.edges.length; index++) {
-        if (post.edges[index].node.frontmatter.tags[0] === "Notice") {
+        if (
+          post.edges[index].node.frontmatter.tags[0] === "Notice" &&
+          count < 2
+        ) {
           tempLatest[count] = {
             articleId: post.edges[index].node.id,
             heading: post.edges[index].node.frontmatter.title,
