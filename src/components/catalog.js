@@ -13,13 +13,13 @@ import { FeaturedCard } from ".";
 import { ARTICLECATALOG, CATALOG, FEATUREARTICLE } from "../constants";
 
 export const Catalog = (props) => {
-
   // let history = useHistory()
   // const [activeTag, setActiveTage] = useState({
   //   tag:"",
   //   type:1
   // })
   const [size, setSize] = useState([0, 0]);
+  const [open, setOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
   //   const useWindowResize = () => {
   // State and setters for window size value
@@ -77,6 +77,7 @@ export const Catalog = (props) => {
     } else {
       setCatalogLimit(props.articleCardList.length);
     }
+    setOpen(!open);
   };
 
   const handleToggleTab = (tag, type) => {
@@ -288,7 +289,7 @@ export const Catalog = (props) => {
           {props.articleCardList.length > CATALOG.limit && (
             <div className="catalog-button-wrapper">
               <button className="catalog-loadmore" onClick={handleMore}>
-                Load More +
+                {!open ? "Load More +" : "Load Less -"}
               </button>
             </div>
           )}
