@@ -46,11 +46,16 @@ collections:
         }
       - { label: "author", name: "author", widget: string }
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - {
+          label: "Publish Date",
+          name: "date",
+          widget: "datetime",
+          format: "DD, MM, YYYY",
+        }
       - { label: "Description", name: "description", widget: "text" }
       # - { label: "Featured Post", name: "featuredpost", widget: "boolean" }
       - { label: "Body", name: "body", widget: "markdown" }
-      - { label: "Tags", name: "tags", widget: "list", min: 1 }
+      - { label: "Tags", name: "tags", widget: "list", min: 1, max: 5 }
 
   # - name: "pages"
   #   label: "Pages"
