@@ -25,6 +25,17 @@ export const CatologIndexPage = ({ data }) => {
       author: "",
     },
   ]);
+  const [activeTag, setActiveTag] = useState({
+    author: "",
+    tag: "",
+    type: 0,
+  });
+  let numActiveArticle = 0;
+  articles.map(({ tags }) =>
+    tags[0] === activeTag.tag || activeTag.tag === ""
+      ? numActiveArticle++
+      : null
+  );
   let tempArticle = [...articles];
   useEffect(() => {
     post.edges.map((edge, index) => {
@@ -44,12 +55,6 @@ export const CatologIndexPage = ({ data }) => {
   }, []);
 
   //   let { typeParam, tagParam } = useParams();
-
-  const [activeTag, setActiveTag] = useState({
-    author: "",
-    tag: "",
-    type: 0,
-  });
 
   const [mostRead, setMostRead] = useState([
     {
@@ -207,7 +212,7 @@ export const CatologIndexPage = ({ data }) => {
       <div className="article_wrapper">
         <Catalog
           catalogTitle={ARTICLECATALOG.catalogTitle}
-          catalogSubText={`${articles.length} ${ARTICLECATALOG.catalogSubTitle}`}
+          catalogSubText={`${numActiveArticle} ${ARTICLECATALOG.catalogSubTitle}`}
           catalogSubSubText={ARTICLECATALOG.catalogSubtext}
           catalogImage={ARTICLECATALOG.banner}
           type="Article"
