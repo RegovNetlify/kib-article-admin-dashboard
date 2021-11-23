@@ -10,9 +10,9 @@ export function BreadCrumb({ pathName }) {
 
   const handleClick = (tab) => {
     if (tab === "Home") {
-      history.push("/");
+      window.location.href = "https://www.dev-kibwebsite.regovdevservices.com/";
     } else if (tab === "Articles") {
-      history.push("/articlecatalog");
+      window.location.href = "/"
     } else if (tab === "AMP") {
       history.push("/amp");
     } else if (tab === "Funds") {
