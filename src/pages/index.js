@@ -13,7 +13,7 @@ export const CatologIndexPage = ({ data }) => {
   const isBrowser = typeof window !== "undefined";
   let activeTagState = "";
   if (isBrowser) {
-    activeTagState = localStorage.getItem("tag");
+    activeTagState = sessionStorage.getItem("tag");
   }
   useEffect(() => {
     if (isBrowser && activeTagState !== "") {
@@ -31,7 +31,7 @@ export const CatologIndexPage = ({ data }) => {
           type: parseInt(activeTagState[0]),
         });
       }
-      localStorage.clear();
+      sessionStorage.clear();
     } else {
       setActiveTag({
         author: "",
@@ -194,7 +194,7 @@ export const CatologIndexPage = ({ data }) => {
     }
     if (isBrowser) {
       window.scroll(0, 0);
-      window.localStorage.setItem("tag", `/${type ? type : 1}/${tag}`);
+      sessionStorage.setItem("tag", `/${type ? type : 1}/${tag}`);
     }
   };
 

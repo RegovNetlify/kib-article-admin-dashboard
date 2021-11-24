@@ -73,7 +73,7 @@ export const ArticlePostTemplate = ({
     if (isBrowser) {
       window.scroll(0, 0);
       window.location.href = `/`;
-      window.localStorage.setItem("tag", JSON.stringify(`${type + "/" + tag}`));
+      sessionStorage.setItem("tag", JSON.stringify(`${type + "/" + tag}`));
     }
   };
 
