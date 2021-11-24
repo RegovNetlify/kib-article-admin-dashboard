@@ -22,7 +22,8 @@ export const CatologIndexPage = ({ data }) => {
         activeTagState !== undefined &&
         activeTagState
       ) {
-        activeTagState = JSON.parse(activeTagState).split("/");
+        activeTagState = activeTagState.replaceAll(`"`, "");
+        activeTagState = activeTagState.split("/");
         console.log(activeTagState);
         setActiveTag({
           author: activeTagState[1],
