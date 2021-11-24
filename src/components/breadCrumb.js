@@ -12,7 +12,8 @@ export function BreadCrumb({ pathName }) {
     if (tab === "Home") {
       window.location.href = "https://www.dev-kibwebsite.regovdevservices.com/";
     } else if (tab === "Articles") {
-      window.location.href = "/"
+      sessionStorage.clear();
+      window.location.href = "/";
     } else if (tab === "AMP") {
       history.push("/amp");
     } else if (tab === "Funds") {

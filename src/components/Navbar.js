@@ -2,7 +2,6 @@ import React from "react";
 import { Fragment, useState } from "react";
 import { useHistory } from "react-router-dom";
 
-import { siteSearch } from "../api";
 import { LoginCardData, NAVBAR } from "../constants";
 import { LoginCard } from "./logInCard";
 import { Dropdown } from "./dropdown";
