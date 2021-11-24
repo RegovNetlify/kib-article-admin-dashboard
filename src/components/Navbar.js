@@ -10,6 +10,7 @@ import { Modal } from "./modal";
 import { SiteSearchBar } from "./SiteSearchBar";
 
 export const NavBar = () => {
+  const isBrowser = typeof window !== "undefined";
   const [showModal, setShowModal] = useState(false);
   const [searchValue, setSearchValue] = useState("");
   const [showSearch, setShowSearch] = useState(false);
@@ -40,12 +41,13 @@ export const NavBar = () => {
     setShowSearch(false);
 
     // handleScrollToTop();
-    history.push(`/search-results`, searchResults);
+    if (isBrowser) {
+      window.location.href = `https://www.dev-kibwebsite.regovdevservices.com/search-results/${JSON.stringify(
+        searchResults
+      )}`;
+    }
   };
-  const handleScrollToTop = () => {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-  };
+  
   return (
     <Fragment>
       <div className="border navbar flex_row_vertical_center">

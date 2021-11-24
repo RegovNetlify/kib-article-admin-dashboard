@@ -20,7 +20,7 @@ export const SiteSearchBar = ({
   const updateSize = () => {
     if (isBrowser) {
       setSize([window.innerWidth, window.innerHeight]);
-    } 
+    }
   };
   //   window.addEventListener("resize", updateSize);
   //   updateSize();
@@ -30,10 +30,13 @@ export const SiteSearchBar = ({
   //   };
 
   useEffect(() => {
+    updateSize();
+  }, []);
+  useEffect(() => {
     if (isBrowser) {
       window.onresize = updateSize;
     }
-  }, [isBrowser]);
+  }, [size]);
   let width = size[0];
   console.log(width);
   return width > 1024 ? (
@@ -115,20 +118,24 @@ export const ResultsSearchBar = ({
   searchValue,
 }) => {
   const [size, setSize] = useState([0, 0]);
+  const isBrowser = typeof window !== "undefined";
   const useWindowResize = () => {
     // State and setters for window size value
-
     useLayoutEffect(() => {
-      const updateSize = () => {
-        setSize([window.innerWidth, window.innerHeight]);
-      };
-      window.addEventListener("resize", updateSize);
-      updateSize();
-      return () => window.removeEventListener("resize", updateSize);
+      if (isBrowser) {
+        const updateSize = () => {
+          setSize([window.innerWidth, window.innerHeight]);
+        };
+        window.addEventListener("resize", updateSize);
+        updateSize();
+        return () => window.removeEventListener("resize", updateSize);
+      }
     }, []);
     return size;
   };
-  window.onresize = useWindowResize;
+  if (isBrowser) {
+    window.onresize = useWindowResize;
+  }
   let width = size;
   return width > 1024 ? (
     <Fragment>
