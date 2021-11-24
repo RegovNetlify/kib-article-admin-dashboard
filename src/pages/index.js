@@ -16,7 +16,7 @@ export const CatologIndexPage = ({ data }) => {
     activeTagState = localStorage.getItem("tag");
   }
   useEffect(() => {
-    if (isBrowser) {
+    if (isBrowser && activeTagState !== "") {
       if (
         activeTagState !== null &&
         activeTagState !== undefined &&
