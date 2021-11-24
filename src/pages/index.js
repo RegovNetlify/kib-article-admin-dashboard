@@ -261,7 +261,7 @@ export const catalogQuery = graphql`
           frontmatter {
             title
             templateKey
-            date(formatString: "DD MMMM, YYYY")
+            date()
             tags
             author
             description
