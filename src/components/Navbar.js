@@ -35,9 +35,7 @@ export const NavBar = () => {
     setSearchValue("");
   };
   const onSite_Search = async (input) => {
-    const response = await siteSearch(input, 0);
-    console.log("data", response?.data);
-    const searchResults = { key: input, result: response?.data.searchData };
+    const searchResults = input;
     setShowSearch(false);
 
     // handleScrollToTop();
