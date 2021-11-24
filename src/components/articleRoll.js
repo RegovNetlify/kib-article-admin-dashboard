@@ -73,7 +73,7 @@ export default function ArticleRoll() {
                 frontmatter {
                   title
                   templateKey
-                  date()
+                  date
                 }
               }
             }

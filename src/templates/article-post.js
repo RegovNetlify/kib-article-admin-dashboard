@@ -237,7 +237,7 @@ export const articlePageQuery = graphql`
       id
       html
       frontmatter {
-        date()
+        date
         title
         description
         tags
