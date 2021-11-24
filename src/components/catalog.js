@@ -286,16 +286,16 @@ export const Catalog = (props) => {
               }
             })}
           </div>
-          {props.numActiveArticle > CATALOG.limit && (
+          {props.numActiveArticle > CATALOG.limit && !open ? (
             <div className="catalog-button-wrapper">
               <button
                 className="catalog-loadmore cursor_pointer"
                 onClick={handleMore}
               >
-                {!open ? "Load More +" : "Load Less -"}
+                Load More +
               </button>
             </div>
-          )}
+          ) : null}
         </div>
       </div>
 
