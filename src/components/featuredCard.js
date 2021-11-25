@@ -1,11 +1,12 @@
 import React from "react";
-import { useHistory } from "react-router-dom";
 import { ANNOUNCEMENTCARD } from "../constants";
 
 export const FeaturedCard = (props) => {
-  let history = useHistory();
+  const isBrowser = typeof window !== "undefined";
   const HandleClick = () => {
-    history.push(`/SingleArticle/${props.id}`);
+    if (isBrowser) {
+      window.location.href = props.slug;
+    }
   };
 
   return (

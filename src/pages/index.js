@@ -50,6 +50,7 @@ export const CatologIndexPage = ({ data }) => {
       shortDescription: "",
       date: "",
       author: "",
+      slug: "",
     },
   ]);
   const [activeTag, setActiveTag] = useState({

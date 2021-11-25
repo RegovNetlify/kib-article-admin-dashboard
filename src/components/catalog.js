@@ -108,6 +108,7 @@ export const Catalog = (props) => {
         mainTitle: props.articleCardList.find((d) => d.type === 1)?.heading,
         maintext: props.articleCardList.find((d) => d.type === 1)
           ?.shortDescription,
+        slug: props.articleCardList.find((d) => d.type === 1)?.slug,
       });
     }
   }, [props.articleCardList]);
@@ -167,6 +168,7 @@ export const Catalog = (props) => {
                   mainTitle={featured.mainTitle}
                   maintext={featured.maintext}
                   id={featured.id}
+                  slug={featured.slug}
                 />
               )}
             </div>
