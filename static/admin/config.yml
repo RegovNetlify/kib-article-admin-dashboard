@@ -51,6 +51,7 @@ collections:
           name: "date",
           widget: "datetime",
           format: "DD, MMMM, YYYY",
+          time_format: false,
         }
       - { label: "Description", name: "description", widget: "text" }
       # - { label: "Featured Post", name: "featuredpost", widget: "boolean" }
