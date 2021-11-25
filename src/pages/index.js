@@ -16,7 +16,7 @@ export const CatologIndexPage = ({ data }) => {
     activeTagState = sessionStorage.getItem("tag");
   }
   useEffect(() => {
-    if (isBrowser && activeTagState !== "") {
+    if (isBrowser && activeTagState !== "" && activeTagState) {
       if (
         activeTagState !== null &&
         activeTagState !== undefined &&
@@ -65,7 +65,12 @@ export const CatologIndexPage = ({ data }) => {
 
   let numActiveArticle = 0;
   articles.map(({ tags }) =>
-    tags[0] === activeTag.tag || activeTag.tag === ""
+    tags[0] === activeTag.tag ||
+    activeTag.tag === "" ||
+    tags[1] === activeTag.tag ||
+    tags[3] === activeTag.tag ||
+    tags[4] === activeTag.tag ||
+    tags[2] === activeTag.tag
       ? numActiveArticle++
       : null
   );
