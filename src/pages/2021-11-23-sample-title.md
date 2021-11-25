@@ -2,7 +2,7 @@
 templateKey: article-post
 author: Sample Author
 title: Sample Title
-date: 2021-11-23T03:59:59.249Z
+date: 23, November, 2021
 description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
   eiusmod tempor incididunt ut labore et dolore magna aliqua. "
 tags:
