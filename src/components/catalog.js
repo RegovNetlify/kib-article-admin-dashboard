@@ -309,7 +309,7 @@ export const Catalog = (props) => {
               <AnnouncementCard
                 onClick={() => handleNotice(notice.slug)}
                 secondary
-                // tag={notice.tags}
+                tag={["Notice"]}
                 // heading= {notice.heading}
                 main={notice.heading}
               />
