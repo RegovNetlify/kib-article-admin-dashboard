@@ -78,7 +78,7 @@ export const ArticleCard = (props) => {
 
       <div className="article-main-content">{props.shortDescription}</div>
 
-      <div className="article-readmore">
+      <div className="article-readmore flex_row_vertical_center">
         <div className={"article-readmore-text"}>Read More</div>
         <img
           src={ANNOUNCEMENTCARD.arrow}

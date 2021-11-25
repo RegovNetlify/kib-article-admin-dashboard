@@ -54,8 +54,8 @@
     margin-bottom: auto;
   }
   .announcement_card_arrow {
-    width: 24px;
-    height: 24px;
+    width: 16px;
+    height: 16px;
     margin-left: 8px;
   }
   .announcement_card_read {
@@ -116,8 +116,8 @@
       letter-spacing: 0.0025em;
     }
     .announcement_card_arrow {
-      width: 24px;
-      height: 24px;
+      width: 16px;
+      height: 16px;
       margin-left: 10px;
     }
   }
