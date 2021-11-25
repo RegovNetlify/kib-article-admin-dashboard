@@ -118,25 +118,32 @@ export const ResultsSearchBar = ({
   searchValue,
 }) => {
   const [size, setSize] = useState([0, 0]);
+  //   const useWindowResize = () => {
+  // State and setters for window size value
+
+  // useLayoutEffect(() => {
   const isBrowser = typeof window !== "undefined";
-  const useWindowResize = () => {
-    // State and setters for window size value
-    useLayoutEffect(() => {
-      if (isBrowser) {
-        const updateSize = () => {
-          setSize([window.innerWidth, window.innerHeight]);
-        };
-        window.addEventListener("resize", updateSize);
-        updateSize();
-        return () => window.removeEventListener("resize", updateSize);
-      }
-    }, []);
-    return size;
+  const updateSize = () => {
+    if (isBrowser) {
+      setSize([window.innerWidth, window.innerHeight]);
+    }
   };
-  if (isBrowser) {
-    window.onresize = useWindowResize;
-  }
-  let width = size;
+  //   window.addEventListener("resize", updateSize);
+  //   updateSize();
+  //   return () => window.removeEventListener("resize", updateSize);
+  // }, []);
+  // return size;
+  //   };
+
+  useEffect(() => {
+    updateSize();
+  }, []);
+  useEffect(() => {
+    if (isBrowser) {
+      window.onresize = updateSize;
+    }
+  }, [size]);
+  let width = size[0];
   return width > 1024 ? (
     <Fragment>
       <div className="relative_results">
