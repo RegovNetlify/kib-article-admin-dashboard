@@ -14,6 +14,7 @@ export const CatologIndexPage = ({ data }) => {
   let activeTagState = "";
   if (isBrowser) {
     activeTagState = sessionStorage.getItem("tag");
+    console.log(activeTagState);
   }
   useEffect(() => {
     if (isBrowser && activeTagState !== "" && activeTagState) {
@@ -26,9 +27,9 @@ export const CatologIndexPage = ({ data }) => {
         activeTagState = activeTagState.split("/");
         console.log(activeTagState);
         setActiveTag({
-          author: activeTagState[1],
-          tag: activeTagState[1],
-          type: parseInt(activeTagState[0]),
+          author: activeTagState[2],
+          tag: activeTagState[2],
+          type: parseInt(activeTagState[1]),
         });
       }
       sessionStorage.clear();
