@@ -12,34 +12,37 @@ export const CatologIndexPage = ({ data }) => {
   const { allMarkdownRemark: post } = data;
   const isBrowser = typeof window !== "undefined";
   let activeTagState = "";
-  if (isBrowser) {
-    activeTagState = sessionStorage.getItem("tag");
-    console.log(activeTagState);
-  }
+
   useEffect(() => {
+    if (isBrowser) {
+      activeTagState = sessionStorage.getItem("tag");
+      console.log(activeTagState);
+    }
     if (isBrowser && activeTagState !== "" && activeTagState) {
-      if (
-        activeTagState !== null &&
-        activeTagState !== undefined &&
-        activeTagState
-      ) {
+      if (activeTagState !== null && activeTagState !== undefined) {
         activeTagState = activeTagState.replaceAll(`"`, "");
         activeTagState = activeTagState.split("/");
+        let tempTag = { ...activeTag };
+        tempTag = {
+          author: activeTagState[1] ? activeTagState[1] : "",
+          tag: activeTagState[1] ? activeTagState[1] : "",
+          type: parseInt(activeTagState[0]),
+        };
+
+        setActiveTag({ ...tempTag });
         console.log(activeTagState);
-        setActiveTag({
-          author: activeTagState[2],
-          tag: activeTagState[2],
-          type: parseInt(activeTagState[1]),
-        });
+        console.log(tempTag);
+        console.log(activeTag);
       }
-      sessionStorage.clear();
     } else {
+      // console.log("activeTag");
       setActiveTag({
         author: "",
         tag: "",
         type: 0,
       });
     }
+    sessionStorage.clear();
   }, []);
   const [articles, setArticle] = useState([
     {
@@ -231,7 +234,11 @@ export const CatologIndexPage = ({ data }) => {
           mostReadList={mostRead}
           articleCardList={articles}
           tags={tags}
-          noticeHeading={ARTICLECATALOG.noticeHeading}
+          noticeHeading={
+            activeTag.tag === "Notice"
+              ? ARTICLECATALOG.noticeHeading
+              : ARTICLECATALOG.articleHeading
+          }
           noticeList={latest}
           handleList={HandleToogleTag}
           handleNotice={articleOnClick}
