@@ -145,23 +145,39 @@ export const CatologIndexPage = ({ data }) => {
       });
     });
     setTags(tempTag);
-  }, []);
+  }, [activeTag]);
 
-  const getLatest = async () => {
+  const getLatest = () => {
     try {
       let tempLatest = [...latest];
       let count = 0;
       for (let index = 0; index < post.edges.length; index++) {
-        if (
-          post.edges[index].node.frontmatter.tags[0] === "Notice" &&
-          count < 2
-        ) {
-          tempLatest[count] = {
-            articleId: post.edges[index].node.id,
-            heading: post.edges[index].node.frontmatter.title,
-            slug: post.edges[index].node.fields.slug,
-          };
-          count = count + 1;
+        if (activeTag.tag === "" || activeTag.tag === " Notice") {
+          if (
+            post.edges[index].node.frontmatter.tags[0] === "Notice" &&
+            count < 2
+          ) {
+            tempLatest[count] = {
+              articleId: post.edges[index].node.id,
+              heading: post.edges[index].node.frontmatter.title,
+              slug: post.edges[index].node.fields.slug,
+              tags: post.edges[index].node.frontmatter.tags,
+            };
+            count = count + 1;
+          }
+        } else {
+          if (
+            post.edges[index].node.frontmatter.tags[0] !== "Notice" &&
+            count < 2
+          ) {
+            tempLatest[count] = {
+              articleId: post.edges[index].node.id,
+              heading: post.edges[index].node.frontmatter.title,
+              slug: post.edges[index].node.fields.slug,
+              tags: post.edges[index].node.frontmatter.tags,
+            };
+            count = count + 1;
+          }
         }
       }
 
@@ -235,7 +251,7 @@ export const CatologIndexPage = ({ data }) => {
           articleCardList={articles}
           tags={tags}
           noticeHeading={
-            activeTag.tag === "Notice"
+            activeTag.tag === "Notice" || activeTag.tag === ""
               ? ARTICLECATALOG.noticeHeading
               : ARTICLECATALOG.articleHeading
           }
