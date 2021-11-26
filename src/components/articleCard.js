@@ -56,7 +56,7 @@ export const ArticleCard = (props) => {
       </div>
 
       <div className="article-mete-data">
-        <div>{props.date.replace(",", "")}</div>
+        <div>{props.date.replaceAll(",", "")}</div>
         {!props.notice && (
           <>
             <div className="vertical"></div>

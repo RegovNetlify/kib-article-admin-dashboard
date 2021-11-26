@@ -177,7 +177,7 @@ export const ArticlePostTemplate = ({
                   color: "#3c3c3e",
                 }}
               >
-                {artilceData.date.replace(",", "")}
+                {artilceData.date.replaceAll(",", "")}
               </div>
             </div>
             <div
