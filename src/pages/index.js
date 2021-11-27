@@ -117,7 +117,7 @@ export const CatologIndexPage = ({ data }) => {
 
   const handleGetArticle = async (tag, type) => {
     let data = {};
-    if (tag === "Notices") {
+    if (tag === "Notice") {
       data["type"] = 2;
     } else {
       if (type) {
@@ -154,7 +154,8 @@ export const CatologIndexPage = ({ data }) => {
       let tempLatest = [...latest];
       let count = 0;
       for (let index = 0; index < post.edges.length; index++) {
-        if (activeTag.tag === "" || activeTag.tag === " Notice") {
+        if (activeTag.tag === "" || activeTag.tag === "Notice") {
+          console.log("notice");
           if (
             post.edges[index].node.frontmatter.tags[0] === "Notice" &&
             count < 2
@@ -168,6 +169,7 @@ export const CatologIndexPage = ({ data }) => {
             count = count + 1;
           }
         } else {
+          console.log("article");
           if (
             post.edges[index].node.frontmatter.tags[0] !== "Notice" &&
             count < 2
@@ -182,7 +184,6 @@ export const CatologIndexPage = ({ data }) => {
           }
         }
       }
-
       setLatest([...tempLatest]);
     } catch (error) {}
   };
