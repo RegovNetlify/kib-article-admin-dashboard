@@ -57,6 +57,7 @@
   margin-bottom: auto;
 }
 .announcement_card_arrow {
+  margin-top: 4px;
   width: 16px;
   height: 16px;
   margin-left: 8px;
