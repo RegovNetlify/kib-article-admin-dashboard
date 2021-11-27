@@ -33,6 +33,7 @@ export const CatologIndexPage = ({ data }) => {
         console.log(activeTagState);
         console.log(tempTag);
         console.log(activeTag);
+        sessionStorage.removeItem("tag");
       }
     } else {
       // console.log("activeTag");
@@ -44,6 +45,7 @@ export const CatologIndexPage = ({ data }) => {
     }
     sessionStorage.clear();
   }, []);
+
   const [articles, setArticle] = useState([
     {
       articleId: 0,
@@ -220,7 +222,15 @@ export const CatologIndexPage = ({ data }) => {
     }
     if (isBrowser) {
       window.scroll(0, 0);
-      sessionStorage.setItem("tag", `/${type ? type : 1}/${tag}`);
+      // sessionStorage.setItem("tag", `/${type ? type : 1}/${tag}`);
+      let tempTag = { ...activeTag };
+      tempTag = {
+        author: activeTagState[1] ? activeTagState[1] : "",
+        tag: activeTagState[1] ? activeTagState[1] : "",
+        type: parseInt(activeTagState[0]),
+      };
+
+      setActiveTag({ ...tempTag });
     }
   };
 
