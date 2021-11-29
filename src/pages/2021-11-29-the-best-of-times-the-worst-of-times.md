@@ -14,7 +14,7 @@ It has been a story of two halves for the Malaysian stock market over the past d
 
 "We were doing quite well in the first half of the decade, when the global economy was still recovering strongly from the 2008 global financial crisis. The listing of a few companies also attracted foreign investors' attention to the local market," says Lim Tze Cheng, head of research at EquitiesTracker Holdings Bhd. For instance, the listing of Petronas Chemicals Group Bhd in November 2010 was the largest initial public offering (IPO) in Southeast Asia that year.
 
-![](/img/2019-01-09-the-edge-the-best-of-times-the-worst-of-times.png)
+![](/img/2019-01-09-the-edge-the-best-of-times-the-worst-of-times.jpg)
 
 It raised RM12.8 billion from the market. Felda Global Ventures Holdings Bhd was listed on June 28, 2012, and raised RM10.4 billion from investors. It was the second largest IPO in the world that year after Facebook Inc.’s US$16 billion listing. IHH Healthcare Bhd was listed a month later and became the thirdlargest IPO of the year. In the second half of the decade, things took a turn for the worse.
 
