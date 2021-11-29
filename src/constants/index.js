@@ -173,7 +173,7 @@ export const ARTICLECATALOG = {
     },
   ],
   noticeHeading: "Latest Notices",
-  articleHeading: "Latest Article",
+  articleHeading: "Related Article",
 };
 
 export const SINGLEARTICLE = {
