@@ -13,7 +13,9 @@ tags:
   - Focus Malaysia
 ---
 * Trump must act more cohesively to settle the US-China trade dispute
-* Other challenges to a global equity market rebound in 2019![](article-images/2019-01-14-Focus-Malaysia-Deceptive-Trade-Conflict-Truce.png)
+* Other challenges to a global equity market rebound in 2019
+
+![](/img/2019-01-14-focus-malaysia-deceptive-trade-conflict-truce.png)
 
 If there is one wish the global investment fraternity has for 2019, it has to be for US president Donald Trump to act in a more gentlemanly manner in his decisionmaking process, particularly on issues with major global impact. Last year witnessed how the eccentric behaviour of the leader of the world’s biggest economy brought about numerous rollercoaster rides time and again across equity markets worldwide. The global economic climate has been besieged with uncertainties of sorts in recent times with Trump’s notoriety in declaring a ‘deceptive’ 90-day trade conflict truce – his most recent market-adverse stunt. On Dec 3, the already sluggish Dow Jones Industrial Index rebounded 250 points soon after Trump and his Chinese counterpart Xi Jinping agreed to a 90-day ceasefire in the trade war that has weighed heavily on global stock markets since mid-2018. But the joy was short-lived as Wall Street’s enthusiasm for the US-China trade truce vanished 24 hours later (the Dow plunged 799 points or 3.1%) following Trump’s costly tweet labelling himself as a “Tariff Man” in addition to the surprise and controversial arrest in Canada of Huawei’s chief financial officer Meng Wanzhou at the behest of US authorities.
 
