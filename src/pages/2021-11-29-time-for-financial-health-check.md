@@ -17,8 +17,6 @@ tags:
 * Financial discipline is key to financial stability
 * Staying clear of debt and having adequate funds for retirement is crucial for everyone
 
-
-
 ![](/img/2018-12-24-focus-malaysia-time-for-a-financial-health-check.png)
 
 <p>Amid all the last-minute rush for the ultimate family vacation during the year-end
@@ -37,7 +35,7 @@ tags:
     to capitalise on cheaper/promotional rate, simply hunting for deals online or watching out for sales instead
     of embarking on a shopping spree. </p>
 
-<h3>**Retirement Savings VS Debt Level**</h3>
+\*\*Retirement Savings VS Debt Level\*\*
 
 <p>For the longer term, financial health hinges on fulfilling financial commitments with ease, earning more than
     planned, spending less than necessary, saving as much as possible and investing wisely. Human
@@ -57,7 +55,7 @@ tags:
     secure (i.e. student loan, credit card spending and mortgage balances). Interestingly, the first experience of
     debt for most people comes from their time in university. </p>
 
-<h3>**Tax Planning**</h3>
+**Tax Planning**
 
 <p>Budget 2019 has introduced a slew of new taxes following the abolishment of the indirect Goods and
     Services Tax (GST) which is replaced by the Sales and Service Tax (SST). Henceforth, proper tax planning
@@ -78,7 +76,7 @@ tags:
     the Inland Revenue Board on capital statement to uncover tax evasion and changes in EPF contribution
     and relief.</p>
 
-<h3>**Stock Market Enthusiasts** </h3>
+**Stock Market Enthusiasts**
 
 <p>Those who dabble in the stock market should be cautious of their over-dependency on margin loans as this
     can be a double-edged sword. Two extremes to bear in mind are that one can either rake in massive profits
