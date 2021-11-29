@@ -10,8 +10,6 @@ description: It has been a story of two halves for the Malaysian stock market
 tags:
   - The Edge
 ---
-The Edge Malaysia (30 December 2019)
-
 It has been a story of two halves for the Malaysian stock market over the past decade. While the first five years saw healthy growth and listing activity, the other five years saw the market lose about half its gains, due to factors such as poor corporate earnings and low oil prices.
 
 "We were doing quite well in the first half of the decade, when the global economy was still recovering strongly from the 2008 global financial crisis. The listing of a few companies also attracted foreign investors' attention to the local market," says Lim Tze Cheng, head of research at EquitiesTracker Holdings Bhd. For instance, the listing of Petronas Chemicals Group Bhd in November 2010 was the largest initial public offering (IPO) in Southeast Asia that year.
