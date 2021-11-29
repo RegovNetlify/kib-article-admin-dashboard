@@ -1,7 +1,7 @@
 ---
 templateKey: article-post
 author: Ismitz Matthew De Alwis
-title: Holding power is key to prevailing in volatile times
+title: Holding Power Is Key To Prevailing In Volatile Times
 date: 04, March, 2019
 description: "Three negative indicators in recent times have further heightened
   prevailing weaknesses in the Malaysian economy over the short- to medium-term,
