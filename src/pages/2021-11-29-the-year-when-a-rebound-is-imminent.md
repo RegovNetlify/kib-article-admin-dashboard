@@ -33,7 +33,7 @@ tags:
     challenges facing the Malaysian economy in 2019 and beyond? The following are views expressed by
     some prominent market players on the investment outlook for 2019: </p>
 
-<h3>**Kenanga Investors Bhd Chief Investment Officer Lee Sook Yee** </h3>
+**Kenanga Investors Bhd Chief Investment Officer Lee Sook Yee**
 
 <p>Investors generally dislike uncertainty and have been cautious on the market given the roll-out of new taxes
     as well as changes in infrastructure plans that have negatively affected corporates, particularly the
@@ -58,7 +58,7 @@ tags:
     given it is traditionally grouped alongside countries in the emerging market bloc. Nevertheless, the ringgit
     still outperformed regional currencies in view of Malaysia’s current account surplus position.</p>
 
-<h3>**Thriving On Fundamentals**</h3>
+**Thriving On Fundamentals**
 
 <p>While it is usually true that there are opportunities in every crisis, it is critical to focus on fundamentals in
     order to determine the ‘what’ and the ‘when’ of investing. Although the US-China trade war has worsened
@@ -82,7 +82,7 @@ tags:
     play out. Thus, investors need to be more trading-oriented by buying on weakness and be disciplined in
     taking profits.</p>
 
-<h3>**Allianz Malaysia Bhd Chief Investment Officer Wong Siew Lin**</h3>
+**Allianz Malaysia Bhd Chief Investment Officer Wong Siew Lin**
 
 ![](/img/2018-12-06-smart-investor-the-year-when-a-rebound-is-imminent-2.png)
 
@@ -101,7 +101,7 @@ tags:
     market sentiment. At worst, it could lead to a slowdown in global economic growth and heighten financial
     market volatility.</p>
 
-<h3>**Foreign Funds Outflow**</h3>
+**Foreign Funds Outflow**
 
 <p>Foreign funds have been pulling out of emerging markets, including Malaysia. The bulk of the foreign
     outflows centred around May-June 2018 which could suggest that the sizeable sell-down was due in part to
@@ -124,7 +124,7 @@ tags:
     Malaysia’s long-term fundamentals remain intact. Investors should invest prudently in areas with good longterm growth prospects and avoid over-extending with excessive leverage.
     </p>
 
-<h3>**Fundsupermart Research Analyst, Jerry Lee Chee Yeong**</h3>
+**Fundsupermart Research Analyst, Jerry Lee Chee Yeong**
 
 ![](/img/2018-12-06-smart-investor-the-year-when-a-rebound-is-imminent-3.png)
 
@@ -142,7 +142,7 @@ tags:
     Fitch. In order to prevent either credit outlook or rating downgrade, the government should reduce reliance
     on oil-related revenue to prevent the fluctuation in oil prices affecting the country’s fundamentals. </p>
 
-<h3>**Volatility And Uncertainties Aplenty**</h3>
+**Volatility And Uncertainties Aplenty**
 
 <p>With the new government in power for the first time in 60 years, volatility and uncertainty are inevitable,
     prompting investors to shun the local equity market. Sectors such as plantation, materials, construction,
@@ -186,7 +186,7 @@ and trade diversion”
     equities rout that affected investors’ risk appetite. Hence, from the valuation front, the local small to midcap
     segment appears to be rather attractive with its fundamentals remaining intact.</p>
 
-<h3>**Affin Hwang Asset Management Portfolio Manager Lim Chia Wei**</h3>
+**Affin Hwang Asset Management Portfolio Manager Lim Chia Wei**
 
 ![](/img/2018-12-06-smart-investor-the-year-when-a-rebound-is-imminent-4.png)
 
@@ -216,7 +216,7 @@ and trade diversion”
     predict market sentiment correctly.
     </p>
 
-<h3>**EMs Still A Decent Asset Class**</h3>
+**EMs Still A Decent Asset Class**
 
 <p>EMs have been pressured in 2018 and will continue to face this pressure in 2019 as mentioned earlier. But
     it may not break Asian countries. Today, most Asian countries have stronger current account and much
