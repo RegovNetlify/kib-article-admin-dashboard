@@ -17,8 +17,8 @@ description: "Three negative indicators in recent times have further heightened
 tags:
   - Focus Malaysia
 ---
-* Don’t be unduly worried over the pessimistic outlook as they are probably priced in already
-* Embark on a defensive strategy, right stock pick and portfolio diversification to stay resilient
+* **Don’t** be unduly worried over the pessimistic outlook as they are probably priced in already
+* **Embar**k on a defensive strategy, right stock pick and portfolio diversification to stay resilient
 
 ![](/img/2019-01-14-focus-malaysia-deceptive-trade-conflict-truce.png)
 
