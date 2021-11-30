@@ -1,7 +1,7 @@
 ---
 templateKey: article-post
-author: Smart Investor
-title: "Kenanga Investors Berhad: Consistent Outperformance Is The Key !"
+author: "-"
+title: "Kenanga Investors Berhad: Consistent Outperformance Is The Key"
 date: 16, July, 2019
 description: Kenanga Investors Bhd (KIB) is a wholly-owned subsidiary of Kenanga
   Investment Bank Bhd. KIB provides investment solutions ranging from collective
