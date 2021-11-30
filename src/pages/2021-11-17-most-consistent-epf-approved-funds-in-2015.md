@@ -2,7 +2,7 @@
 templateKey: article-post
 author: Lee Tien Xiang
 title: Most Consistent EPF-Approved Funds in 2015
-date: 2016-01-22T04:12:54.251Z
+date: 22, January, 2016
 description: >-
   As of end-2015, we have a total of 95 EPF-approved funds on our platform. Out
   of the 95 funds, there
