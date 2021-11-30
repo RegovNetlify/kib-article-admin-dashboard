@@ -440,10 +440,10 @@ export const FOOTER = {
     "Kenanga Investors Berhad 199501024358 . All Rights Reserved.",
 
   footerLink: [
-    { name: "Disclaimer", link: "/disclaimer" },
-    { name: "Privacy Policy", link: "/privacyPolicy" },
-    { name: "Internet Risk", link: "/internetRisk" },
-    { name: "Terms & Conditions", link: "/termsAndConditions" },
+    { name: "Disclaimer", link: "https://www.dev-kibwebsite.regovdevservices.com/disclaimer" },
+    { name: "Privacy Policy", link: "https://www.dev-kibwebsite.regovdevservices.com/privacyPolicy" },
+    { name: "Internet Risk", link: "https://www.dev-kibwebsite.regovdevservices.com/internetRisk" },
+    { name: "Terms & Conditions", link: "https://www.dev-kibwebsite.regovdevservices.com/termsAndConditions" },
     // { name: "Sitemap", link: "#" },
     { name: "SIDREC", link: "https://sidrec.com.my/" },
   ],
