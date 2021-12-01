@@ -2,7 +2,7 @@
 templateKey: article-post
 author: "-"
 title: Kenanga Remains Positive On Asia
-date: 2016-07-25T08:34:26.269Z
+date: 25, July, 2016
 description: >-
   Over the past few weeks, investors around the world have been reeling from the
   shock of seeing
