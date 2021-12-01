@@ -2,7 +2,7 @@
 templateKey: article-post
 author: Mokhriz Mokhtar
 title: Now Is A Good Time To Invest In Unit Trust, Says FIMM
-date: 2016-01-26T04:31:47.653Z
+date: 26, January, 2016
 description: >-
   THE current low market valuation represents a good time for public investors
   to invest in unit trust
