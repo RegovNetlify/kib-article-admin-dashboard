@@ -2,7 +2,7 @@
 templateKey: article-post
 author: "-"
 title: Kenanga Investors Debuts Its Shariah OnePRS Scheme
-date: 2016-08-19T05:34:57.593Z
+date: 19, August, 2016
 description: >-
   KUALA LUMPUR, 19 August 2016: – Kenanga Investors Berhad’s (“Kenanga
   Investors”) has debut
