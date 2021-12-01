@@ -2,7 +2,7 @@
 templateKey: article-post
 author: Sherilyn Goh
 title: Thriving In Adversity
-date: 2016-03-31T06:20:41.417Z
+date: 31, March, 2016
 description: |-
   As Kenanga Investors Group (KIG) celebrates a year of
       remarkable achievements in 2015 amid challenging
