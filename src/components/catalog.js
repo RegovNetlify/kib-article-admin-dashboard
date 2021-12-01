@@ -80,6 +80,15 @@ export const Catalog = (props) => {
     setOpen(!open);
   };
 
+  useEffect(() => {
+    console.log(props.activeTag.tag);
+    if (props.activeTag.tag !== "") {
+      setCatalogLimit(props.articleCardList.length);
+    } else {
+      setCatalogLimit(CATALOG.limit);
+    }
+  }, [props.activeTag]);
+
   const handleToggleTab = (tag, type) => {
     // setActiveTage({
     //   tag:tag,
