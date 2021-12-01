@@ -2,7 +2,7 @@
 templateKey: article-post
 author: "-"
 title: Kenanga Investors Declares Unprecedented Income Distribution Of RM99.68 Million
-date: 2016-06-06T02:04:35.997Z
+date: 06, June, 2016
 description: "Kenanga Investors’ Executive Director and Chief Executive Officer,
   Mr Ismitz Matthew De Alwis said “We are proud to declare an unprecedented
   Income Distribution amounting to RM99.68 Million² for nine funds. "
