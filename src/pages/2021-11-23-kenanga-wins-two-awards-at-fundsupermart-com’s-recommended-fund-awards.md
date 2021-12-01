@@ -2,7 +2,7 @@
 templateKey: article-post
 author: "-"
 title: Kenanga Wins Two Awards At Fundsupermart.com’s Recommended Fund Awards
-date: 2016-07-13T05:32:34.565Z
+date: 13, July, 2016
 description: >-
   KUALA LUMPUR, 13 JULY 2016: – Kenanga Investors Berhad’s (“Kenanga
   Investors”), Kenanga Growth
