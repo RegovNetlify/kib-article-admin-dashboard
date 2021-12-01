@@ -1,6 +1,6 @@
 ---
 templateKey: article-post
-author: Ismitz Matthew De Alwis (test)
+author: "Ismitz Matthew De Alwis "
 title: Enough Talk, More Action.
 date: 18, July, 2016
 description: >-
