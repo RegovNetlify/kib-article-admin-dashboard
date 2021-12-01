@@ -2,7 +2,7 @@
 templateKey: article-post
 author: WEBMASTER
 title: Kenanga Investors Bhd Receives Regional Recognition.
-date: 2016-05-04T06:59:02.822Z
+date: 04, May, 2016
 description: >-
   Kenanga Investors Berhad (Kenanga Investors) was recently awarded the 2015
   Malaysia Rising Star
