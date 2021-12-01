@@ -2,7 +2,7 @@
 templateKey: article-post
 author: Ismitz Matthew De Alwis (test)
 title: Enough Talk, More Action.
-date: 2016-07-18T07:05:05.646Z
+date: 18, July, 2016
 description: >-
   IT is a fact and longheld belief that if you fail to plan, you plan to fail.
   Perhaps this sounds familiar,
