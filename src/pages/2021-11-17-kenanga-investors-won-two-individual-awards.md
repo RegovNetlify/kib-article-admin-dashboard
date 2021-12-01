@@ -2,7 +2,7 @@
 templateKey: article-post
 author: Kuek Ser Kwang Zhe
 title: Kenanga Investors Won Two Individual Awards
-date: 2016-03-28T05:08:56.143Z
+date: 28, March, 2016
 description: |-
   Kenanga Investors Bhd’s winning streak continued at
       The Edge-Thomson Reuters Lipper Fund Awards
