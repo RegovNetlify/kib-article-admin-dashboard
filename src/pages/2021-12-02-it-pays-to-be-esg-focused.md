@@ -2,7 +2,7 @@
 templateKey: article-post
 author: Ismitz Matthew De Alwis
 title: It pays to be ESG-focused
-date: 16, June, 2018
+date: 16, May, 2018
 description: >-
   Putnam Investments which recently reclassified its US$4.3 bil MultiCap
       Growth and US$450 mil MultiCap Value funds to becoming Putnam
