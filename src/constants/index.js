@@ -178,8 +178,8 @@ export const ARTICLECATALOG = {
 
 export const SINGLEARTICLE = {
   name: "Fintech And Asset Management Firms Disrupting Fund Distribution",
-  Heading: "Related Articles",
-  noticeHeading: "Latest Notices",
+  Heading: "Articles",
+  noticeHeading: "Notices",
   date: "November 2, 2020",
   tags: ["The Edge Market"],
   tag: "Tags",

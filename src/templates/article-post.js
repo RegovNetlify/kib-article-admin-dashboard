@@ -5,7 +5,7 @@ import { Helmet } from "react-helmet";
 import { graphql } from "gatsby";
 import { HTMLContent } from "../components/Content";
 import { SINGLEARTICLE } from "../constants";
-import { Banner, BreadCrumb } from "../components";
+import { Banner, BreadCrumb, AnnouncementCard } from "../components";
 
 export const ArticlePostTemplate = ({
   content,
@@ -14,9 +14,95 @@ export const ArticlePostTemplate = ({
   author,
   tags,
   date,
+  allData,
 }) => {
+  const [related, setRelated] = useState([]);
+  const [isRelated, setIsRelated] = useState(true);
+  const isBrowser = typeof window !== "undefined";
+
+  const relatedOnClick = (slug) => {
+    if (isBrowser) {
+      window.location.href = "/slug";
+    }
+  };
+
   let notice = false;
   useEffect(() => {
+    let tempRelated = [...related];
+    console.log(allData.edges);
+    // check for tags matching this article
+    allData.edges.map(({ node }) => {
+      tags.map((tag) => {
+        node.frontmatter.tags.map((t) => {
+          if (
+            t === tag &&
+            node.frontmatter.title !== title &&
+            tempRelated.length < 2
+          ) {
+            if (tempRelated.length !== 0) {
+              tempRelated.map(({ heading }) => {
+                if (heading !== node.frontmatter.title) {
+                  tempRelated.push({
+                    heading: node.frontmatter.title,
+                    slug: node.fields.slug,
+                    tags: node.frontmatter.tags,
+                  });
+                }
+              });
+            } else {
+              tempRelated.push({
+                heading: node.frontmatter.title,
+                slug: node.fields.slug,
+                tags: node.frontmatter.tags,
+              });
+            }
+          }
+        });
+      });
+    });
+    /// if no tags match go for article
+    if (tempRelated.length === 0) {
+      allData.edges.map(({ node }) => {
+        if (
+          node.frontmatter.author &&
+          node.frontmatter.author === author &&
+          node.frontmatter.title !== title
+        ) {
+          if (tempRelated.length !== 0) {
+            tempRelated.map(({ heading }) => {
+              if (heading !== node.frontmatter.title) {
+                tempRelated.push({
+                  heading: node.frontmatter.title,
+                  slug: node.fields.slug,
+                  tags: node.frontmatter.tags,
+                });
+              }
+            });
+          } else {
+            tempRelated.push({
+              heading: node.frontmatter.title,
+              slug: node.fields.slug,
+              tags: node.frontmatter.tags,
+            });
+          }
+        }
+      });
+    }
+    // if neither matches put the latest articles
+    if (tempRelated.length === 0) {
+      allData.edges.map(({ node }, index) => {
+        if (index < 2) {
+          tempRelated.push({
+            heading: node.frontmatter.title,
+            slug: node.fields.slug,
+            tags: node.frontmatter.tags,
+          });
+        }
+      });
+      setIsRelated(true);
+    }
+    console.log(tempRelated);
+    setRelated([...tempRelated]);
     tags.map((tag) => (tag === "notice" ? (notice = true) : null));
   }, []);
   const handlePrint = () => {
@@ -56,18 +142,8 @@ export const ArticlePostTemplate = ({
     heading: title,
   });
 
-  const [related, setRelated] = useState([
-    {
-      heading: "",
-      articleId: 0,
-      tags: [""],
-    },
-  ]);
-
   let pathname = "";
   let { id } = "0";
-
-  const isBrowser = typeof window !== "undefined";
 
   const HandleToogleTag = (tag, type) => {
     if (isBrowser) {
@@ -188,6 +264,28 @@ export const ArticlePostTemplate = ({
         </div>
         {helmet || ""}
       </section>
+      {related.length !== 0 && (
+        <div className="catalog-notices-wrapper ash">
+          <p className="catalog-notices-header">
+            {isRelated ? "Related" : "Latest"}
+            &nbsp;
+            {notice ? SINGLEARTICLE.noticeHeading : SINGLEARTICLE.Heading}
+          </p>
+          <div className="catalog-notice-list">
+            {related.map((data) => {
+              return (
+                <AnnouncementCard
+                  onClick={() => relatedOnClick(data.articleId)}
+                  secondary
+                  tag={notice ? undefined : data.tags}
+                  // heading= {notice.heading}
+                  main={data.heading}
+                />
+              );
+            })}
+          </div>
+        </div>
+      )}
     </Fragment>
   );
 };
@@ -204,6 +302,7 @@ ArticlePostTemplate.propTypes = {
 
 const ArticlePost = ({ data }) => {
   const { markdownRemark: post } = data;
+  const { allMarkdownRemark: allPost } = data;
   return (
     <Layout title="Kenanga Investors">
       <ArticlePostTemplate
@@ -214,6 +313,7 @@ const ArticlePost = ({ data }) => {
         author={post.frontmatter.author}
         tags={post.frontmatter.tags}
         post={post}
+        allData={allPost}
         helmet={
           <Helmet titleTemplate="%s | Blog">
             <title>Kenanga Investors</title>
@@ -231,8 +331,14 @@ const ArticlePost = ({ data }) => {
 
 export default ArticlePost;
 
+ArticlePostTemplate.propTypes = {
+  allData: PropTypes.shape({
+    allMarkdownRemark: PropTypes.object,
+  }),
+};
+
 export const articlePageQuery = graphql`
-  query ArticlePostByID($id: String!) {
+  query allArticlePageQuery($id: String!) {
     markdownRemark(id: { eq: $id }) {
       id
       html
@@ -242,6 +348,28 @@ export const articlePageQuery = graphql`
         description
         tags
         author
+      }
+    }
+    allMarkdownRemark(
+      sort: { order: DESC, fields: [frontmatter___date] }
+      filter: { frontmatter: { templateKey: { eq: "article-post" } } }
+    ) {
+      edges {
+        node {
+          excerpt(pruneLength: 400)
+          id
+          fields {
+            slug
+          }
+          frontmatter {
+            title
+            templateKey
+            date
+            tags
+            author
+            description
+          }
+        }
       }
     }
   }
