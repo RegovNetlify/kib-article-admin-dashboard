@@ -130,7 +130,7 @@ export const Catalog = (props) => {
       {!isMobile && (
         <Banner height={`auto`} img={isMobile ? "" : props.catalogImage}>
           <div className="catalog-banner-text">
-            <p className="catalog-banner-title">{"Articles"}</p>
+            <p className="catalog-banner-title">{"News & Announcements"}</p>
             <p className="catalog-banner-sub-title">
               {ARTICLECATALOG.bannerPara}
             </p>
@@ -141,7 +141,7 @@ export const Catalog = (props) => {
         {!isMobile && (
           <div className="catalog-breadcrumb">
             <BreadCrumb
-              pathName={`/Home/Articles${
+              pathName={`/Home/News & Announcements${
                 props.activeTag.tag === ""
                   ? ""
                   : `${props.activeTag.type === 1 ? `/Categories` : "/Author"}`
@@ -154,7 +154,7 @@ export const Catalog = (props) => {
           <div className="catalog_section">
             <div className="catalog-breadcrumb">
               <BreadCrumb
-                pathName={`/Home/Articles${
+                pathName={`/Home/News & Announcements${
                   props.activeTag.tag === ""
                     ? ""
                     : `${
@@ -163,7 +163,7 @@ export const Catalog = (props) => {
                 }`}
               />
             </div>
-            <p className="catalog-banner-title">{"Articles"}</p>
+            <p className="catalog-banner-title">{"News & Announcements"}</p>
           </div>
         )}
 

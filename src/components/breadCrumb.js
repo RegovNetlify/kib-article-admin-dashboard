@@ -11,7 +11,7 @@ export function BreadCrumb({ pathName }) {
   const handleClick = (tab) => {
     if (tab === "Home") {
       window.location.href = "https://www.dev-kibwebsite.regovdevservices.com/";
-    } else if (tab === "Articles") {
+    } else if (tab === "Articles" || tab === "News & Announcements") {
       sessionStorage.clear();
       window.location.href = "/";
     } else if (tab === "AMP") {
