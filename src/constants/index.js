@@ -458,7 +458,7 @@ export const NEW_FOOTER_INFO_LINKS = [
         link: "https://www.dev-kibwebsite.regovdevservices.com/AboutUs",
       },
       {
-        name: "Our Structure",
+        name: "Corporate Structure",
         link: "https://www.dev-kibwebsite.regovdevservices.com/AboutUs/OurStructure",
         subLink: [
           {
@@ -473,11 +473,11 @@ export const NEW_FOOTER_INFO_LINKS = [
       },
 
       {
-        name: "Our Investment Committee",
+        name: "Investment Committee",
         link: "https://www.dev-kibwebsite.regovdevservices.com/AboutUs/OurInvestmentCommittee",
       },
       {
-        name: "Delegation Function",
+        name: "Shariah Adviser",
         link: "https://www.dev-kibwebsite.regovdevservices.com/AboutUs/DelegationFunction",
         subLink: [
           {
@@ -495,15 +495,11 @@ export const NEW_FOOTER_INFO_LINKS = [
         ],
       },
       {
-        name: "Shariah Adviser",
-        link: "https://www.dev-kibwebsite.regovdevservices.com/AboutUs/DelegationFunction",
-      },
-      {
         name: "Award History",
         link: "https://www.dev-kibwebsite.regovdevservices.com/AboutUs/AwardHistory",
       },
       {
-        name: `Kenanga Group`,
+        name: `Kenanga Investment Bank Berhad`,
         link: "https://www.dev-kibwebsite.regovdevservices.com/AboutUs/KenangaGroup",
       },
     ],
@@ -524,11 +520,11 @@ export const NEW_FOOTER_INFO_LINKS = [
         link: "https://www.dev-kibwebsite.regovdevservices.com/products/wholesale_fund",
       },
       {
-        name: "OnePRS by Kenanga",
+        name: "OnePRS ",
         link: "https://www.dev-kibwebsite.regovdevservices.com/products/one_prs_by_kenanga",
       },
       {
-        name: "OneETF by Kenanga",
+        name: "OneETF & MyETF",
         link: "https://www.dev-kibwebsite.regovdevservices.com/products/one_etf_by_kenanga",
       },
     ],
@@ -536,7 +532,7 @@ export const NEW_FOOTER_INFO_LINKS = [
   {
     heading: "Resources",
     links: [
-      { name: "Articles", link: "/" },
+      { name: "News & Announcements", link: "/" },
       {
         name: "Videos & Webinar",
         link: "",

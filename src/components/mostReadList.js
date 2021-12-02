@@ -38,7 +38,7 @@ export const MostReadList = (props) => {
                 >
                   {list.heading}
                 </div>
-                <div className="mostread-sutext">{list.date}</div>
+                <div className="mostread-sutext">{list.date.replaceAll(",", " ") }</div>
               </div>
             </div>
           );

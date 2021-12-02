@@ -257,7 +257,7 @@ export const CatologIndexPage = ({ data }) => {
           catalogSubSubText={ARTICLECATALOG.catalogSubtext}
           catalogImage={ARTICLECATALOG.banner}
           type="Article"
-          mostReadTitle={"Recent News"}
+          mostReadTitle={"Recent News Update"}
           mostReadList={mostRead}
           articleCardList={articles}
           tags={tags}

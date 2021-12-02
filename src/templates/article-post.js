@@ -26,7 +26,7 @@ export const ArticlePostTemplate = ({
     }
   };
 
-  let notice = false;
+  const [notice, setNotice] = useState(false)
   useEffect(() => {
     let tempRelated = [...related];
     console.log(allData.edges);
@@ -105,7 +105,7 @@ export const ArticlePostTemplate = ({
     }
     console.log(tempRelated);
     setRelated([...tempRelated]);
-    tags.map((tag) => (tag === "notice" ? (notice = true) : null));
+    tags.map((tag) => (tag === "Notice" ? (setNotice(true)) : null));
   }, []);
   const handleNotice = (slug) => {
     // history.push("/SingleArticleNotice")
@@ -285,7 +285,7 @@ export const ArticlePostTemplate = ({
                   onClick={() => handleNotice(data.slug)}
                   handleToggle={HandleToogleTag}
                   secondary
-                  tag={notice ? undefined : data.tags}
+                  tag={data.tags}
                   // heading= {notice.heading}
                   main={data.heading}
                 />

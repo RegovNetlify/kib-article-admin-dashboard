@@ -140,6 +140,7 @@
     /* identical to box height, or 110% */
     letter-spacing: -0.0025em;
     margin-top: 0px;
+    width: 436px;
   }
   
   .catalog-banner-sub-title {
@@ -147,6 +148,7 @@
     font-size: 21px;
     line-height: 32px;
     margin-bottom: 0px;
+    width: 384px;
   }
   .article_wrapper + .footer-horizontal-line {
     margin-top: 0;
