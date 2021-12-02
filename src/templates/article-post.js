@@ -63,27 +63,29 @@ export const ArticlePostTemplate = ({
     /// if no tags match go for article
     if (tempRelated.length === 0) {
       allData.edges.map(({ node }) => {
-        if (
-          node.frontmatter.author &&
-          node.frontmatter.author === author &&
-          node.frontmatter.title !== title
-        ) {
-          if (tempRelated.length !== 0) {
-            tempRelated.map(({ heading }) => {
-              if (heading !== node.frontmatter.title) {
-                tempRelated.push({
-                  heading: node.frontmatter.title,
-                  slug: node.fields.slug,
-                  tags: node.frontmatter.tags,
-                });
-              }
-            });
-          } else {
-            tempRelated.push({
-              heading: node.frontmatter.title,
-              slug: node.fields.slug,
-              tags: node.frontmatter.tags,
-            });
+        if (tempRelated.length < 2) {
+          if (
+            node.frontmatter.author &&
+            node.frontmatter.author === author &&
+            node.frontmatter.title !== title
+          ) {
+            if (tempRelated.length !== 0) {
+              tempRelated.map(({ heading }) => {
+                if (heading !== node.frontmatter.title) {
+                  tempRelated.push({
+                    heading: node.frontmatter.title,
+                    slug: node.fields.slug,
+                    tags: node.frontmatter.tags,
+                  });
+                }
+              });
+            } else {
+              tempRelated.push({
+                heading: node.frontmatter.title,
+                slug: node.fields.slug,
+                tags: node.frontmatter.tags,
+              });
+            }
           }
         }
       });
