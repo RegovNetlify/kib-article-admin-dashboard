@@ -3,7 +3,7 @@ templateKey: article-post
 author: "Lee Sook Yee "
 title: "Post GE14: Short Term Volatility to Present Buying Opportunities Amid
   Longer Term Optimism"
-date: 14, June, 2018
+date: 14, May, 2018
 description: >-
   Commentary by Lee Sook Yee, Chief Investment Officer. 
 
