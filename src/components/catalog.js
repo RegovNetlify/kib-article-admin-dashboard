@@ -317,6 +317,7 @@ export const Catalog = (props) => {
             return (
               <AnnouncementCard
                 onClick={() => handleNotice(notice.slug)}
+                handleToggle={handleToggleTab}
                 secondary
                 tag={notice.tags}
                 // heading= {notice.heading}

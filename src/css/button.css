@@ -30,7 +30,7 @@
     background: transparent;
     color: #a7202c;
   }
-  .secondary:hover {
+  .custom_button.secondary:hover {
     background: #a7202c;
     color: #ffffff;
     border: 0;

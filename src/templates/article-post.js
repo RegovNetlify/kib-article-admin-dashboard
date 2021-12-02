@@ -105,6 +105,11 @@ export const ArticlePostTemplate = ({
     setRelated([...tempRelated]);
     tags.map((tag) => (tag === "notice" ? (notice = true) : null));
   }, []);
+  const handleNotice = (slug) => {
+    // history.push("/SingleArticleNotice")
+    window.scrollTo(0, 0);
+    window.location.pathname = `${slug}`;
+  };
   const handlePrint = () => {
     let content = document.getElementById(
       `${notice ? "notice" : "article"}:${id}`
@@ -275,7 +280,8 @@ export const ArticlePostTemplate = ({
             {related.map((data) => {
               return (
                 <AnnouncementCard
-                  onClick={() => relatedOnClick(data.articleId)}
+                  onClick={() => handleNotice(data.slug)}
+                  handleToggle={HandleToogleTag}
                   secondary
                   tag={notice ? undefined : data.tags}
                   // heading= {notice.heading}
