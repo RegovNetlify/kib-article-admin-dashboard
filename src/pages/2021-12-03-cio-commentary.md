@@ -14,7 +14,7 @@ Markets across the globe tumbled as concerns over the Covid-19 pandemic and oil 
 
 ### Table 1 – Performance of major market indices
 
-![](<>)
+![](/img/2020-03-17-cio-commentary-final.png)
 
 We think markets will continue to be highly volatile with a downward bias in the short term. Hence we increase defensive positioning but also remain selective buyers of quality stocks where we see value emerging. Should there be no further agreement on oil production cuts, we see the possibility of continued weakness in oil price well into the end of 2020, with the most severe impact in 2Q 2020 when demand suffers and supply ramps up.
 
