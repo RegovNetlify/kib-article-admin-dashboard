@@ -2,7 +2,7 @@
 templateKey: article-post
 author: Lee Sook Yee
 title: Commentary On The Current Political Turmoil in Malaysia
-date: 03, December, 2021
+date: 27, February, 2020
 description: The departure of Bersatu and a splinter group from PKR led by its
   deputy president from the Pakatan Harapan (PH) coalition has left the ruling
   coalition with fewer than the 112 MPs required to form a simple majority in
