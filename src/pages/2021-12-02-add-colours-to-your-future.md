@@ -38,6 +38,7 @@ tags:
     used or almost finished.</p>
 
 **Retirement Phases** 
+
 </h3>
 
 <p>The retirement age can be categorised into three phases. The first is the Go-Go Phase (50s and 60s). This
@@ -52,7 +53,7 @@ tags:
     most probably cut back on a lot of your recreational activities while healthcare expenditure increases. Bear
     in mind that medical costs are one of the biggest drivers of inflation in retirement.</p>
 
-![](/img/2018-07-27-the-star-add-colours-to-your-future-2.png)
+![](/img/2018-07-27-the-star-add-colours-to-your-future-3.png)
 
 **The “P” Word</h3>**
 
