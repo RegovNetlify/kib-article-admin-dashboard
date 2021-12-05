@@ -458,15 +458,15 @@ export const NEW_FOOTER_INFO_LINKS = [
         link: "https://www.dev-kibwebsite.regovdevservices.com/AboutUs",
       },
       {
-        name: "Corporate Structure",
+        name: "Structure & Directorate",
         link: "https://www.dev-kibwebsite.regovdevservices.com/AboutUs/OurStructure",
         subLink: [
           {
-            name: "Our Directorate",
+            name: "Board of Directors",
             link: "https://www.dev-kibwebsite.regovdevservices.com/AboutUs/OurStructure#tab",
           },
           {
-            name: "Our Personnel Professional",
+            name: "Key Personnel",
             link: "https://www.dev-kibwebsite.regovdevservices.com/AboutUs/OurStructure/PersonnelProfessional#tab",
           },
         ],
@@ -562,16 +562,16 @@ export const NEW_FOOTER_INFO_LINKS = [
       {
         name: "Calculators",
         link: "https://www.dev-kibwebsite.regovdevservices.com/Retirement Calculator",
-        subLink: [
-          {
-            name: "Retirement Calculator",
-            link: "https://www.dev-kibwebsite.regovdevservices.com/Retirement Calculator",
-          },
-          {
-            name: "EPF Calculator",
-            link: "https://www.dev-kibwebsite.regovdevservices.com/EPF Calculator",
-          },
-        ],
+        // subLink: [
+        //   {
+        //     name: "Retirement Calculator",
+        //     link: "https://www.dev-kibwebsite.regovdevservices.com/Retirement Calculator",
+        //   },
+        //   {
+        //     name: "EPF Calculator",
+        //     link: "https://www.dev-kibwebsite.regovdevservices.com/EPF Calculator",
+        //   },
+        // ],
       },
     ],
   },
