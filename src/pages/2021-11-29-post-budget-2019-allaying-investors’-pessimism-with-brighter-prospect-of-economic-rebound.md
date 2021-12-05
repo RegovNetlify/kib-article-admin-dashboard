@@ -13,7 +13,7 @@ description: >-
       as well as the rolling out of reform initiatives to turnaround the Malaysian economy amid
       uncertainties of sorts in the external environment.
 tags:
-  - "-"
+  - Kenanga
 ---
 **Commentary by Ismitz Matthew De Alwis, Chief Executive Officer/Executive
     Director**

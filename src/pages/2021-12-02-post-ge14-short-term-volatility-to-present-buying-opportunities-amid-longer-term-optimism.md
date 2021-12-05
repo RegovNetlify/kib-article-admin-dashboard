@@ -11,7 +11,7 @@ description: >-
       121 (including Warisan) out of the 222 parliamentary seats and ending the 61-year political era
       ruled by BN
 tags:
-  - "-"
+  - Kenanga
 ---
 <p>The opposition coalition, led by former PM Tun Dr Mahathir, has claimed victory in GE14, winning
     121 (including Warisan) out of the 222 parliamentary seats and ending the 61-year political era
