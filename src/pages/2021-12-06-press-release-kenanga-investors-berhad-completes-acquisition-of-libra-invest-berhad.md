@@ -1,8 +1,7 @@
 ---
 templateKey: article-post
 author: "-"
-title: "Press Release - Kenanga Investors Berhad Completes Acquisition of Libra
-  Invest Berhad "
+title: "Kenanga Investors Berhad Completes Acquisition of Libra Invest Berhad "
 date: 08, July, 2019
 description: >
   Kenanga Investors Berhad (“KIB”) today completed the acquisition of 100%
@@ -10,7 +9,7 @@ description: >
   ECM Libra Financial Group Berhad, in accordance with the conditional share
   purchase agreement dated 28 March 2019.
 tags:
-  - Notice
+  - Press Release
 ---
 ### PRESS RELEASE FOR IMMEDIATE RELEASE
 
