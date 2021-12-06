@@ -290,7 +290,7 @@ export default CatologIndexPage;
 export const catalogQuery = graphql`
   query CatologIndexPageQuery {
     allMarkdownRemark(
-      sort: { order: DESC, fields: [frontmatter___date] }
+      sort: { order: ASC, fields: [frontmatter___date] }
       filter: { frontmatter: { templateKey: { eq: "article-post" } } }
     ) {
       edges {
