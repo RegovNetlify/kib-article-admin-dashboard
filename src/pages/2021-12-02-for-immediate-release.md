@@ -1,14 +1,20 @@
 ---
 templateKey: article-post
 author: "-"
-title: For Immediate Release
+title: MARC affirms IMR-2 rating on Kenanga Investors and Kenanga Islamic
+  Investors for 2nd year in a row
 date: 16, May, 2018
-description: >-
-  MARC has affirmed its investment manager rating (IMR) of IMR-2 on Kenanga
-  Investors Berhad
-      (KIB) and on Kenanga Islamic Investors Berhad (KIIB)
+description: >
+  Kenanga Investors Berhad and Kenanga Islamic Investors Berhad have been
+  affirmed investment manager rating (IMR) of IMR-2 by the Malaysian Rating
+  Corporation Berhad (MARC). It is a testament of its well-established
+  investment processes, sound risk management and strong operating track
+  record. 
+
+
+  Ratings received were based on the investment manager's standing and reputation in the industry, the depth of its investment expertise, the robustness of its portfolio management as well as risk management infrastructure processes, track record and governance arrangements. 
 tags:
-  - Press Announcement
+  - Press Release
 ---
 **MARC Affirms Investment Manager Rating Of IMR-2 On Kenanga
     Investors Berhad And Kenanga Islamic Investors Berhad</h2>**
