@@ -1,8 +1,7 @@
 ---
 templateKey: article-post
 author: "-"
-title: Press Release - Kenanga Growth Fund Named Most Outstanding Unit Trust for
-  10-Years
+title: Kenanga Growth Fund Named Most Outstanding Unit Trust for 10-Years
 date: 12, July, 2019
 description: >
   We are pleased to announce that Kenanga Investors Berhad (Kenanga Investors)
@@ -14,7 +13,7 @@ description: >
   consecutive year, while Kenanga OnePRS Conservative Fund (“KOCF”) won the
   Private Retirement Scheme – Conservative title.
 tags:
-  - Notice
+  - Press Release
 ---
 ### PRESS RELEASE FOR IMMEDIATE RELEASE
 
