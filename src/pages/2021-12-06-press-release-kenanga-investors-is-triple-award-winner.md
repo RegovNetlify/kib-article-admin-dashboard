@@ -1,13 +1,13 @@
 ---
 templateKey: article-post
 author: "-"
-title: "Press Release: Kenanga Investors is Triple Award Winner "
+title: "Kenanga Investors is Triple Award Winner "
 date: 16, May, 2019
 description: Kenanga Investors Berhad was awarded Best Equity Manager, Best
   Wealth Management Platform & Best Investor Education at 2019 Best of the Best
   Awards by Asia Asset Management awards ceremony.
 tags:
-  - Notice
+  - Press Release
 ---
 ### PRESS RELEASE FOR IMMEDIATE RELEASE
 
