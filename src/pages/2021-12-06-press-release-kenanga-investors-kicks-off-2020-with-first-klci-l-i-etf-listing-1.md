@@ -1,18 +1,18 @@
 ---
 templateKey: article-post
 author: "-"
-title: Press Release - Kenanga Investors Kicks off 2020 with First KLCI L&I ETF
-  Listing
-date: 13, January, 2020
-description: >
-  Kenanga Investors Berhad (“Kenanga Investors”) the asset management arm of
-  Kenanga Investment Bank Berhad announced the listing of OneETF by Kenanga
-  (“OneETF”) on the Main Market of Bursa Malaysia Securities Berhad today, which
-  signals the company’s first foray into exchange-traded funds (“ETF”) by means
-  of leveraged and inverse ETFs. The Kenanga KLCI Daily 2X Leveraged ETF
-  (KLCI2XL) and the Kenanga KLCI Daily (-1X) Inverse ETF (KLCI1XI) are the first
-  L&I ETFs to be benchmarked against the FTSE Bursa KLCI (“KLCI”) and the
-  first  ETF listing of the new decade on the local bourse.
+title: "Press Release: MARC affirms IMR-2 rating on KIB and KIIB for 4th
+  consecutive year"
+date: 24, February, 2020
+description: "Kenanga Investors Berhad (KIB) and Kenanga Islamic Investors
+  Berhad (KIIB) have been affirmed investment manager ratings (IMR) of IMR-2 by
+  the Malaysian Rating Corporation Berhad (MARC) for the 4th consecutive year.
+  The IMR rating reflects KIB’s well-established investment processes, sound
+  risk management practices and strong operating track record as well as KIIB’s
+  significant integration with KIB through shared resources and infrastructure.
+  MARC also highlighted that KIB’s average one-year, three-year and five-year
+  annualised returns for its top 20 largest unit trust funds outperformed its
+  benchmarks in 2019.  "
 tags:
   - Notice
 ---
