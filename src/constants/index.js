@@ -455,30 +455,30 @@ export const NEW_FOOTER_INFO_LINKS = [
     links: [
       {
         name: "Who We Are",
-        link: "https://www.dev-kibwebsite.regovdevservices.com/AboutUs",
+        link: "https://www.dev-kibwebsite.regovdevservices.com/AboutUs/WhoWEAre",
       },
       {
         name: "Structure & Directorate",
-        link: "https://www.dev-kibwebsite.regovdevservices.com/AboutUs/OurStructure",
+        link: "https://www.dev-kibwebsite.regovdevservices.com/AboutUs/StructureDirectorate",
         subLink: [
           {
             name: "Board of Directors",
-            link: "https://www.dev-kibwebsite.regovdevservices.com/AboutUs/OurStructure#tab",
+            link: "https://www.dev-kibwebsite.regovdevservices.com/AboutUs/StructureDirectorate#tab",
           },
           {
             name: "Key Personnel",
-            link: "https://www.dev-kibwebsite.regovdevservices.com/AboutUs/OurStructure/PersonnelProfessional#tab",
+            link: "https://www.dev-kibwebsite.regovdevservices.com/AboutUs/StructureDirectorate/PersonnelProfessional#tab",
           },
         ],
       },
 
       {
         name: "Investment Committee",
-        link: "https://www.dev-kibwebsite.regovdevservices.com/AboutUs/OurInvestmentCommittee",
+        link: "https://www.dev-kibwebsite.regovdevservices.com/AboutUs/InvestmentCommittee",
       },
       {
         name: "Shariah Adviser",
-        link: "https://www.dev-kibwebsite.regovdevservices.com/AboutUs/DelegationFunction",
+        link: "https://www.dev-kibwebsite.regovdevservices.com/AboutUs/ShariahAdviser",
         subLink: [
           {
             name: "External Fund Manager",
@@ -486,7 +486,7 @@ export const NEW_FOOTER_INFO_LINKS = [
           },
           {
             name: "Shariah Adviser",
-            link: "https://www.dev-kibwebsite.regovdevservices.com/AboutUs/DelegationFunction",
+            link: "https://www.dev-kibwebsite.regovdevservices.com/AboutUs/ShariahAdviser",
           },
           {
             name: "Trustee",
@@ -500,7 +500,7 @@ export const NEW_FOOTER_INFO_LINKS = [
       },
       {
         name: `Kenanga Investment Bank Berhad`,
-        link: "https://www.dev-kibwebsite.regovdevservices.com/AboutUs/KenangaGroup",
+        link: "https://www.dev-kibwebsite.regovdevservices.com/AboutUs/KenangaInvestmentBankBerhad",
       },
     ],
   },
