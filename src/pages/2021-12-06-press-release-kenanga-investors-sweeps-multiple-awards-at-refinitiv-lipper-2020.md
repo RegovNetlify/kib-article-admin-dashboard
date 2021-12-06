@@ -1,8 +1,7 @@
 ---
 templateKey: article-post
 author: "-"
-title: Press Release - Kenanga Investors Sweeps Multiple Awards at Refinitiv
-  Lipper 2020
+title: Kenanga Investors Sweeps Multiple Awards at Refinitiv Lipper 2020
 date: 06, December, 2021
 description: Kenanga Investors Berhad picked up a total of five (5) awards at
   the Refinitiv Lipper Fund Awards 2020. As a fund manager, we won the 2 Group
@@ -14,7 +13,7 @@ description: Kenanga Investors Berhad picked up a total of five (5) awards at
   MYR Flexible - Malaysia Pension, 5 years” and “Mixed Asset MYR Flexible –
   Malaysia Pension, 3 years”.
 tags:
-  - Notice
+  - Press Release
 ---
 ### PRESS RELEASE FOR IMMEDIATE RELEASE
 
