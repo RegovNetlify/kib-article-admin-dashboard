@@ -1,7 +1,7 @@
 ---
 templateKey: article-post
 author: "-"
-title: Press Release - Kenanga Investors Wins Malaysia Best Equity Over 10-Years
+title: Kenanga Investors Wins Malaysia Best Equity Over 10-Years
 date: 06, December, 2021
 description: We are pleased to announce that the Kenanga Syariah Growth Fund was
   named Malaysia Best Equity Fund over 10-years at the recent renowned Refinitiv
@@ -11,7 +11,7 @@ description: We are pleased to announce that the Kenanga Syariah Growth Fund was
   won over the years, which further reaffirms the breadth of our investment
   capabilities.
 tags:
-  - Notice
+  - Press Release
 ---
 ### PRESS RELEASE FOR IMMEDIATE RELEASE
 
