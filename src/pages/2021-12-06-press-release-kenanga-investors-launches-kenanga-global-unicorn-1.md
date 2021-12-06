@@ -1,7 +1,7 @@
 ---
 templateKey: article-post
 author: "-"
-title: "Press Release: Kenanga Investors Launches Kenanga Global Unicorn 1"
+title: Kenanga Investors Launches Kenanga Global Unicorn 1
 date: 17, June, 2019
 description: Kenanga Investors Berhad (“Kenanga Investors”) has launched Kenanga
   Global Unicorn 1 (KGU1, “the Fund”). The Fund feeds into the Ericsenz-K2
@@ -9,7 +9,7 @@ description: Kenanga Investors Berhad (“Kenanga Investors”) has launched Ken
   superior medium term returns by investing primarily in the securities of
   unicorn companies.
 tags:
-  - Notice
+  - Press Release
 ---
 ### PRESS RELEASE FOR IMMEDIATE RELEASE
 
