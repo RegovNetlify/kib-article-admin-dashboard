@@ -1,14 +1,13 @@
 ---
 templateKey: article-post
 author: "-"
-title: Press Release - Kenanga Investors - Libra Invest Consolidation Exercise
-  Completed
+title: Kenanga Investors - Libra Invest Consolidation Exercise Completed
 date: 02, December, 2019
 description: "Kenanga Investors Berhad (“KIB”) the asset management arm of
   Kenanga Investment Bank Berhad has completed its business consolidation
   exercise with its wholly owned subsidiary, Libra Invest Berhad (“LIB”). "
 tags:
-  - Notice
+  - Press Release
 ---
 ### PRESS RELEASE FOR IMMEDIATE RELEASE
 
