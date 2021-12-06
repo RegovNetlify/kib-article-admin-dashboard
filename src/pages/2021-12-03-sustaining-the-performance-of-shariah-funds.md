@@ -2,7 +2,7 @@
 templateKey: article-post
 author: Khairani Afifi Noordin
 title: Sustaining the Performance of Shariah Funds
-date: 03, December, 2021
+date: 04, September, 2020
 description: Shariah-compliant investments are known to be resilient and even
   tend to perform better than their conventional peers in troubled times. This
   was proven during the first half of the year, when the average returns of
