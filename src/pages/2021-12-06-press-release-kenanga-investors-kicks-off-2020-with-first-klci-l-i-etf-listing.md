@@ -4,14 +4,14 @@ author: "-"
 title: Press Release - Kenanga Investors Kicks off 2020 with First KLCI L&I ETF
   Listing
 date: 13, January, 2020
-description: Kenanga Investors Berhad (“Kenanga Investors”) the asset management
-  arm of Kenanga Investment Bank Berhad announced the listing of OneETF by
-  Kenanga (“OneETF”) on the Main Market of Bursa Malaysia Securities Berhad
-  today, which signals the company’s first foray into exchange-traded funds
-  (“ETF”) by means of leveraged and inverse ETFs. The Kenanga KLCI Daily 2X
-  Leveraged ETF (KLCI2XL) and the Kenanga KLCI Daily (-1X) Inverse ETF (KLCI1XI)
-  are the first L&I ETFs to be benchmarked against the FTSE Bursa KLCI (“KLCI”)
-  and the first  ETF listing of the new decade on the local bourse.
+description: "Kenanga Investors Berhad (“Kenanga Investors”) the asset
+  management arm of Kenanga Investment Bank Berhad announced the listing of
+  OneETF by Kenanga (“OneETF”) on the Main Market of Bursa Malaysia Securities
+  Berhad today, which signals the company’s first foray into exchange-traded
+  funds (“ETF”) by means of leveraged and inverse ETFs. The Kenanga KLCI Daily
+  2X Leveraged ETF (KLCI2XL) and the Kenanga KLCI Daily (-1X) Inverse ETF
+  (KLCI1XI) are the first L&I ETFs to be benchmarked against the FTSE Bursa KLCI
+  (“KLCI”) and the first  ETF listing of the new decade on the local bourse. "
 tags:
   - Notice
 ---
