@@ -1,7 +1,7 @@
 ---
 templateKey: article-post
 author: "-"
-title: "Press Release: Kenanga Acquires ValueCap ETF Business"
+title: Kenanga Acquires ValueCap ETF Business
 date: 04, February, 2021
 description: "Kenanga Investment Bank Berhad announced that it is acquiring
   i-VCAP Management Sdn Bhd (“i-VCAP”), via Kenanga Investors Bhd, its fully
@@ -14,7 +14,7 @@ description: "Kenanga Investment Bank Berhad announced that it is acquiring
   Yuanta Securities, the largest ETFs provider in Taiwan and a leading ETFs
   provider in Asia. "
 tags:
-  - Notice
+  - Press Release
 ---
 ### PRESS RELEASE FOR IMMEDIATE RELEASE
 
