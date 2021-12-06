@@ -1,8 +1,7 @@
 ---
 templateKey: article-post
 author: "-"
-title: "Press Release: MARC affirms IMR-2 rating on KIB and KIIB for 4th
-  consecutive year"
+title: MARC affirms IMR-2 rating on KIB and KIIB for 4th consecutive year
 date: 24, February, 2020
 description: "Kenanga Investors Berhad (KIB) and Kenanga Islamic Investors
   Berhad (KIIB) have been affirmed investment manager ratings (IMR) of IMR-2 by
@@ -14,7 +13,7 @@ description: "Kenanga Investors Berhad (KIB) and Kenanga Islamic Investors
   annualised returns for its top 20 largest unit trust funds outperformed its
   benchmarks in 2019.  "
 tags:
-  - Notice
+  - Press Release
 ---
 ![](/img/2018-05-16-marc-rating-2018.png)
 
