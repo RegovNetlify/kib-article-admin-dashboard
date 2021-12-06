@@ -1,7 +1,7 @@
 ---
 templateKey: article-post
 author: "-"
-title: Press Release - Kenanga Investors' Unicorn Fund Returns On High Demand
+title: Kenanga Investors' Unicorn Fund Returns On High Demand
 date: 06, November, 2019
 description: >
   Kenanga Investors Berhad has launched Kenanga Global Unicorn 2 (“KGU2”, “the
@@ -12,7 +12,7 @@ description: >
   to initial public offering (“IPO”) - ready entities, otherwise known as
   “unicorns. 
 tags:
-  - Notice
+  - Press Release
 ---
 ### PRESS RELEASE FOR IMMEDIATE RELEASE
 
