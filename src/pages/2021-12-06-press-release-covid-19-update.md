@@ -1,14 +1,14 @@
 ---
 templateKey: article-post
 author: "-"
-title: Press Release - COVID-19 Update
+title: COVID-19 Update
 date: 16, October, 2020
 description: "Kenanga Investment Bank Berhad confirms that one of its non-client
   facing employees, based at Kenanga Tower on Jalan Tun Razak, Kuala Lumpur, has
   tested positive for COVID-19. The employee has been on medical leave since 14
   October 2020, and is currently being treated at a government hospital. "
 tags:
-  - Notice
+  - Press Release
 ---
 ### PRESS RELEASE FOR IMMEDIATE RELEASE
 
