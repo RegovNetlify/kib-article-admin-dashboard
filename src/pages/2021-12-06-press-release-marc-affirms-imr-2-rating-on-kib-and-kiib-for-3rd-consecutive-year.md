@@ -1,8 +1,7 @@
 ---
 templateKey: article-post
 author: "-"
-title: "Press Release: MARC affirms IMR-2 rating on KIB and KIIB for 3rd
-  consecutive year "
+title: "MARC affirms IMR-2 rating on KIB and KIIB for 3rd consecutive year "
 date: 09, April, 2019
 description: "Kenanga Investors Berhad (KIB) and Kenanga Islamic Investors
   Berhad (KIIB) have been affirmed investment manager ratings (IMR) of IMR-2 by
@@ -10,7 +9,7 @@ description: "Kenanga Investors Berhad (KIB) and Kenanga Islamic Investors
   It is a testament to both entities' well-established investment processes,
   sound risk management and strong operating track record. "
 tags:
-  - Notice
+  - Press Release
 ---
 ![](/img/2019-04-09-pr-marc-rating.png)
 
