@@ -3,11 +3,9 @@ templateKey: article-post
 author: "-"
 title: "Press Release: Kenanga Investors is Triple Award Winner "
 date: 16, May, 2019
-description: "Kenanga Investors Berhad (KIB) and Kenanga Islamic Investors
-  Berhad (KIIB) have been affirmed investment manager ratings (IMR) of IMR-2 by
-  the Malaysian Rating Corporation Berhad (MARC) for the third consecutive year.
-  It is a testament to both entities' well-established investment processes,
-  sound risk management and strong operating track record. "
+description: Kenanga Investors Berhad was awarded Best Equity Manager, Best
+  Wealth Management Platform & Best Investor Education at 2019 Best of the Best
+  Awards by Asia Asset Management awards ceremony.
 tags:
   - Notice
 ---
