@@ -1,8 +1,7 @@
 ---
 templateKey: article-post
 author: "-"
-title: Press Release - Kenanga Investors Kicks off 2020 with First KLCI L&I ETF
-  Listing
+title: Kenanga Investors Kicks off 2020 with First KLCI L&I ETF Listing
 date: 13, January, 2020
 description: "Kenanga Investors Berhad (“Kenanga Investors”) the asset
   management arm of Kenanga Investment Bank Berhad announced the listing of
@@ -13,7 +12,7 @@ description: "Kenanga Investors Berhad (“Kenanga Investors”) the asset
   (KLCI1XI) are the first L&I ETFs to be benchmarked against the FTSE Bursa KLCI
   (“KLCI”) and the first  ETF listing of the new decade on the local bourse. "
 tags:
-  - Notice
+  - Press Release
 ---
 ### PRESS RELEASE FOR IMMEDIATE RELEASE
 
