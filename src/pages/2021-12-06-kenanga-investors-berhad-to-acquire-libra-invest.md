@@ -3,12 +3,11 @@ templateKey: article-post
 author: "-"
 title: "Press Release: Kenanga Investors Berhad to acquire Libra Invest "
 date: 28, March, 2019
-description: "Kuala Lumpur, 28 March 2019: Kenanga Investment Bank Berhad
-  (“Kenanga Investment Bank”) today announced that its asset management
-  subsidiary, Kenanga Investors Berhad (“KIB”) has entered into a conditional
-  Share Purchase Agreement with ECM Libra Financial Group Berhad to acquire the
-  entire issued share capital, comprising 6,500,000 ordinary shares, of its fund
-  management arm, Libra Invest Berhad (“Libra Invest”)."
+description: Kenanga Investment Bank Berhad (“Kenanga Investment Bank”) today
+  announced that its asset management subsidiary, Kenanga Investors Berhad
+  (“KIB”) has entered into a conditional Share Purchase Agreement with ECM Libra
+  Financial Group Berhad to acquire its fund management arm, Libra Invest Berhad
+  (“Libra Invest”).
 tags:
   - Notice
 ---
