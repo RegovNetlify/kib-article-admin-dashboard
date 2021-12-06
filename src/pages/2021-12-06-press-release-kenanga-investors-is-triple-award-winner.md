@@ -15,7 +15,7 @@ tags:
 
 ## Kenanga Investors Berhad Awarded Best Equity Manager, Best Wealth Management Platform & Best Investor Education
 
-![](<>)
+![](/img/2019-05-12-press-release-bob-awards-by-aam-2019.png)
 
 KUALA LUMPUR, 13 MAY 2019 – Kenanga Investors Berhad (Kenanga Investors) walked away with three awards at the 2019 Best of the Best Awards by Hong Kong-based Asia Asset Management held in Singapore recently. The fund house was awarded Malaysia Best Equity Manager, Malaysia Best Wealth Management Platform and Malaysia Best Investor Education.
 
