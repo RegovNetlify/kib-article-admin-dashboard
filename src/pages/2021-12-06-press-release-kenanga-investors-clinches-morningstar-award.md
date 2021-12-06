@@ -2,7 +2,7 @@
 templateKey: article-post
 author: "-"
 title: "Press Release: Kenanga Investors clinches Morningstar award"
-date: 06, December, 2021
+date: 01, April, 2019
 description: KUALA LUMPUR, 1 APRIL 2019 – Kenanga Investors Berhad (Kenanga
   Investors) was awarded the Best Malaysia Large-Cap Equity Fund for the Kenanga
   Blue Chip Fund (“KBCF”) at the Morningstar Awards 2019 ceremony.
