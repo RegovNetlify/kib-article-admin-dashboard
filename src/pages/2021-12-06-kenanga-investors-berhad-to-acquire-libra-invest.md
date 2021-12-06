@@ -1,7 +1,7 @@
 ---
 templateKey: article-post
 author: "-"
-title: "Press Release: Kenanga Investors Berhad to acquire Libra Invest "
+title: "Kenanga Investors Berhad to acquire Libra Invest "
 date: 28, March, 2019
 description: Kenanga Investment Bank Berhad (“Kenanga Investment Bank”) today
   announced that its asset management subsidiary, Kenanga Investors Berhad
@@ -9,7 +9,7 @@ description: Kenanga Investment Bank Berhad (“Kenanga Investment Bank”) toda
   Financial Group Berhad to acquire its fund management arm, Libra Invest Berhad
   (“Libra Invest”).
 tags:
-  - Notice
+  - Press Release
 ---
 ### PRESS RELEASE FOR IMMEDIATE RELEASE
 
