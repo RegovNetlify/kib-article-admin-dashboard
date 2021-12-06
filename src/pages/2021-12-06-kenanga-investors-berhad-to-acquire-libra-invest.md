@@ -1,8 +1,8 @@
 ---
 templateKey: article-post
 author: "-"
-title: "# Kenanga Investors Berhad To Acquire Libra Invest"
-date: 06, December, 2021
+title: "Press Release: Kenanga Investors Berhad to acquire Libra Invest "
+date: 28, March, 2019
 description: "Kuala Lumpur, 28 March 2019: Kenanga Investment Bank Berhad
   (“Kenanga Investment Bank”) today announced that its asset management
   subsidiary, Kenanga Investors Berhad (“KIB”) has entered into a conditional
