@@ -2,7 +2,7 @@
 templateKey: article-post
 author: "-"
 title: "Ask The Experts: 2H2017 Market Outlook: Will The Run Continue?"
-date: 01, August, 2017
+date: 01 August 2017
 description: "-"
 tags:
   - Fundsupermart

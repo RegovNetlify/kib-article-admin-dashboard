@@ -2,7 +2,7 @@
 templateKey: article-post
 author: Ismitz Matthew De Alwis
 title: AI A Driving Force To Fund Management Industry
-date: 21, March, 2018
+date: 21 March 2018
 description: |-
   AT its recent Malaysia FutureScape event in Kuala Lumpur, the
       International Data Corporation (IDC) has revealed that two out of three

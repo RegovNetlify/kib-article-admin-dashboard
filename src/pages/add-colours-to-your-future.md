@@ -2,7 +2,7 @@
 templateKey: article-post
 author: Ismitz Matthew De Alwis
 title: Add Colours To Your Future
-date: 27, July, 2018
+date: 27 July 2018
 description: >-
   DOES the thought of retirement cause anxiety or the exact opposite –
   indifference? While the idea of

@@ -2,7 +2,7 @@
 templateKey: article-post
 author: Ismitz Matthew De Alwis
 title: A Clarion Call That Business & Politics Don’t Mix
-date: 22, June, 2018
+date: 22 June 2018
 description: >-
   “I CAN’T change the direction of the wind, but I can adjust my sails to always
   reach my destination.” This

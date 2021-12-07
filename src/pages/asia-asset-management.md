@@ -2,7 +2,7 @@
 templateKey: article-post
 author: Goh Thean Eu
 title: Asia Asset Management
-date: 01, May, 2018
+date: 01 May 2018
 description: >-
   Over the past few years, Kenanga Investors Group (KIG) has grown into a force
   to be

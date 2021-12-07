@@ -2,7 +2,7 @@
 templateKey: article-post
 author: Lee Sook Yee
 title: All That Doom & Gloom
-date: 02, August, 2018
+date: 02 August 2018
 description: |-
   Fiscal consolidation measures, institutional
       reform and strong consumer sentiment likely

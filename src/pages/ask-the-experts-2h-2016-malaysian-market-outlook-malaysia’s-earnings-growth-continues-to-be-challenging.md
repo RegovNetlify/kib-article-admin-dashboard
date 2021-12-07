@@ -3,7 +3,7 @@ templateKey: article-post
 author: "-"
 title: Ask The Experts:2H 2016 Malaysian Market Outlook - Malaysia’s Earnings
   Growth Continues to be Challenging.
-date: 15, August, 2016
+date: 15 August 2016
 description: >-
   Malaysia’s GDP has been moderating with the first quarter of 2016 coming in at
   4.2% y-o-y

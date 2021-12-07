@@ -2,7 +2,7 @@
 templateKey: article-post
 author: "-"
 title: Appointment of Shariah Adviser of the Fund and Variation to the PRS Guidelines
-date: 20, February, 2019
+date: 20 February 2019
 description: Please be informed that we have appointed Kenanga Investment Bank
   Berhad as the new Shariah Adviser of the Fund effective 1 January 2019 and
   have amended the information in the First Replacement Disclosure Document

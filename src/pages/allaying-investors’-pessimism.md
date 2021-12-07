@@ -2,7 +2,7 @@
 templateKey: article-post
 author: Ismitz Matthew De Alwis
 title: Allaying Investors’ Pessimism
-date: 12, November, 2018
+date: 12 November 2018
 description: >-
   Budget 2019 has been a surprise in that it turned out to be another
   expansionary

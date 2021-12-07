@@ -311,36 +311,36 @@ export const NAVBAR = {
 export const LoginCardData = {
   buttonText: "Visit",
   main: "eAccess",
-  sub: "Lorem ipsum dolor sit amet",
+  sub: "Stay connected always, by accessing our products and services from wherever you are.",
   visitCard: [
     {
       header: "OMNI",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
+        "An integrated and dynamic investment management system for today's investors.",
       href: "",
     },
     {
       header: "KenEASY",
       description:
-        "Allow clients convenient access to view their financial portfolios. It is accessible 24 hours a day.",
+        "View your investment portfolio and receive transaction notifications or service updates easily.",
       href: "https://www.kenangainvestors.com.my/KenEasy/KIB.Application.Web/",
     },
     {
       header: "AIMs",
       description:
-        "Adviser-Investor Management System (AIMs) provides agents to handle performance and 24x7 access productivity.",
+        "Our Adviser-Investor Management System is a powerful client management platform that supports performance-driven portfolio management services.",
       href: "https://www.kenangainvestors.com.my/aims/kib.application.web/aimsdefault/default.aspx",
     },
     {
       header: "Kenanga i-Invest",
       description:
-        "Invest in our EPF Approved Funds online using the EPF i-Invest facility within the i-Akaun (Member) platform.",
+        "Invest with us using the EPF i-Invest facility within the i-Akaun (Member) platform for portfolio diversification",
       href: "https://secure.kwsp.gov.my/member/member/login",
     },
     {
       header: "PRS Online Enrolment",
       description:
-        "Service developed by PPA for our clients to select our OnePRS funds and save for their future in Private Retirement Scheme.",
+        "Contribute towards a colourful retirement by investing in OnePRS by Kenanga with the PRS Online Enrolment service.",
       href: "https://prsenrolment.ppa.my/kenanga/",
     },
   ],

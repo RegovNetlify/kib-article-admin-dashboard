@@ -2,7 +2,7 @@
 templateKey: article-post
 author: Stephanie Jacob
 title: Asia On The Rise Again
-date: 28, December, 2016
+date: 28 December 2016
 description: |-
   INVESTOR sentiment for emerging
       markets – including those in Asia – has

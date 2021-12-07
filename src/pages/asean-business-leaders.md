@@ -2,7 +2,7 @@
 templateKey: article-post
 author: "-"
 title: ASEAN Business Leaders
-date: 21, February, 2018
+date: 21 February 2018
 description: >-
   The Association of Southeast Asian Nations (ASEAN) is the sixth-largest
   economy in the
