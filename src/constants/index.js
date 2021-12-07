@@ -334,7 +334,7 @@ export const LoginCardData = {
     {
       header: "Kenanga i-Invest",
       description:
-        "Invest with us using the EPF i-Invest facility within the i-Akaun (Member) platform for portfolio diversification",
+        "Invest with us using the EPF i-Invest facility within the i-Akaun (Member) platform for portfolio diversification.",
       href: "https://secure.kwsp.gov.my/member/member/login",
     },
     {
