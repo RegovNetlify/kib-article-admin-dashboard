@@ -3,14 +3,13 @@ templateKey: article-post
 author: Lee Sook Yee
 title: Commentary on Post-US Presidential Election
 date: 06, December, 2021
-description: >-
-  On Tuesday 8th November 2016, Donald Trump staged a surprise victory over
-  Hillary in the now
-      concluded U.S Presidential Elections. The initial market reaction was a sharp knee-jerk risk
-      aversion as investors grappled with the uncertain policy outlook in US as Trump was widely
-      perceived as a wildcard candidate.
+description: On Tuesday 8th November 2016, Donald Trump staged a surprise
+  victory over Hillary in the now concluded U.S Presidential Elections. The
+  initial market reaction was a sharp knee-jerk risk aversion as investors
+  grappled with the uncertain policy outlook in US as Trump was widely perceived
+  as a wildcard candidate.
 tags:
-  - "-"
+  - Kenanga
 ---
 **Market Review</h3>**
 
