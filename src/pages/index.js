@@ -10,6 +10,7 @@ import { useEffect } from "react";
 
 export const CatologIndexPage = ({ data }) => {
   const { allMarkdownRemark: post } = data;
+  console.log(post);
   const isBrowser = typeof window !== "undefined";
   let activeTagState = "";
 
@@ -290,7 +291,7 @@ export default CatologIndexPage;
 export const catalogQuery = graphql`
   query CatologIndexPageQuery {
     allMarkdownRemark(
-      sort: { order: ASC, fields: [frontmatter___date] }
+      sort: { fields: [frontmatter___date], order: ASC }
       filter: { frontmatter: { templateKey: { eq: "article-post" } } }
     ) {
       edges {
