@@ -2,7 +2,7 @@
 templateKey: article-post
 author: Lee Sook Yee
 title: Commentary on Post-US Presidential Election
-date: 06, December, 2021
+date: 14, November, 2016
 description: On Tuesday 8th November 2016, Donald Trump staged a surprise
   victory over Hillary in the now concluded U.S Presidential Elections. The
   initial market reaction was a sharp knee-jerk risk aversion as investors
