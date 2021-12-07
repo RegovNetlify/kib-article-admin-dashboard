@@ -103,7 +103,7 @@ export const NavBar = () => {
           />
         </div>
 
-        <Modal open={showModal} paddingTop="0" closeModal={closeLogin}>
+        <Modal open={showModal} paddingTop="0" closeModal={closeLogin} stateClass="navbar_modal">
           <LoginCard
             main={LoginCardData.main}
             sub={LoginCardData.sub}
