@@ -64,10 +64,10 @@ export const ArticleCard = (props) => {
               By{" "}
               <b
                 className="article_author_text"
-                onClick={(e) => {
-                  e.stopPropagation();
-                  props.setTag(props.author, 2);
-                }}
+                // onClick={(e) => {
+                //   e.stopPropagation();
+                //   props.setTag(props.author, 2);
+                // }}
               >
                 {props.author}
               </b>

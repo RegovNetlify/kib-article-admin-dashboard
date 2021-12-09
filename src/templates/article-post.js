@@ -222,10 +222,10 @@ export const ArticlePostTemplate = ({
                   <div className="sa_border" />
                   <div className="sa_related_header">{SINGLEARTICLE.by}</div>
                   <div
-                    className="sa_related_author cursor_pointer"
-                    onClick={() => {
-                      HandleToogleTag(artilceData.author, 2);
-                    }}
+                    className="sa_related_author"
+                    // onClick={() => {
+                    //   HandleToogleTag(artilceData.author, 2);
+                    // }}
                   >
                     {artilceData.author}
                   </div>
