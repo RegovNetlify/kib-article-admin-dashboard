@@ -4,8 +4,7 @@ author: Ismitz Matthew De Alwis
 title: How To Handle Your Retirement Planning
 date: 15, March, 2016
 description: |-
-  THEY say “Life is a marathon, not
-      a sprint.” That saying actually applies to
+  THEY say “Life is a marathon, not a sprint.” That saying actually applies to
       retirement planning as well. However, all
       too often we race through the nitty-gritty
       details of our finances and neglect to
