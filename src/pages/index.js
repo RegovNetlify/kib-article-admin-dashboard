@@ -84,6 +84,7 @@ export const CatologIndexPage = ({ data }) => {
   );
   let tempArticle = [...articles];
   useEffect(() => {
+    handleSort(post.edges);
     post.edges.map((edge, index) => {
       tempArticle[index] = {
         articleId: edge.node.id,
@@ -212,6 +213,16 @@ export const CatologIndexPage = ({ data }) => {
 
   const selectArticle = (slug) => {
     window.location.pathname = `${slug}`;
+  };
+
+  const handleSort = (data) => {
+    // let d = new Date(date);
+    let tempData = data.sort((a, b) => {
+      return (
+        new Date(b.node.frontmatter.date) - new Date(a.node.frontmatter.date)
+      );
+    });
+    console.log(tempData);
   };
 
   const HandleToogleTag = (tag, type) => {
