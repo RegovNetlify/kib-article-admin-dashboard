@@ -256,7 +256,7 @@ export const NAVBAR = {
   eAccess: eAccess,
   eAccess_hover: eAccess_hover,
   solotab: {
-    label2: "Choice of Profession",
+    label2: "Join Our Team",
     links2: "https://www.dev-kibwebsite.regovdevservices.com/Recruitment Agent",
   },
   tabs: [
