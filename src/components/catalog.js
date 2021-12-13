@@ -141,10 +141,10 @@ export const Catalog = (props) => {
         {!isMobile && (
           <div className="catalog-breadcrumb">
             <BreadCrumb
-              pathName={`/Home/News & Announcements${
+              pathName={`|||Home|||News & Announcements${
                 props.activeTag.tag === ""
                   ? ""
-                  : `${props.activeTag.type === 1 ? `/Categories` : "/Author"}`
+                  : `${props.activeTag.type === 1 ? `|||Categories` : "|||Author"}`
               }`}
             />
           </div>
@@ -154,11 +154,11 @@ export const Catalog = (props) => {
           <div className="catalog_section">
             <div className="catalog-breadcrumb">
               <BreadCrumb
-                pathName={`/Home/News & Announcements${
+                pathName={`|||Home|||News & Announcements${
                   props.activeTag.tag === ""
                     ? ""
                     : `${
-                        props.activeTag.type === 1 ? `/Categories` : "/Author"
+                        props.activeTag.type === 1 ? `|||Categories` : "|||Author"
                       }`
                 }`}
               />

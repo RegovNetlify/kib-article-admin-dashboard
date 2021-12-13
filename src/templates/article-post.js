@@ -173,7 +173,7 @@ export const ArticlePostTemplate = ({
     <Fragment>
       <Banner height="112px" img="">
         <div className="sa_banner flex_row_vertical_center sa">
-          <BreadCrumb pathName={`/home/Articles/${artilceData.heading}`} />
+          <BreadCrumb pathName={`|||home|||Articles|||${artilceData.heading}`} />
         </div>
       </Banner>
       <section className="section">

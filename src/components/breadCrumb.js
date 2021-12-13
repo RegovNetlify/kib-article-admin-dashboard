@@ -3,7 +3,7 @@ import { useHistory } from "react-router-dom";
 import { BREADCRUMB } from "../constants";
 
 export function BreadCrumb({ pathName }) {
-  let path = pathName.split("/");
+  let path = pathName.split("|||");
   let history = useHistory();
   path.shift();
   path[0] = "Home";
