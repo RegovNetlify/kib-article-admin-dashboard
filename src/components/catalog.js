@@ -105,8 +105,8 @@ export const Catalog = (props) => {
   const handleNotice = (slug) => {
     // history.push("/SingleArticleNotice")
     if (props.handleNotice) {
-      window.scrollTo(0, 0);
       props.handleNotice(slug);
+      // window.scrollTo(0, 0);
     }
   };
 
