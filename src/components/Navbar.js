@@ -44,7 +44,7 @@ export const NavBar = () => {
       )}`;
     }
   };
-  
+
   return (
     <Fragment>
       <div className="border navbar flex_row_vertical_center">
@@ -75,7 +75,7 @@ export const NavBar = () => {
 
         <div className="solotab_dropdown_label">
           <a className="solotab_dropdown_label" href={NAVBAR.solotab.links2}>
-            Choice of Profession
+            Join Our Team
           </a>
         </div>
         <div className="flex_grow" />
@@ -103,7 +103,12 @@ export const NavBar = () => {
           />
         </div>
 
-        <Modal open={showModal} paddingTop="0" closeModal={closeLogin} stateClass="navbar_modal">
+        <Modal
+          open={showModal}
+          paddingTop="0"
+          closeModal={closeLogin}
+          stateClass="navbar_modal"
+        >
           <LoginCard
             main={LoginCardData.main}
             sub={LoginCardData.sub}
