@@ -13,6 +13,7 @@
 
 .modal_background.open {
   display: block;
+  pointer-events: none;
 }
 
 /* Modal Content */
@@ -29,6 +30,7 @@
   max-height: 680px;
   /* overflow-y: scroll; */
   /* border: 1px solid #888; */
+  pointer-events: auto;
 }
 
 @media screen and (max-height: 760px) {
