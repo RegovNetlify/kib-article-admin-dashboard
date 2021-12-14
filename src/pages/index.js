@@ -84,8 +84,8 @@ export const CatologIndexPage = ({ data }) => {
   );
   let tempArticle = [...articles];
   useEffect(() => {
-    post.edges = handleSort(post.edges);
-    post.edges.map((edge, index) => {
+    let temp = handleSort(post.edges);
+    temp.map((edge, index) => {
       tempArticle[index] = {
         articleId: edge.node.id,
         tags: edge.node.frontmatter.tags,
@@ -219,10 +219,12 @@ export const CatologIndexPage = ({ data }) => {
     let d = new Date();
 
     let tempData = data.sort((a, b) => {
-      return new Date(b.node.frontmatter.date) >
-        new Date(a.node.frontmatter.date)
+      
+      console.log(new Date(b.node.frontmatter.date.replaceAll(",", "")));
+      return new Date(b.node.frontmatter.date.replaceAll(",", "")) >
+        new Date(a.node.frontmatter.date.replaceAll(",", ""))
         ? 1
-        : new Date(b.node.frontmatter.date) < new Date(a.node.frontmatter.date)
+        : new Date(b.node.frontmatter.date.replaceAll(",", "")) < new Date(a.node.frontmatter.date.replaceAll(",", ""))
         ? -1
         : 0;
     });
