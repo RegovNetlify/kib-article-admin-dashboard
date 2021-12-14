@@ -36,7 +36,16 @@
     max-height: 504px;
     overflow: auto;
     /* top: 0px;
-      transform: translate(-50%, 8px); */
+    transform: translate(-50%, 8px); */
+  }
+
+  .modal_background.navbar_modal .modal_content::-webkit-scrollbar {
+    display: inline;
+    scrollbar-width: thin !important;
+  }
+  .modal_background.navbar_modal .modal_content ::-moz-scrollbar {
+    display: inline;
+    scrollbar-width: thin !important;
   }
 }
 
