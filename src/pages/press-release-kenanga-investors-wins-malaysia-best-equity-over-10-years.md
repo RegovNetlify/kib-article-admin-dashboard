@@ -2,7 +2,7 @@
 templateKey: article-post
 author: "-"
 title: Kenanga Investors Wins Malaysia Best Equity Over 10-Years
-date: 06, December, 2021
+date: 09, April, 2020
 description: We are pleased to announce that the Kenanga Syariah Growth Fund was
   named Malaysia Best Equity Fund over 10-years at the recent renowned Refinitiv
   Lipper Global Islamic Fund Awards 2020. We have been steadfastly committed to
