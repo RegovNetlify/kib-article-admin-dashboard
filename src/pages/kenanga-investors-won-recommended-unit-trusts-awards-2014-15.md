@@ -2,7 +2,7 @@
 templateKey: article-post
 author: test QA regov
 title: Kenanga Investors won Recommended Unit Trusts Awards 2014/15
-date: 26, June, 2014
+date: 08, April, 2016
 description: "-"
 tags:
   - Focus Malaysia
