@@ -2,18 +2,15 @@
 templateKey: article-post
 author: Cheah Chor Sooi
 title: Putting A Stop To Front-running
-date: 06, December, 2021
-description: >-
-  FRONT–running – the practice of buying or selling a security using advance
-  knowledge of
-      pending orders to wrongfully benefit from the trade – has become difficult to trace these days.
-      This is especially so with stock exchanges all over the world seeing high frequency trades and direct market access technology. Imagine how a
-      milisecond advantage in the queue order can allow
-      investors with privileged information to reap handsome
-      profits from their trading activities. In essence, such
-      discreet practice is often associated with dealer
-      representatives handling accounts of several big
-      institutions/ retail clients.
+date: 12, October, 2016
+description: Kenanga Investors’ Executive Director and Chief Executive Officer,
+  Mr Ismitz Matthew De Alwis was featured in a recent article titled ‘Putting a
+  stop to front-running’ by Focus Malaysia. The article explains that the
+  practice of front-running has become increasingly difficult to trace and
+  highlights the viewpoints of several industry players on the matter. From
+  KIB’s perspective, Mr Ismitz reveals that investment decisions made by the
+  company’s investment team are fully guided by stringent guidelines comprising
+  both regulatory and internal policies.
 tags:
   - Focus Malaysia
 ---
