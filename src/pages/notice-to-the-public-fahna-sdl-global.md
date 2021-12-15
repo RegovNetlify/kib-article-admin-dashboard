@@ -2,7 +2,7 @@
 templateKey: article-post
 author: "-"
 title: "NOTICE TO THE PUBLIC: Fahna SDL Global"
-date: 06, December, 2021
+date: 31, July, 2019
 description: >
   This is to inform the public that Fahna SDL Global, in Miri, Sarawak, is using
   the name, contact details, and branch address of Kenanga Investors as its
