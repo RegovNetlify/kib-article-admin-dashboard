@@ -3,9 +3,8 @@ templateKey: article-post
 author: "-"
 title: Kenanga Investors Appointed Fund Manager for Dana Wakaf Bencana
 date: 18, November, 2021
-description: >
-  Kenanga Investors has been appointed fund manager for Dana Wakaf Bencana
-  (“Emergency Waqf Fund”). The fund aims to provide emergency relief by
+description: Kenanga Investors has been appointed fund manager for Dana Wakaf
+  Bencana (“Emergency Waqf Fund”). The fund aims to provide emergency relief by
   channeling resources to the parties affected by climate change-related
   disasters as well as future pandemics. Moreover, the fund will be supervised
   by Yayasan Waqaf Malaysia (waqf administrator) and MATCH Foundation
