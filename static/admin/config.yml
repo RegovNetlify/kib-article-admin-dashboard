@@ -11,6 +11,7 @@ backend:
 local_backend: true
 media_folder: static/img
 public_folder: /img
+logo_url: https://i.imgur.com/rA4qXSV.png
 
 collections:
   # - name: "blog"

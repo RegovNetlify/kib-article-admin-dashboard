@@ -44,6 +44,11 @@ export const getNotice = async (id) => {
 export const getLatestNotice = async (id) => {
   return await API_Call(API_ENDPOINT.LATESTNOTICES, { articleId: id });
 };
+export const updateArticle = async () => {
+  return await API_Call(
+    "https://api.regovitservices.com/v1/api/app/updatearticle"
+  );
+};
 export const getLatestArticle = async (id, tag, type) => {
   console.log(
     `data being send ::: ${JSON.stringify({

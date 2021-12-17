@@ -7,6 +7,7 @@ import { ARTICLECATALOG } from "../constants";
 import { graphql } from "gatsby";
 import PropTypes from "prop-types";
 import { useEffect } from "react";
+import { updateArticle } from "../myOwnApi";
 
 export const CatologIndexPage = ({ data }) => {
   const { allMarkdownRemark: post } = data;
@@ -15,9 +16,9 @@ export const CatologIndexPage = ({ data }) => {
   let activeTagState = "";
 
   useEffect(() => {
-    fetch("/.netlify/functions/deploy-building-background")
-      .then((response) => response.json())
-      .then(console.log);
+    updateArticle().then((res) => {
+      console.log(res);
+    });
   }, []);
 
   useEffect(() => {
