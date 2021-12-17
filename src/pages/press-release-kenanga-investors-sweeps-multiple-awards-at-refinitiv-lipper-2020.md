@@ -2,7 +2,7 @@
 templateKey: article-post
 author: "-"
 title: Kenanga Investors Sweeps Multiple Awards at Refinitiv Lipper 2020
-date: 06, December, 2021
+date: 20, April, 2020
 description: Kenanga Investors Berhad picked up a total of five (5) awards at
   the Refinitiv Lipper Fund Awards 2020. As a fund manager, we won the 2 Group
   Awards, “Best Mixed Asset Award – Malaysia Pension” and “Best Equity Award –
