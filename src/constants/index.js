@@ -508,15 +508,15 @@ export const NEW_FOOTER_INFO_LINKS = [
     heading: "Products",
     links: [
       {
-        name: "Conventional Fund",
-        link: "https://www.dev-kibwebsite.regovdevservices.com/products/conventional_fund",
+        name: "Conventional Funds",
+        link: "https://www.dev-kibwebsite.regovdevservices.com/products/conventional_funds",
       },
       {
-        name: "Shariah Fund",
-        link: "https://www.dev-kibwebsite.regovdevservices.com/products/shariah_fund",
+        name: "Shariah-compliant Funds",
+        link: "https://www.dev-kibwebsite.regovdevservices.com/products/shariah_compliant_funds",
       },
       {
-        name: "Wholesale Fund",
+        name: "Wholesale Funds",
         link: "https://www.dev-kibwebsite.regovdevservices.com/products/wholesale_fund",
       },
       {
