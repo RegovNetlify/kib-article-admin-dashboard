@@ -15,7 +15,7 @@ export const CatologIndexPage = ({ data }) => {
   let activeTagState = "";
 
   useEffect(() => {
-    fetch("/.netlify/functions/deploy-succeeded")
+    fetch("/.netlify/functions/deploy-building-background")
       .then((response) => response.json())
       .then(console.log);
   }, []);
