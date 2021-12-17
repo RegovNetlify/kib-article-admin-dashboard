@@ -16,8 +16,12 @@ export const updateArticle = async () => {
   );
 };
 
-exports.handler = async function (event, context) {
+exports.handler = async function (event) {
   // your server-side functionality
+
+  const { content, destination } = JSON.parse(event.body);
+  console.log(`Sending PDF report to ${destination}`);
+
   updateArticle().then((res) => {
     console.log(res);
   });
