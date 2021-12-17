@@ -15,6 +15,12 @@ export const CatologIndexPage = ({ data }) => {
   let activeTagState = "";
 
   useEffect(() => {
+    fetch("/.netlify/functions/deploy-succeeded")
+      .then((response) => response.json())
+      .then(console.log);
+  }, []);
+
+  useEffect(() => {
     if (isBrowser) {
       activeTagState = sessionStorage.getItem("tag");
       console.log(activeTagState);
@@ -219,12 +225,12 @@ export const CatologIndexPage = ({ data }) => {
     let d = new Date();
 
     let tempData = data.sort((a, b) => {
-      
       console.log(new Date(b.node.frontmatter.date.replaceAll(",", "")));
       return new Date(b.node.frontmatter.date.replaceAll(",", "")) >
         new Date(a.node.frontmatter.date.replaceAll(",", ""))
         ? 1
-        : new Date(b.node.frontmatter.date.replaceAll(",", "")) < new Date(a.node.frontmatter.date.replaceAll(",", ""))
+        : new Date(b.node.frontmatter.date.replaceAll(",", "")) <
+          new Date(a.node.frontmatter.date.replaceAll(",", ""))
         ? -1
         : 0;
     });
