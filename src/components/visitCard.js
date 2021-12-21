@@ -17,7 +17,7 @@ export const VisitCard = (props) => {
             <div className="visit_card_button_text">
                 {props.buttonText}
                 <span style={{marginLeft:"12px"}}>
-                <div className={`visit_arrow ${mouseEnterButton?"secondary":""}`}/>
+                <div className={`visit_arrow ${mouseEnterButton?"onHover":""}`}/>
             </span>
             </div> 
         </a>
