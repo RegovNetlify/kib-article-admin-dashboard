@@ -61,17 +61,27 @@
 .visit_arrow {
   /* margin-left: 12px; */
   background-image: url("../img/arrow_right_red.png");
-  background-size: contain;
-  width: 18px;
-  height: 18px;
+  background-size: 16px 16px;
+  width: 16px;
+  height: 16px;
+  margin-top:3px;
+  margin-left:2px;
 }
 
 .visit_card_button.disable .visit_arrow {
   background-image: url("../img/right_arrow_grey.png");
+  width:19px;
+  height:19px;
+  background-size: 22px 22px;
+  margin-top:0px;
 }
 
-.visit_arrow.secondary {
+.visit_arrow.onHover {
   background-image: url("../img/right_arrow_white.png");
+  width:19px;
+  height:19px;
+  margin-top:0px;
+  background-size: 22px 22px;
 }
 
 .visit_card_page_description {
