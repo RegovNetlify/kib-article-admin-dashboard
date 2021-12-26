@@ -3,7 +3,15 @@ templateKey: article-post
 author: "-"
 title: "Ask The Experts: 24% Potential upside for Asian Equities In Two Years"
 date: 23, November, 2016
-description: "-"
+description: >-
+  We are bullish on Asian equities, because we think that the Asia region is one
+  of the few regions that
+      will bring growth moving forward. If you look at developed markets like US and Europe, they are
+      actually showing 2% growth forecasted in the next two years, whereas Asia’s forecast GDP growth is
+      about 5% to 6%, and corporate earnings growth should be even stronger than that. Therefore, it is one
+      of the only regions where investors may experience growth for their investments. Although there are
+      risks generally arising from high debt particularly in China, we think the government has the capability
+      and willingness to contain it for now.
 tags:
   - Fundsupermart
 ---
