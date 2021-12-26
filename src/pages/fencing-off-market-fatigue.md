@@ -3,7 +3,18 @@ templateKey: article-post
 author: Ismitz Matthew De Alwis
 title: Fencing Off Market Fatigue
 date: 24, July, 2018
-description: "-"
+description: >-
+  The adage "when America sneezes, the world catches the cold" has its origin in
+  the
+      aftermath of the Oct 29, 1929 Wall Street crash (a.k.a Black Tuesday) which has
+      been deemed as the most devastating stock market crash in US history. A period of
+      economic gloom permeated across the US and elsewhere across the globe. The
+      ripple effect which brought about an era of Great Depression did eventually arrive at
+      the then Malayan shores. Predictably, the tumbling passenger car sales in the US
+      had dire consequences on the demand for rubber which was then Malaya's chief
+      export. The US would hold on to that 'metaphoric' honour well into the new millennium
+      until recent times when China's rapid ascent as the world's second biggest economy
+      threatened to dethrone it as an economic powerhouse.
 tags:
   - Focus Malaysia
 ---
