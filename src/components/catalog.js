@@ -84,6 +84,7 @@ export const Catalog = (props) => {
     console.log(props.activeTag.tag);
     if (props.activeTag.tag !== "") {
       setCatalogLimit(props.articleCardList.length);
+      setOpen(true);
     } else {
       setCatalogLimit(CATALOG.limit);
     }
@@ -144,7 +145,9 @@ export const Catalog = (props) => {
               pathName={`|||Home|||News & Announcements${
                 props.activeTag.tag === ""
                   ? ""
-                  : `${props.activeTag.type === 1 ? `|||Categories` : "|||Author"}`
+                  : `${
+                      props.activeTag.type === 1 ? `|||Categories` : "|||Author"
+                    }`
               }`}
             />
           </div>
@@ -158,7 +161,9 @@ export const Catalog = (props) => {
                   props.activeTag.tag === ""
                     ? ""
                     : `${
-                        props.activeTag.type === 1 ? `|||Categories` : "|||Author"
+                        props.activeTag.type === 1
+                          ? `|||Categories`
+                          : "|||Author"
                       }`
                 }`}
               />
