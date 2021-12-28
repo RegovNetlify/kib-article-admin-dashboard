@@ -573,7 +573,7 @@ export const NEW_FOOTER_INFO_LINKS = [
       },
       {
         name: "Calculators",
-        link: "https://www.dev-kibwebsite.regovdevservices.com/Retirement Calculator",
+        link: "https://www.dev-kibwebsite.regovdevservices.com/EPF%20Calculator",
         // subLink: [
         //   {
         //     name: "Retirement Calculator",
