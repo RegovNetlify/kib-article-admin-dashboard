@@ -3,7 +3,16 @@ templateKey: article-post
 author: Laili Ismail
 title: Kenanga Wins Islamic Group Award For Second Year Running
 date: 06, April, 2018
-description: "-"
+description: >-
+  Kenanga Investors Bhd bagged a group award and two individual awards at The
+  EdgeThomson Reuters Lipper Fund Awards 2018. It won the awards for Best Equity
+  Group
+      (Islamic), Best Equity Malaysia (Provident) in the three-year category and Best Equity
+      Malaysia (Islamic) in the 10-year category. CEO and executive director Ismitz Matthew
+      De Alwis credits the excellent performance to the fund house’s careful research and
+      bottom-up stock-picking approach. He says the team spent a lot of time researching
+      undervalued stocks whose fundamentals were deemed superior and sustainable to arrive
+      at their intrinsic values.
 tags:
   - The Edge
 ---
