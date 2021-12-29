@@ -261,7 +261,7 @@ export const NAVBAR = {
   },
   tabs: [
     {
-      label: "Invest for You",
+      label: "Investing for All",
       tabs: [
         "Our Mission",
         "Investment Mechanism & Philosophy",
@@ -290,21 +290,6 @@ export const NAVBAR = {
         "https://www.dev-kibwebsite.regovdevservices.com/Head Office & Branch Locator",
       ],
     },
-    // {
-    //   label: "Choice of Profession",
-    //   tabs: [
-    //     "Recruitment Agent",
-    //     "Qualification",
-    //     "Our Plan for You",
-    //     "Lifestyle Rewards",
-    //   ],
-    //   links: [
-    //     "Recruitment Agent",
-    //     "Recruitment Agent#Qualification",
-    //     "Recruitment Agent#Our_Plan_for_You",
-    //     "Recruitment Agent#Lifestyle_Rewards",
-    //   ],
-    // },
   ],
 };
 
