@@ -282,12 +282,12 @@ export const NAVBAR = {
       tabs: [
         "Book An Appointment",
         "Contact Investor Services",
-        "Head Office & Branch Locator",
+        "Branch Locator",
       ],
       link: [
         "https://www.dev-kibwebsite.regovdevservices.com/Book An Appointment",
         "https://www.dev-kibwebsite.regovdevservices.com/Contact Investor Services",
-        "https://www.dev-kibwebsite.regovdevservices.com/Head Office & Branch Locator",
+        "https://www.dev-kibwebsite.regovdevservices.com/Branch Locator",
       ],
     },
   ],
