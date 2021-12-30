@@ -2,7 +2,8 @@ module.exports = {
   siteMetadata: {
     title: "Kenanga Investors",
     description:
-      "This repo contains an example business website that is built with Gatsby, and Netlify CMS.It follows the JAMstack architecture by using Git as a single source of truth, and Netlify for continuous deployment, and CDN distribution.",
+      "Asia Asset Management’s 2021 Best of the Best Awards for Malaysia Best Equity Manager. Invest with an award-winning asset & wealth manager for sustainable performance.",
+    image: ""
   },
   plugins: [
     "gatsby-plugin-react-helmet",
