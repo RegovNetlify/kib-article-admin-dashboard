@@ -282,12 +282,12 @@ export const NAVBAR = {
       tabs: [
         "Book An Appointment",
         "Contact Investor Services",
-        "Head Office & Branch Locator",
+        "Branch Locator",
       ],
       link: [
         "https://www.dev-kibwebsite.regovdevservices.com/Book An Appointment",
         "https://www.dev-kibwebsite.regovdevservices.com/Contact Investor Services",
-        "https://www.dev-kibwebsite.regovdevservices.com/Head Office & Branch Locator",
+        "https://www.dev-kibwebsite.regovdevservices.com/Branch Locator",
       ],
     },
   ],
@@ -558,7 +558,7 @@ export const NEW_FOOTER_INFO_LINKS = [
       },
       {
         name: "Calculators",
-        link: "https://www.dev-kibwebsite.regovdevservices.com/EPF%20Calculator",
+        link: "https://www.dev-kibwebsite.regovdevservices.com/EPF Calculator",
         // subLink: [
         //   {
         //     name: "Retirement Calculator",
