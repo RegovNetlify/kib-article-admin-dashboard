@@ -58,25 +58,6 @@ collections:
       # - { label: "Featured Post", name: "featuredpost", widget: "boolean" }
       - { label: "Body", name: "body", widget: "markdown" }
       - { label: "Tags", name: "tags", widget: "list", min: 1, max: 5 }
-  - name: "csv"
-    label: "csv"
-    folder: "src/csv"
-    create: true
-    slug: "{{slug}}"
-    fields:
-      - {
-          label: "Template Key",
-          name: "templateKey",
-          widget: "hidden",
-          default: "csv-post",
-        }
-      - {
-          label: "Manual PDF",
-          name: "manual_pdf",
-          widget: "file",
-          default: "/uploads/general-manual.pdf",
-        }
-
   # - name: "pages"
   #   label: "Pages"
   #   files:
