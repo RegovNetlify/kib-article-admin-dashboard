@@ -264,17 +264,17 @@ export const NAVBAR = {
       label: "Investing for All",
       tabs: [
         "Our Mission",
-        "Investment Mechanism & Philosophy",
+        "Investment Philosophy",
         "Stewardship Code",
-        "Principle of Waqf",
-        "Accolades for MARC",
+        "Principles of Waqf",
+        "MARC Rating",
       ],
       link: [
         "https://www.dev-kibwebsite.regovdevservices.com/Our Mission",
-        "https://www.dev-kibwebsite.regovdevservices.com/Investment Mechanism & Philosophy",
+        "https://www.dev-kibwebsite.regovdevservices.com/Investment%20Philosophy",
         "https://www.dev-kibwebsite.regovdevservices.com/Stewardship Code",
         "https://www.dev-kibwebsite.regovdevservices.com/Principle of Waqf",
-        "https://www.dev-kibwebsite.regovdevservices.com/Accolades for MARC",
+        "https://www.dev-kibwebsite.regovdevservices.com/MARC%20Rating",
       ],
     },
     {
