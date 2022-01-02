@@ -273,7 +273,7 @@ export const NAVBAR = {
         "https://www.dev-kibwebsite.regovdevservices.com/Our Mission",
         "https://www.dev-kibwebsite.regovdevservices.com/Investment%20Philosophy",
         "https://www.dev-kibwebsite.regovdevservices.com/Stewardship Code",
-        "https://www.dev-kibwebsite.regovdevservices.com/Principle of Waqf",
+        "https://www.dev-kibwebsite.regovdevservices.com/Principles%20of%20Waqf",
         "https://www.dev-kibwebsite.regovdevservices.com/MARC%20Rating",
       ],
     },
