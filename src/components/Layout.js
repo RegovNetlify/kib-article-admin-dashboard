@@ -14,7 +14,12 @@ const TemplateWrapper = ({ children }) => {
       <Helmet>
         <html lang="en" />
         <title>{title}</title>
-        <meta name="description" content={description} />
+        <meta
+          name="description"
+          content={
+            "Asia Asset Management’s 2021 Best of the Best Awards for Malaysia Best Equity Manager. Invest with an award-winning asset & wealth manager for sustainable performance."
+          }
+        />
 
         <link
           rel="icon"
