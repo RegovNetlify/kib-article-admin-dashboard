@@ -28,7 +28,7 @@ const TemplateWrapper = ({ children }) => {
         <meta property="og:url" content="/" />
         <meta
           property="og:image"
-          content={`/`}
+          content={`https://coolbackgrounds.io/images/backgrounds/white/pure-white-background-85a2a7fd.jpg`}
         />
       </Helmet>
       <NavBar />
