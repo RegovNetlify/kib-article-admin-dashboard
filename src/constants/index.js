@@ -356,19 +356,25 @@ export const FOOTER = {
       links: [
         {
           name: "Who We Are",
-          link: "/AboutUs",
+          link: "/AboutUs/WhoWEAre",
         },
         {
-          name: "Our Structure",
-          link: "/AboutUs/OurStructure",
+          name: "Corporate Structure",
+          link: "/AboutUs/Corporate Structure",
         },
         {
-          name: "Our Directorate",
-          link: "/AboutUs/OurStructure#tab",
-        },
-        {
-          name: "Our Personnel Professional",
-          link: "/AboutUs/OurStructure/PersonnelProfessional#tab",
+          name: "Management",
+          link: "/AboutUs/Management",
+          subLink: [
+            {
+              name: "Board of Directors",
+              link: "/AboutUs/Management#tab",
+            },
+            {
+              name: "Key Personnel",
+              link: "/AboutUs/Management/PersonnelProfessional#tab",
+            },
+          ],
         },
         {
           name: "Our Investment Committee",
@@ -455,16 +461,20 @@ export const NEW_FOOTER_INFO_LINKS = [
         link: "https://www.dev-kibwebsite.regovdevservices.com/AboutUs/WhoWEAre",
       },
       {
-        name: "Structure & Directorate",
-        link: "https://www.dev-kibwebsite.regovdevservices.com/AboutUs/StructureDirectorate",
+        name: "Corporate Structure",
+        link: "https://www.dev-kibwebsite.regovdevservices.com/AboutUs/Corporate Structure",
+      },
+      {
+        name: "Management",
+        link: "https://www.dev-kibwebsite.regovdevservices.com/AboutUs/Management",
         subLink: [
           {
             name: "Board of Directors",
-            link: "https://www.dev-kibwebsite.regovdevservices.com/AboutUs/StructureDirectorate#tab",
+            link: "https://www.dev-kibwebsite.regovdevservices.com/AboutUs/Management#tab",
           },
           {
             name: "Key Personnel",
-            link: "https://www.dev-kibwebsite.regovdevservices.com/AboutUs/StructureDirectorate/PersonnelProfessional#tab",
+            link: "https://www.dev-kibwebsite.regovdevservices.com/AboutUs/Management/PersonnelProfessional#tab",
           },
         ],
       },
