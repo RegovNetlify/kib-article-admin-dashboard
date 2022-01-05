@@ -420,7 +420,7 @@ export const FOOTER = {
           name: "Events",
           link: "https://www.kenanga.com.my/news/#filter=.events",
         },
-        { name: "Download Centre", link: "/download_center" },
+        { name: "Download Centre", link: "/Download Centre" },
         { name: "Frequently Asked Questions", link: "/faq" },
         // { name: "Calculators", link: "#" },
       ],
@@ -560,7 +560,7 @@ export const NEW_FOOTER_INFO_LINKS = [
       },
       {
         name: "Download Centre",
-        link: "https://www.dev-kibwebsite.regovdevservices.com/download_center",
+        link: "https://www.dev-kibwebsite.regovdevservices.com/Download Centre",
       },
       {
         name: "Frequently Asked Questions",
