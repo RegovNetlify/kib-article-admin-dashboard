@@ -400,7 +400,7 @@ export const FOOTER = {
         { name: "Conventional Fund", link: "/products/conventional_fund" },
         { name: "Shariah Fund", link: "/products/shariah_fund" },
         { name: "Wholesale Fund", link: "/products/wholesale_fund" },
-        { name: "OnePRS by Kenanga", link: "/products/one_prs_by_kenanga" },
+        { name: "OnePRS by Kenanga", link: "/products/OnePRS" },
         { name: "OneETF by Kenanga", link: "/products/oneETF_&_myETF" },
       ],
     },
@@ -528,7 +528,7 @@ export const NEW_FOOTER_INFO_LINKS = [
       },
       {
         name: "OnePRS ",
-        link: "https://www.dev-kibwebsite.regovdevservices.com/products/one_prs_by_kenanga",
+        link: "https://www.dev-kibwebsite.regovdevservices.com/products/OnePRS",
       },
       {
         name: "OneETF & MyETF",
